@@ -52,8 +52,6 @@ export const runCommand = (yargs) => {
           default: false,
         })
         .example("$0 run", "Run visual tests with default settings")
-        .example("$0 run --mode lite", "Run only _visual stories")
-
         .example(
           "$0 run --include-paths components/Button",
           "Run tests for Button component",

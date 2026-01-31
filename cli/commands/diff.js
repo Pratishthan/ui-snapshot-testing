@@ -26,20 +26,13 @@ export const diffCommand = (yargs) => {
           type: "string",
           description: "Target branch for comparison",
         })
-        .option("mode", {
-          alias: "m",
-          type: "string",
-          choices: ["lite", "full"],
-          description: "Test mode",
-        })
         .option("config", {
           alias: "c",
           type: "string",
           description: "Path to config file",
         })
         .example("$0 diff", "Run tests for stories changed since Sprint16")
-        .example("$0 diff --target-branch main", "Compare against main branch")
-        .example("$0 diff --mode full", "Use full mode for changed stories");
+        .example("$0 diff --target-branch main", "Compare against main branch");
     },
     async (argv) => {
       try {
@@ -49,7 +42,6 @@ export const diffCommand = (yargs) => {
           configFile: argv.config,
         };
 
-        if (argv.mode) configOptions.mode = argv.mode;
         if (argv.targetBranch) {
           configOptions.diff = { targetBranch: argv.targetBranch };
         }
@@ -57,7 +49,6 @@ export const diffCommand = (yargs) => {
         const config = await loadConfig(configOptions);
 
         console.log(chalk.gray(`Target branch: ${config.diff.targetBranch}`));
-        console.log(chalk.gray(`Test mode: ${config.mode}\n`));
 
         // Get changed files
         const changedFiles = getChangedFiles(config.diff.targetBranch);
@@ -96,7 +87,6 @@ export const diffCommand = (yargs) => {
         // Set environment variables
         const env = {
           ...process.env,
-          VISUAL_TEST_MODE: config.mode,
           STORY_INCLUDE_PATHS: affected.allStoryFiles.join(","),
           CI: "1",
           VISUAL_TESTS_DATA_FILE: dataFile,
