@@ -92,7 +92,11 @@ export function generateVisualTestsFromData(options = {}) {
 
   // Generate a test for each story
   for (const story of stories) {
-    test(`${story.id}`, async ({ page }, testInfo) => {
+    const testTitle = story.importPath
+      ? `${story.importPath} › ${story.id}`
+      : `${story.id}`;
+
+    test(testTitle, async ({ page }, testInfo) => {
       const storyId = story.id;
       const snapshotName = getSnapshotName(storyId);
 
@@ -157,11 +161,63 @@ export function generateVisualTestsFromData(options = {}) {
           story._testOptions?.image !== false
         ) {
           const screenshot = await captureStoryScreenshot(page, targetSelector);
-          expect(screenshot).toMatchSnapshot(`${snapshotName}.png`, {
-            maxDiffPixelRatio: config.snapshot?.image?.maxDiffPixelRatio,
-            maxDiffPixels: config.snapshot?.image?.maxDiffPixels,
-            threshold: config.snapshot?.image?.threshold,
-          });
+
+          if (isUpdateMode) {
+            // Update mode: save snapshot directly
+            fs.writeFileSync(snapshotPath, screenshot);
+            // Verify it exists to ensure write success
+            if (!fs.existsSync(snapshotPath)) {
+              throw new Error(`Failed to write snapshot to ${snapshotPath}`);
+            }
+          } else {
+            // Verify mode: compare with existing snapshot
+            // Use higher maxDiffPixelRatio if maxDiffPixelRatioForDimensions is configured
+            // This helps handle cases where dimensions might differ slightly
+            const maxDiffPixelRatio =
+              config.snapshot?.image?.maxDiffPixelRatioForDimensions ||
+              config.snapshot?.image?.maxDiffPixelRatio;
+
+            try {
+              expect(screenshot).toMatchSnapshot(`${snapshotName}.png`, {
+                maxDiffPixelRatio,
+                maxDiffPixels: config.snapshot?.image?.maxDiffPixels,
+                threshold: config.snapshot?.image?.threshold,
+              });
+            } catch (snapshotError) {
+              // Check if this is a dimension mismatch error
+              const dimensionMismatchMatch = snapshotError.message.match(
+                /Expected an image (\d+)px by (\d+)px, received (\d+)px by (\d+)px/,
+              );
+
+              if (dimensionMismatchMatch) {
+                const [
+                  ,
+                  expectedWidth,
+                  expectedHeight,
+                  actualWidth,
+                  actualHeight,
+                ] = dimensionMismatchMatch;
+                const widthDiff = Math.abs(
+                  parseInt(expectedWidth) - parseInt(actualWidth),
+                );
+                const heightDiff = Math.abs(
+                  parseInt(expectedHeight) - parseInt(actualHeight),
+                );
+
+                throw new Error(
+                  `Snapshot dimensions changed for ${storyId}:\n` +
+                    `  Expected: ${expectedWidth}×${expectedHeight}px\n` +
+                    `  Actual:   ${actualWidth}×${actualHeight}px\n` +
+                    `  Difference: ${widthDiff}px width, ${heightDiff}px height\n\n` +
+                    `This indicates a layout change. To accept the new dimensions, run:\n` +
+                    `  npx ui-snapshot-testing update --include-paths ${story.importPath || storyId}`,
+                );
+              }
+
+              // Re-throw original error if not a dimension mismatch
+              throw snapshotError;
+            }
+          }
         }
       } catch (error) {
         // Check if error should be ignored

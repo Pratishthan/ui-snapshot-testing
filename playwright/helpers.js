@@ -75,23 +75,75 @@ export async function waitForStoryReady(
   timeout = 5000,
 ) {
   try {
-    // Wait for the target element to be visible
+    // Wait for the target element to be attached (not checking visibility since aria-hidden may be present)
     await page.waitForSelector(targetSelector, {
-      state: "visible",
+      state: "attached",
       timeout,
     });
 
-    // Wait for any animations to complete
-    await page.waitForTimeout(100);
+    // Wait for any animations and content to render
+    // Increased wait time to allow story content to fully load
+    await page.waitForTimeout(2000);
 
     // Check if element is actually visible and has content
-    const isReady = await page.evaluate((selector) => {
+    const debugInfo = await page.evaluate((selector) => {
       const element = document.querySelector(selector);
-      if (!element) return false;
+      if (!element) return { found: false };
 
       const rect = element.getBoundingClientRect();
-      return rect.width > 0 && rect.height > 0;
+
+      // Also check alternative selectors
+      const alternatives = {
+        body: document.body?.getBoundingClientRect(),
+        "#storybook-docs": document
+          .querySelector("#storybook-docs")
+          ?.getBoundingClientRect(),
+        "#root": document.querySelector("#root")?.getBoundingClientRect(),
+        ".sb-show-main": document
+          .querySelector(".sb-show-main")
+          ?.getBoundingClientRect(),
+      };
+
+      // Check for any visible content on the page (handles dialogs/modals)
+      const hasAnyVisibleContent = () => {
+        // Check if body has any visible children with dimensions
+        const allElements = document.querySelectorAll("body *");
+        for (const el of allElements) {
+          const elRect = el.getBoundingClientRect();
+          if (elRect.width > 0 && elRect.height > 0) {
+            return true;
+          }
+        }
+        return false;
+      };
+
+      return {
+        found: true,
+        hasChildren: element.hasChildNodes(),
+        childCount: element.childNodes.length,
+        width: rect.width,
+        height: rect.height,
+        ariaHidden: element.getAttribute("aria-hidden"),
+        display: window.getComputedStyle(element).display,
+        visibility: window.getComputedStyle(element).visibility,
+        innerHTML: element.innerHTML.substring(0, 200), // First 200 chars
+        hasAnyVisibleContent: hasAnyVisibleContent(),
+        alternatives: Object.fromEntries(
+          Object.entries(alternatives).map(([key, rect]) => [
+            key,
+            rect ? { width: rect.width, height: rect.height } : null,
+          ]),
+        ),
+      };
     }, targetSelector);
+
+    // Story is ready if:
+    // 1. Target element exists AND has children with dimensions, OR
+    // 2. There's ANY visible content on the page (handles dialogs/modals)
+    const isReady =
+      debugInfo.found &&
+      ((debugInfo.hasChildren && debugInfo.width > 0 && debugInfo.height > 0) ||
+        debugInfo.hasAnyVisibleContent);
 
     return isReady;
   } catch (error) {
@@ -112,13 +164,26 @@ export async function captureStoryScreenshot(
   targetSelector = "#storybook-root",
   options = {},
 ) {
-  const element = await page.locator(targetSelector);
+  // Check if target element has dimensions
+  const hasContent = await page.evaluate((selector) => {
+    const element = document.querySelector(selector);
+    if (!element) return false;
+    const rect = element.getBoundingClientRect();
+    return rect.width > 0 && rect.height > 0;
+  }, targetSelector);
 
   const screenshotOptions = {
     animations: "disabled",
     ...options,
   };
 
+  // If target element is empty (e.g., for dialogs/modals), screenshot the body instead
+  if (!hasContent) {
+    return await page.screenshot(screenshotOptions);
+  }
+
+  // Otherwise screenshot the target element
+  const element = await page.locator(targetSelector);
   return await element.screenshot(screenshotOptions);
 }
 

@@ -7,16 +7,14 @@ import { spawn } from "child_process";
 import path from "path";
 import fs from "fs";
 import { loadConfig } from "../../config-loader.js";
-import {
-  generateHtmlReport,
-  generateJsonReport,
-} from "../../lib/report-generator.js";
+import { generateJsonReport } from "../../lib/report-generator.js";
 import {
   readFailuresFromJsonl,
   readPassedFromJsonl,
   readIgnoredFromJsonl,
   readSkippedFromJsonl,
-} from "../../lib/failure-handler.js";
+  allFailuresIgnorable,
+} from "../../lib/result-processor.js";
 
 export const reportCommand = (yargs) => {
   yargs.command(
@@ -83,15 +81,6 @@ export const reportCommand = (yargs) => {
             ignored,
             skipped,
           };
-
-          if (argv.format === "html" || argv.format === "both") {
-            const htmlPath = await generateHtmlReport(results, config);
-            if (htmlPath) {
-              console.log(chalk.green(`✅ HTML report generated: ${htmlPath}`));
-            } else {
-              console.log(chalk.yellow("⚠️  No failures to report"));
-            }
-          }
 
           if (argv.format === "json" || argv.format === "both") {
             const jsonPath = await generateJsonReport(results, config);

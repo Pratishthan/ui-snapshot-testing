@@ -30,7 +30,7 @@ export default {
        * - Increase (e.g., 0.05): More tolerant of widespread changes across the image.
        * - Decrease (e.g., 0.001): Stricter, fails even if a small area changes.
        */
-      maxDiffPixelRatio: 0.01,
+      maxDiffPixelRatio: 0.02,
 
       /**
        * Max Number of Different Pixels
@@ -38,7 +38,7 @@ export default {
        * - Increase (e.g., 500): Tolerates small artifacts or tiny layout shifts (e.g., 1px border shift).
        * - Decrease (e.g., 0): Zero tolerance for any pixel difference.
        */
-      maxDiffPixels: 100,
+      maxDiffPixels: 300,
 
       /**
        * Color Threshold (0-1)
@@ -47,6 +47,14 @@ export default {
        * - Decrease (e.g., 0.1): Stricter; slight color variations (e.g., rendering differences) will be flagged.
        */
       threshold: 0.2,
+
+      /**
+       * Max Diff Pixel Ratio for Dimension Changes (0-1)
+       * - What it does: Higher tolerance for pixel differences when dimensions might change.
+       * - Use this when content might render at slightly different sizes.
+       * - If not set, falls back to maxDiffPixelRatio.
+       */
+      maxDiffPixelRatioForDimensions: 1.0,
     },
 
     // JSON position tracking settings

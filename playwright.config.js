@@ -29,6 +29,12 @@ const config = {
   ),
   snapshotPathTemplate: "{snapshotDir}/{arg}{ext}",
 
+  // Update snapshots configuration
+  // Default to 'none' to prevent accidental creation of new snapshots
+  // Only allow 'missing' if explicitly authorized via env var
+  updateSnapshots:
+    process.env.VISUAL_TEST_UPDATE_SNAPSHOTS === "true" ? "missing" : "none",
+
   // Test execution settings
   fullyParallel: visualTestConfig.playwrightConfig?.fullyParallel ?? false,
   workers: visualTestConfig.playwrightConfig?.workers ?? 1,

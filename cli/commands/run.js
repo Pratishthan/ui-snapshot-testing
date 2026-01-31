@@ -12,7 +12,7 @@ import {
   generateTestFiles,
   cleanupTestFiles,
 } from "../../lib/test-runner-utils.js";
-import { generateFailuresLog } from "../../lib/failure-handler.js";
+import { processTestResults } from "../../lib/result-processor.js";
 
 export const runCommand = (yargs) => {
   yargs.command(
@@ -101,7 +101,7 @@ export const runCommand = (yargs) => {
         console.log(chalk.blue("🔍 Discovering stories..."));
         const stories = await fetchStoriesFromStorybook(
           config,
-          argv.updateSnapshots,
+          true, // Always include all matching stories, let Playwright fail if snapshots missing
         );
         console.log(chalk.green(`✅ Found ${stories.length} stories`));
 
@@ -139,6 +139,7 @@ export const runCommand = (yargs) => {
           // Keep legacy env vars just in case, though they shouldn't be needed for core logic anymore
           // VISUAL_TEST_MODE: config.mode,
           STORYBOOK_PORT: config.storybook.port,
+          VISUAL_TEST_UPDATE_SNAPSHOTS: argv.updateSnapshots ? "true" : "false",
         };
 
         // Run Playwright
@@ -199,12 +200,12 @@ export const runCommand = (yargs) => {
             }
           }
 
-          const failuresFile = path.resolve(
+          const logsDir = path.resolve(
             process.cwd(),
-            config.paths.failuresFile || "logs/visual-test-failures.jsonl",
+            config.paths.logsDir || "logs",
           );
 
-          await generateFailuresLog(jsonReportPath, failuresFile);
+          await processTestResults(jsonReportPath, logsDir);
         } catch (err) {
           console.warn(
             chalk.yellow(`Failed to generate failures log: ${err.message}`),

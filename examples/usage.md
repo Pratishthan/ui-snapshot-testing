@@ -10,6 +10,7 @@ This guide covers how to use the `@pratishthan/snapshot-testing` library, from b
 - [Programmatic Usage](#programmatic-usage) (Advanced)
   - [Custom Scripts](#custom-scripts)
 - [Story Configuration](#story-configuration)
+- [Advanced Topics](../docs/advanced-guide.md) (Masking, Position Tracking, Troubleshooting)
 
 ---
 

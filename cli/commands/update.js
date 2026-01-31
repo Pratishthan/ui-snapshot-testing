@@ -8,7 +8,11 @@ import enquirer from "enquirer";
 import path from "path";
 import fs from "fs";
 import { loadConfig } from "../../config-loader.js";
-import { readFailuresFromJsonl } from "../../lib/failure-handler.js";
+import {
+  parseFailures,
+  readFailuresFromJsonl,
+  readIgnoredFromJsonl,
+} from "../../lib/result-processor.js";
 import {
   fetchStoriesFromStorybook,
   sanitizeSnapshotName,
@@ -44,11 +48,19 @@ export const updateCommand = (yargs) => {
           type: "string",
           description: "Path to config file",
         })
+        .option("include-paths", {
+          type: "string",
+          description: "Comma-separated path segments to include",
+        })
         .example("$0 update", "Update all snapshots")
         .example("$0 update --incremental", "Update only missing snapshots")
         .example(
           "$0 update --interactive",
           "Interactively select snapshots to update",
+        )
+        .example(
+          "$0 update --include-paths components/Button",
+          "Update Button component",
         )
         .example(
           "$0 update --story-ids button--default,input--error",
@@ -59,7 +71,14 @@ export const updateCommand = (yargs) => {
       try {
         console.log(chalk.blue("📸 Updating visual test snapshots...\n"));
 
-        const config = await loadConfig({ configFile: argv.config });
+        const configOptions = { configFile: argv.config };
+
+        if (argv.includePaths) {
+          configOptions.filters = configOptions.filters || {};
+          configOptions.filters.includePaths = argv.includePaths.split(",");
+        }
+
+        const config = await loadConfig(configOptions);
 
         let storyIds = [];
 
@@ -190,6 +209,7 @@ export const updateCommand = (yargs) => {
         const env = {
           ...process.env,
           UPDATE_SNAPSHOTS: "1",
+          VISUAL_TEST_UPDATE_SNAPSHOTS: "true",
           VISUAL_TESTS_DATA_FILE: dataFile,
         };
 
