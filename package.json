@@ -1,6 +1,6 @@
 {
     "name": "ui-snapshot-testing",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "author": "vivekkodira@gmail.com",
     "publishConfig": {
         "access": "public"
