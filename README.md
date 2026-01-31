@@ -2,7 +2,7 @@
 
 > Visual regression testing library for Storybook with Playwright, featuring position tracking and diff-based testing
 
-[![npm version](https://img.shields.io/npm/v/snapshot-testing.svg)](https://www.npmjs.com/package/snapshot-testing)
+[![npm version](https://img.shields.io/npm/v/ui-snapshot-testing.svg)](https://www.npmjs.com/package/ui-snapshot-testing)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Features
@@ -22,7 +22,7 @@
 ### Installation
 
 ```bash
-npm install --save-dev snapshot-testing
+npm install --save-dev ui-snapshot-testing
 ```
 
 ### Prerequisites
@@ -42,13 +42,13 @@ npm run storybook
 2. **Run visual tests:**
 
 ```bash
-npx snapshot-testing run
+npx ui-snapshot-testing run
 ```
 
 3. **View results:**
 
 ```bash
-npx snapshot-testing report
+npx ui-snapshot-testing report
 ```
 
 ## CLI Commands
@@ -57,15 +57,15 @@ npx snapshot-testing report
 
 ```bash
 # Run visual tests
-npx snapshot-testing run
+npx ui-snapshot-testing run
 
 
 
 # Run specific component
-npx snapshot-testing run --include-paths components/Button
+npx ui-snapshot-testing run --include-paths components/Button
 
 # Update snapshots
-npx snapshot-testing run --update-snapshots
+npx ui-snapshot-testing run --update-snapshots
 ```
 
 **Options:**
@@ -81,16 +81,16 @@ npx snapshot-testing run --update-snapshots
 
 ```bash
 # Update all snapshots
-npx snapshot-testing update
+npx ui-snapshot-testing update
 
 # Update only missing snapshots
-npx snapshot-testing update --incremental
+npx ui-snapshot-testing update --incremental
 
 # Interactively select which to update
-npx snapshot-testing update --interactive
+npx ui-snapshot-testing update --interactive
 
 # Update specific stories
-npx snapshot-testing update --story-ids button--default,input--error
+npx ui-snapshot-testing update --story-ids button--default,input--error
 ```
 
 **Options:**
@@ -104,10 +104,10 @@ npx snapshot-testing update --story-ids button--default,input--error
 
 ```bash
 # Test stories changed since Sprint16 (default)
-npx snapshot-testing diff
+npx ui-snapshot-testing diff
 
 # Compare against different branch
-npx snapshot-testing diff --target-branch main
+npx ui-snapshot-testing diff --target-branch main
 
 ```
 
@@ -120,13 +120,13 @@ npx snapshot-testing diff --target-branch main
 
 ```bash
 # Open HTML report
-npx snapshot-testing report
+npx ui-snapshot-testing report
 
 # Generate and open report
-npx snapshot-testing report --generate
+npx ui-snapshot-testing report --generate
 
 # View JSON report
-npx snapshot-testing report --format json
+npx ui-snapshot-testing report --format json
 ```
 
 **Options:**
@@ -216,7 +216,7 @@ import {
   loadConfig,
   fetchStoriesFromStorybook,
   generateHtmlReport,
-} from "snapshot-testing";
+} from "ui-snapshot-testing";
 
 // Load configuration
 const config = await loadConfig({
@@ -276,8 +276,8 @@ export default defineConfig({
 2. **Create test file** (`playwright/visual-tests.spec.ts`):
 
 ```typescript
-import { loadConfig } from "snapshot-testing/config";
-import { generateVisualTests } from "snapshot-testing/playwright";
+import { loadConfig } from "ui-snapshot-testing/config";
+import { generateVisualTests } from "ui-snapshot-testing/playwright";
 
 const config = await loadConfig();
 await generateVisualTests({ config });
@@ -294,7 +294,7 @@ npx playwright test --project=visual-tests
 **With custom hooks:**
 
 ```typescript
-import { generateVisualTests } from "snapshot-testing/playwright";
+import { generateVisualTests } from "ui-snapshot-testing/playwright";
 
 await generateVisualTests({
   config,
@@ -307,7 +307,7 @@ await generateVisualTests({
 **Filter stories programmatically:**
 
 ```typescript
-import { generateVisualTestsWithFilter } from "snapshot-testing/playwright";
+import { generateVisualTestsWithFilter } from "ui-snapshot-testing/playwright";
 
 await generateVisualTestsWithFilter({
   config,
@@ -318,7 +318,7 @@ await generateVisualTestsWithFilter({
 **Test specific stories:**
 
 ```typescript
-import { generateVisualTestsForStories } from "snapshot-testing/playwright";
+import { generateVisualTestsForStories } from "ui-snapshot-testing/playwright";
 
 await generateVisualTestsForStories({
   config,
@@ -329,7 +329,7 @@ await generateVisualTestsForStories({
 **Custom masking:**
 
 ```typescript
-import { maskElements } from "snapshot-testing/playwright";
+import { maskElements } from "ui-snapshot-testing/playwright";
 
 await generateVisualTests({
   config: {
@@ -376,10 +376,10 @@ Only test stories affected by your changes:
 
 ```bash
 # Test stories changed since Sprint16
-npx snapshot-testing diff
+npx ui-snapshot-testing diff
 
 # In CI/CD - use config file with different target branch
-npx snapshot-testing diff --target-branch main
+npx ui-snapshot-testing diff --target-branch main
 ```
 
 **How it works:**
@@ -460,27 +460,27 @@ export const InteractiveDemo_no_visual = () => <Component />;
 npm run storybook
 
 # Or specify custom port
-npx snapshot-testing run --storybook-port 6007
+npx ui-snapshot-testing run --storybook-port 6007
 ```
 
 ### Snapshots not found
 
 ```bash
 # Generate initial snapshots
-npx snapshot-testing run --update-snapshots
+npx ui-snapshot-testing run --update-snapshots
 
 # Or incrementally
-npx snapshot-testing update --incremental
+npx ui-snapshot-testing update --incremental
 ```
 
 ### Too many failures
 
 ```bash
 # Use lite mode for faster iteration
-npx snapshot-testing run --mode lite
+npx ui-snapshot-testing run --mode lite
 
 # Or test specific component
-npx snapshot-testing run --include-paths components/Button
+npx ui-snapshot-testing run --include-paths components/Button
 ```
 
 ## Migration Guide

@@ -1,5 +1,5 @@
 {
-    "name": "snapshot-testing",
+    "name": "ui-snapshot-testing",
     "version": "0.1.0",
     "author": "vivekkodira@gmail.com",
     "publishConfig": {

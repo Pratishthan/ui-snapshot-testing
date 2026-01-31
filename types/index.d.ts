@@ -1,5 +1,5 @@
 /**
- * Type definitions for snapshot-testing
+ * Type definitions for ui-snapshot-testing
  */
 
 // Re-export configuration types

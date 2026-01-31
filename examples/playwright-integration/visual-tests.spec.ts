@@ -12,8 +12,8 @@
  * 5. Take a screenshot and compare with baseline
  */
 
-import { loadConfig } from "snapshot-testing/config";
-import { generateVisualTests } from "snapshot-testing/playwright";
+import { loadConfig } from "ui-snapshot-testing/config";
+import { generateVisualTests } from "ui-snapshot-testing/playwright";
 
 // Load configuration from visual-tests.config.js or environment variables
 const config = await loadConfig();

@@ -19,7 +19,7 @@ const __dirname = path.dirname(__filename);
  *
  * @example
  * import { defineConfig } from '@playwright/test';
- * import { createPlaywrightConfig } from 'snapshot-testing';
+ * import { createPlaywrightConfig } from 'ui-snapshot-testing';
  * import visualTestConfig from './visual-tests.config.js';
  *
  * export default defineConfig(

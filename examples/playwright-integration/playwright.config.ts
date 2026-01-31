@@ -1,5 +1,5 @@
 import { defineConfig } from "@playwright/test";
-import { createPlaywrightConfig } from "snapshot-testing/playwright-config";
+import { createPlaywrightConfig } from "ui-snapshot-testing/playwright-config";
 import visualTestConfig from "./visual-tests.config.js";
 
 /**

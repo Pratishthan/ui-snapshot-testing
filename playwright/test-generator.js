@@ -30,8 +30,8 @@ import {
  *
  * @example
  * // In your visual-tests.spec.ts file:
- * import { generateVisualTests } from 'snapshot-testing/playwright';
- * import { loadConfig } from 'snapshot-testing/config';
+ * import { generateVisualTests } from 'ui-snapshot-testing/playwright';
+ * import { loadConfig } from 'ui-snapshot-testing/config';
  *
  * const config = await loadConfig();
  * await generateVisualTests({ config });
