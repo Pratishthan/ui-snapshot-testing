@@ -1,0 +1,114 @@
+[
+  {
+    "testId": "book-task-summary",
+    "order": 0,
+    "x": 15,
+    "y": 15,
+    "width": 770,
+    "height": 147
+  },
+  {
+    "testId": "task-overview-title",
+    "order": 1,
+    "x": 15,
+    "y": 23,
+    "width": 770,
+    "height": 20
+  },
+  {
+    "testId": "planned-card",
+    "order": 2,
+    "x": 15,
+    "y": 57,
+    "width": 185,
+    "height": 90
+  },
+  {
+    "testId": "planned-card-title",
+    "order": 3,
+    "x": 84,
+    "y": 73,
+    "width": 47,
+    "height": 20
+  },
+  {
+    "testId": "planned-card-count",
+    "order": 4,
+    "x": 98,
+    "y": 93,
+    "width": 19,
+    "height": 38
+  },
+  {
+    "testId": "overdue-card",
+    "order": 5,
+    "x": 210,
+    "y": 57,
+    "width": 185,
+    "height": 90
+  },
+  {
+    "testId": "overdue-card-title",
+    "order": 6,
+    "x": 277,
+    "y": 73,
+    "width": 51,
+    "height": 20
+  },
+  {
+    "testId": "overdue-card-count",
+    "order": 7,
+    "x": 293,
+    "y": 93,
+    "width": 19,
+    "height": 38
+  },
+  {
+    "testId": "open-card",
+    "order": 8,
+    "x": 405,
+    "y": 57,
+    "width": 185,
+    "height": 90
+  },
+  {
+    "testId": "open-card-title",
+    "order": 9,
+    "x": 482,
+    "y": 73,
+    "width": 32,
+    "height": 20
+  },
+  {
+    "testId": "open-card-count",
+    "order": 10,
+    "x": 488,
+    "y": 93,
+    "width": 19,
+    "height": 38
+  },
+  {
+    "testId": "done-card",
+    "order": 11,
+    "x": 600,
+    "y": 57,
+    "width": 185,
+    "height": 90
+  },
+  {
+    "testId": "done-card-title",
+    "order": 12,
+    "x": 677,
+    "y": 73,
+    "width": 31,
+    "height": 20
+  },
+  {
+    "testId": "done-card-count",
+    "order": 13,
+    "x": 683,
+    "y": 93,
+    "width": 19,
+    "height": 38
+  }
+]

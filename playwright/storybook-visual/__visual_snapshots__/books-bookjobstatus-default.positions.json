@@ -1,0 +1,850 @@
+[
+  {
+    "testId": "book-job-status-container",
+    "order": 0,
+    "x": 15,
+    "y": 15,
+    "width": 770,
+    "height": 300
+  },
+  {
+    "testId": "bsq-table-container",
+    "order": 1,
+    "x": 15,
+    "y": 15,
+    "width": 770,
+    "height": 300
+  },
+  {
+    "testId": "job-status-row-0",
+    "order": 2,
+    "x": 15,
+    "y": 71,
+    "width": 770,
+    "height": 56
+  },
+  {
+    "testId": "bsq-timestamp",
+    "order": 3,
+    "x": 523,
+    "y": 89,
+    "width": 5,
+    "height": 18
+  },
+  {
+    "testId": "job-status-row-1",
+    "order": 4,
+    "x": 15,
+    "y": 127,
+    "width": 770,
+    "height": 56
+  },
+  {
+    "testId": "bsq-timestamp",
+    "order": 5,
+    "x": 523,
+    "y": 145,
+    "width": 148,
+    "height": 18
+  },
+  {
+    "testId": "job-status-row-2",
+    "order": 6,
+    "x": 15,
+    "y": 183,
+    "width": 770,
+    "height": 56
+  },
+  {
+    "testId": "bsq-timestamp",
+    "order": 7,
+    "x": 523,
+    "y": 201,
+    "width": 148,
+    "height": 18
+  },
+  {
+    "testId": "job-status-row-3",
+    "order": 8,
+    "x": 15,
+    "y": 239,
+    "width": 770,
+    "height": 56
+  },
+  {
+    "testId": "bsq-timestamp",
+    "order": 9,
+    "x": 523,
+    "y": 257,
+    "width": 148,
+    "height": 18
+  },
+  {
+    "testId": "job-status-row-4",
+    "order": 10,
+    "x": 15,
+    "y": 295,
+    "width": 770,
+    "height": 56
+  },
+  {
+    "testId": "bsq-timestamp",
+    "order": 11,
+    "x": 523,
+    "y": 313,
+    "width": 148,
+    "height": 18
+  },
+  {
+    "testId": "job-status-row-5",
+    "order": 12,
+    "x": 15,
+    "y": 351,
+    "width": 770,
+    "height": 56
+  },
+  {
+    "testId": "bsq-timestamp",
+    "order": 13,
+    "x": 523,
+    "y": 369,
+    "width": 148,
+    "height": 18
+  },
+  {
+    "testId": "job-status-row-6",
+    "order": 14,
+    "x": 15,
+    "y": 407,
+    "width": 770,
+    "height": 56
+  },
+  {
+    "testId": "bsq-timestamp",
+    "order": 15,
+    "x": 523,
+    "y": 425,
+    "width": 148,
+    "height": 18
+  },
+  {
+    "testId": "job-status-row-7",
+    "order": 16,
+    "x": 15,
+    "y": 463,
+    "width": 770,
+    "height": 56
+  },
+  {
+    "testId": "bsq-timestamp",
+    "order": 17,
+    "x": 523,
+    "y": 481,
+    "width": 5,
+    "height": 18
+  },
+  {
+    "testId": "job-status-row-8",
+    "order": 18,
+    "x": 15,
+    "y": 519,
+    "width": 770,
+    "height": 56
+  },
+  {
+    "testId": "bsq-timestamp",
+    "order": 19,
+    "x": 523,
+    "y": 537,
+    "width": 148,
+    "height": 18
+  },
+  {
+    "testId": "job-status-row-9",
+    "order": 20,
+    "x": 15,
+    "y": 575,
+    "width": 770,
+    "height": 56
+  },
+  {
+    "testId": "bsq-timestamp",
+    "order": 21,
+    "x": 523,
+    "y": 593,
+    "width": 148,
+    "height": 18
+  },
+  {
+    "testId": "job-status-row-10",
+    "order": 22,
+    "x": 15,
+    "y": 631,
+    "width": 770,
+    "height": 56
+  },
+  {
+    "testId": "bsq-timestamp",
+    "order": 23,
+    "x": 523,
+    "y": 649,
+    "width": 148,
+    "height": 18
+  },
+  {
+    "testId": "job-status-row-11",
+    "order": 24,
+    "x": 15,
+    "y": 687,
+    "width": 770,
+    "height": 56
+  },
+  {
+    "testId": "bsq-timestamp",
+    "order": 25,
+    "x": 523,
+    "y": 705,
+    "width": 148,
+    "height": 18
+  },
+  {
+    "testId": "job-status-row-12",
+    "order": 26,
+    "x": 15,
+    "y": 743,
+    "width": 770,
+    "height": 56
+  },
+  {
+    "testId": "bsq-timestamp",
+    "order": 27,
+    "x": 523,
+    "y": 761,
+    "width": 148,
+    "height": 18
+  },
+  {
+    "testId": "job-status-row-13",
+    "order": 28,
+    "x": 15,
+    "y": 799,
+    "width": 770,
+    "height": 56
+  },
+  {
+    "testId": "bsq-timestamp",
+    "order": 29,
+    "x": 523,
+    "y": 817,
+    "width": 148,
+    "height": 18
+  },
+  {
+    "testId": "job-status-row-14",
+    "order": 30,
+    "x": 15,
+    "y": 855,
+    "width": 770,
+    "height": 56
+  },
+  {
+    "testId": "bsq-timestamp",
+    "order": 31,
+    "x": 523,
+    "y": 873,
+    "width": 148,
+    "height": 18
+  },
+  {
+    "testId": "job-status-row-15",
+    "order": 32,
+    "x": 15,
+    "y": 911,
+    "width": 770,
+    "height": 56
+  },
+  {
+    "testId": "bsq-timestamp",
+    "order": 33,
+    "x": 523,
+    "y": 929,
+    "width": 148,
+    "height": 18
+  },
+  {
+    "testId": "job-status-row-16",
+    "order": 34,
+    "x": 15,
+    "y": 967,
+    "width": 770,
+    "height": 56
+  },
+  {
+    "testId": "bsq-timestamp",
+    "order": 35,
+    "x": 523,
+    "y": 985,
+    "width": 148,
+    "height": 18
+  },
+  {
+    "testId": "job-status-row-17",
+    "order": 36,
+    "x": 15,
+    "y": 1023,
+    "width": 770,
+    "height": 56
+  },
+  {
+    "testId": "bsq-timestamp",
+    "order": 37,
+    "x": 523,
+    "y": 1041,
+    "width": 148,
+    "height": 18
+  },
+  {
+    "testId": "job-status-row-18",
+    "order": 38,
+    "x": 15,
+    "y": 1079,
+    "width": 770,
+    "height": 56
+  },
+  {
+    "testId": "bsq-timestamp",
+    "order": 39,
+    "x": 523,
+    "y": 1097,
+    "width": 148,
+    "height": 18
+  },
+  {
+    "testId": "job-status-row-19",
+    "order": 40,
+    "x": 15,
+    "y": 1135,
+    "width": 770,
+    "height": 56
+  },
+  {
+    "testId": "bsq-timestamp",
+    "order": 41,
+    "x": 523,
+    "y": 1153,
+    "width": 148,
+    "height": 18
+  },
+  {
+    "testId": "job-status-row-20",
+    "order": 42,
+    "x": 15,
+    "y": 1191,
+    "width": 770,
+    "height": 56
+  },
+  {
+    "testId": "bsq-timestamp",
+    "order": 43,
+    "x": 523,
+    "y": 1209,
+    "width": 148,
+    "height": 18
+  },
+  {
+    "testId": "job-status-row-21",
+    "order": 44,
+    "x": 15,
+    "y": 1247,
+    "width": 770,
+    "height": 56
+  },
+  {
+    "testId": "bsq-timestamp",
+    "order": 45,
+    "x": 523,
+    "y": 1265,
+    "width": 148,
+    "height": 18
+  },
+  {
+    "testId": "job-status-row-22",
+    "order": 46,
+    "x": 15,
+    "y": 1303,
+    "width": 770,
+    "height": 56
+  },
+  {
+    "testId": "bsq-timestamp",
+    "order": 47,
+    "x": 523,
+    "y": 1321,
+    "width": 5,
+    "height": 18
+  },
+  {
+    "testId": "job-status-row-23",
+    "order": 48,
+    "x": 15,
+    "y": 1359,
+    "width": 770,
+    "height": 56
+  },
+  {
+    "testId": "bsq-timestamp",
+    "order": 49,
+    "x": 523,
+    "y": 1377,
+    "width": 148,
+    "height": 18
+  },
+  {
+    "testId": "job-status-row-24",
+    "order": 50,
+    "x": 15,
+    "y": 1415,
+    "width": 770,
+    "height": 56
+  },
+  {
+    "testId": "bsq-timestamp",
+    "order": 51,
+    "x": 523,
+    "y": 1433,
+    "width": 148,
+    "height": 18
+  },
+  {
+    "testId": "job-status-row-25",
+    "order": 52,
+    "x": 15,
+    "y": 1471,
+    "width": 770,
+    "height": 56
+  },
+  {
+    "testId": "bsq-timestamp",
+    "order": 53,
+    "x": 523,
+    "y": 1489,
+    "width": 148,
+    "height": 18
+  },
+  {
+    "testId": "job-status-row-26",
+    "order": 54,
+    "x": 15,
+    "y": 1527,
+    "width": 770,
+    "height": 56
+  },
+  {
+    "testId": "bsq-timestamp",
+    "order": 55,
+    "x": 523,
+    "y": 1545,
+    "width": 148,
+    "height": 18
+  },
+  {
+    "testId": "job-status-row-27",
+    "order": 56,
+    "x": 15,
+    "y": 1583,
+    "width": 770,
+    "height": 56
+  },
+  {
+    "testId": "bsq-timestamp",
+    "order": 57,
+    "x": 523,
+    "y": 1601,
+    "width": 148,
+    "height": 18
+  },
+  {
+    "testId": "job-status-row-28",
+    "order": 58,
+    "x": 15,
+    "y": 1639,
+    "width": 770,
+    "height": 56
+  },
+  {
+    "testId": "bsq-timestamp",
+    "order": 59,
+    "x": 523,
+    "y": 1657,
+    "width": 148,
+    "height": 18
+  },
+  {
+    "testId": "job-status-row-29",
+    "order": 60,
+    "x": 15,
+    "y": 1695,
+    "width": 770,
+    "height": 56
+  },
+  {
+    "testId": "bsq-timestamp",
+    "order": 61,
+    "x": 523,
+    "y": 1713,
+    "width": 148,
+    "height": 18
+  },
+  {
+    "testId": "job-status-row-30",
+    "order": 62,
+    "x": 15,
+    "y": 1751,
+    "width": 770,
+    "height": 56
+  },
+  {
+    "testId": "bsq-timestamp",
+    "order": 63,
+    "x": 523,
+    "y": 1769,
+    "width": 148,
+    "height": 18
+  },
+  {
+    "testId": "job-status-row-31",
+    "order": 64,
+    "x": 15,
+    "y": 1807,
+    "width": 770,
+    "height": 56
+  },
+  {
+    "testId": "bsq-timestamp",
+    "order": 65,
+    "x": 523,
+    "y": 1825,
+    "width": 148,
+    "height": 18
+  },
+  {
+    "testId": "job-status-row-32",
+    "order": 66,
+    "x": 15,
+    "y": 1863,
+    "width": 770,
+    "height": 56
+  },
+  {
+    "testId": "bsq-timestamp",
+    "order": 67,
+    "x": 523,
+    "y": 1881,
+    "width": 148,
+    "height": 18
+  },
+  {
+    "testId": "job-status-row-33",
+    "order": 68,
+    "x": 15,
+    "y": 1919,
+    "width": 770,
+    "height": 56
+  },
+  {
+    "testId": "bsq-timestamp",
+    "order": 69,
+    "x": 523,
+    "y": 1937,
+    "width": 148,
+    "height": 18
+  },
+  {
+    "testId": "job-status-row-34",
+    "order": 70,
+    "x": 15,
+    "y": 1975,
+    "width": 770,
+    "height": 56
+  },
+  {
+    "testId": "bsq-timestamp",
+    "order": 71,
+    "x": 523,
+    "y": 1993,
+    "width": 148,
+    "height": 18
+  },
+  {
+    "testId": "job-status-row-35",
+    "order": 72,
+    "x": 15,
+    "y": 2031,
+    "width": 770,
+    "height": 56
+  },
+  {
+    "testId": "bsq-timestamp",
+    "order": 73,
+    "x": 523,
+    "y": 2049,
+    "width": 148,
+    "height": 18
+  },
+  {
+    "testId": "job-status-row-36",
+    "order": 74,
+    "x": 15,
+    "y": 2087,
+    "width": 770,
+    "height": 56
+  },
+  {
+    "testId": "bsq-timestamp",
+    "order": 75,
+    "x": 523,
+    "y": 2105,
+    "width": 148,
+    "height": 18
+  },
+  {
+    "testId": "job-status-row-37",
+    "order": 76,
+    "x": 15,
+    "y": 2143,
+    "width": 770,
+    "height": 56
+  },
+  {
+    "testId": "bsq-timestamp",
+    "order": 77,
+    "x": 523,
+    "y": 2161,
+    "width": 148,
+    "height": 18
+  },
+  {
+    "testId": "job-status-row-38",
+    "order": 78,
+    "x": 15,
+    "y": 2199,
+    "width": 770,
+    "height": 56
+  },
+  {
+    "testId": "bsq-timestamp",
+    "order": 79,
+    "x": 523,
+    "y": 2217,
+    "width": 148,
+    "height": 18
+  },
+  {
+    "testId": "job-status-row-39",
+    "order": 80,
+    "x": 15,
+    "y": 2255,
+    "width": 770,
+    "height": 56
+  },
+  {
+    "testId": "bsq-timestamp",
+    "order": 81,
+    "x": 523,
+    "y": 2273,
+    "width": 148,
+    "height": 18
+  },
+  {
+    "testId": "job-status-row-40",
+    "order": 82,
+    "x": 15,
+    "y": 2311,
+    "width": 770,
+    "height": 56
+  },
+  {
+    "testId": "bsq-timestamp",
+    "order": 83,
+    "x": 523,
+    "y": 2329,
+    "width": 148,
+    "height": 18
+  },
+  {
+    "testId": "job-status-row-41",
+    "order": 84,
+    "x": 15,
+    "y": 2367,
+    "width": 770,
+    "height": 56
+  },
+  {
+    "testId": "bsq-timestamp",
+    "order": 85,
+    "x": 523,
+    "y": 2385,
+    "width": 148,
+    "height": 18
+  },
+  {
+    "testId": "job-status-row-42",
+    "order": 86,
+    "x": 15,
+    "y": 2423,
+    "width": 770,
+    "height": 56
+  },
+  {
+    "testId": "bsq-timestamp",
+    "order": 87,
+    "x": 523,
+    "y": 2441,
+    "width": 148,
+    "height": 18
+  },
+  {
+    "testId": "job-status-row-43",
+    "order": 88,
+    "x": 15,
+    "y": 2479,
+    "width": 770,
+    "height": 56
+  },
+  {
+    "testId": "bsq-timestamp",
+    "order": 89,
+    "x": 523,
+    "y": 2497,
+    "width": 148,
+    "height": 18
+  },
+  {
+    "testId": "job-status-row-44",
+    "order": 90,
+    "x": 15,
+    "y": 2535,
+    "width": 770,
+    "height": 56
+  },
+  {
+    "testId": "bsq-timestamp",
+    "order": 91,
+    "x": 523,
+    "y": 2553,
+    "width": 148,
+    "height": 18
+  },
+  {
+    "testId": "job-status-row-45",
+    "order": 92,
+    "x": 15,
+    "y": 2591,
+    "width": 770,
+    "height": 56
+  },
+  {
+    "testId": "bsq-timestamp",
+    "order": 93,
+    "x": 523,
+    "y": 2609,
+    "width": 148,
+    "height": 18
+  },
+  {
+    "testId": "job-status-row-46",
+    "order": 94,
+    "x": 15,
+    "y": 2647,
+    "width": 770,
+    "height": 56
+  },
+  {
+    "testId": "bsq-timestamp",
+    "order": 95,
+    "x": 523,
+    "y": 2665,
+    "width": 5,
+    "height": 18
+  },
+  {
+    "testId": "job-status-row-47",
+    "order": 96,
+    "x": 15,
+    "y": 2703,
+    "width": 770,
+    "height": 56
+  },
+  {
+    "testId": "bsq-timestamp",
+    "order": 97,
+    "x": 523,
+    "y": 2721,
+    "width": 5,
+    "height": 18
+  },
+  {
+    "testId": "job-status-row-48",
+    "order": 98,
+    "x": 15,
+    "y": 2759,
+    "width": 770,
+    "height": 56
+  },
+  {
+    "testId": "bsq-timestamp",
+    "order": 99,
+    "x": 523,
+    "y": 2777,
+    "width": 148,
+    "height": 18
+  },
+  {
+    "testId": "job-status-row-49",
+    "order": 100,
+    "x": 15,
+    "y": 2815,
+    "width": 770,
+    "height": 56
+  },
+  {
+    "testId": "bsq-timestamp",
+    "order": 101,
+    "x": 523,
+    "y": 2833,
+    "width": 148,
+    "height": 18
+  },
+  {
+    "testId": "job-status-row-50",
+    "order": 102,
+    "x": 15,
+    "y": 2871,
+    "width": 770,
+    "height": 56
+  },
+  {
+    "testId": "bsq-timestamp",
+    "order": 103,
+    "x": 523,
+    "y": 2889,
+    "width": 5,
+    "height": 18
+  },
+  {
+    "testId": "job-status-row-51",
+    "order": 104,
+    "x": 15,
+    "y": 2927,
+    "width": 770,
+    "height": 56
+  },
+  {
+    "testId": "bsq-timestamp",
+    "order": 105,
+    "x": 523,
+    "y": 2945,
+    "width": 5,
+    "height": 18
+  }
+]

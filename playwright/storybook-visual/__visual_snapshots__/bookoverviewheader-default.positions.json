@@ -1,0 +1,234 @@
+[
+  {
+    "testId": "timeElapsed",
+    "order": 0,
+    "x": 15,
+    "y": 15,
+    "width": 770,
+    "height": 23
+  },
+  {
+    "testId": "entity-name-Nakumoro Telecom",
+    "order": 1,
+    "x": 15,
+    "y": 38,
+    "width": 770,
+    "height": 30
+  },
+  {
+    "testId": "freeze-container",
+    "order": 2,
+    "x": 15,
+    "y": 84,
+    "width": 770,
+    "height": 45
+  },
+  {
+    "testId": "book-refresh-status",
+    "order": 3,
+    "x": 15,
+    "y": 84,
+    "width": 204,
+    "height": 45
+  },
+  {
+    "testId": "refresh-status-icon",
+    "order": 4,
+    "x": 30,
+    "y": 100,
+    "width": 11,
+    "height": 11
+  },
+  {
+    "testId": "refresh-status-title",
+    "order": 5,
+    "x": 53,
+    "y": 98,
+    "width": 39,
+    "height": 17
+  },
+  {
+    "testId": "refresh-status-text",
+    "order": 6,
+    "x": 104,
+    "y": 97,
+    "width": 100,
+    "height": 19
+  },
+  {
+    "testId": "cancel-icon",
+    "order": 7,
+    "x": 241,
+    "y": 97,
+    "width": 19,
+    "height": 19
+  },
+  {
+    "testId": "error-count",
+    "order": 8,
+    "x": 264,
+    "y": 96,
+    "width": 15,
+    "height": 20
+  },
+  {
+    "testId": "warning-icon",
+    "order": 9,
+    "x": 287,
+    "y": 97,
+    "width": 19,
+    "height": 19
+  },
+  {
+    "testId": "warning-count",
+    "order": 10,
+    "x": 309,
+    "y": 96,
+    "width": 15,
+    "height": 20
+  },
+  {
+    "testId": "table-row-12332",
+    "order": 11,
+    "x": 15,
+    "y": 151,
+    "width": 770,
+    "height": 84
+  },
+  {
+    "testId": "keyValue-vertical",
+    "order": 12,
+    "x": 15,
+    "y": 151,
+    "width": 88,
+    "height": 45
+  },
+  {
+    "testId": "keyName-Short Name",
+    "order": 13,
+    "x": 15,
+    "y": 151,
+    "width": 88,
+    "height": 23
+  },
+  {
+    "testId": "valueName-Lorem Ipsum.",
+    "order": 14,
+    "x": 15,
+    "y": 174,
+    "width": 88,
+    "height": 23
+  },
+  {
+    "testId": "keyValue-vertical",
+    "order": 15,
+    "x": 133,
+    "y": 151,
+    "width": 46,
+    "height": 45
+  },
+  {
+    "testId": "keyName-Book #",
+    "order": 16,
+    "x": 133,
+    "y": 151,
+    "width": 46,
+    "height": 23
+  },
+  {
+    "testId": "valueName-12332",
+    "order": 17,
+    "x": 133,
+    "y": 174,
+    "width": 44,
+    "height": 23
+  },
+  {
+    "testId": "keyValue-vertical",
+    "order": 18,
+    "x": 209,
+    "y": 151,
+    "width": 57,
+    "height": 45
+  },
+  {
+    "testId": "keyName-Scenario",
+    "order": 19,
+    "x": 209,
+    "y": 151,
+    "width": 57,
+    "height": 23
+  },
+  {
+    "testId": "valueName-Actual",
+    "order": 20,
+    "x": 209,
+    "y": 174,
+    "width": 43,
+    "height": 23
+  },
+  {
+    "testId": "keyValue-vertical",
+    "order": 21,
+    "x": 296,
+    "y": 151,
+    "width": 134,
+    "height": 45
+  },
+  {
+    "testId": "keyName-Taxonomy",
+    "order": 22,
+    "x": 296,
+    "y": 151,
+    "width": 134,
+    "height": 23
+  },
+  {
+    "testId": "valueName-IFRS New Taxonomy",
+    "order": 23,
+    "x": 296,
+    "y": 174,
+    "width": 134,
+    "height": 23
+  },
+  {
+    "testId": "keyValue-vertical",
+    "order": 24,
+    "x": 460,
+    "y": 151,
+    "width": 62,
+    "height": 45
+  },
+  {
+    "testId": "keyName-Currency",
+    "order": 25,
+    "x": 460,
+    "y": 151,
+    "width": 62,
+    "height": 23
+  },
+  {
+    "testId": "valueName-EUR",
+    "order": 26,
+    "x": 460,
+    "y": 174,
+    "width": 29,
+    "height": 23
+  },
+  {
+    "testId": "progress-bar",
+    "order": 27,
+    "x": 15,
+    "y": 218,
+    "width": 526,
+    "height": 10
+  },
+  {
+    "testId": "remaining",
+    "order": 28,
+    "x": 549,
+    "y": 212,
+    "width": 105,
+    "height": 23
+  }
+]

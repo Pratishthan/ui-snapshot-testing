@@ -1,0 +1,50 @@
+[
+  {
+    "testId": "card-accordion",
+    "order": 0,
+    "x": 15,
+    "y": 15,
+    "width": 770,
+    "height": 275
+  },
+  {
+    "testId": "card-header",
+    "order": 1,
+    "x": 15,
+    "y": 15,
+    "width": 770,
+    "height": 53
+  },
+  {
+    "testId": "card-title",
+    "order": 2,
+    "x": 15,
+    "y": 26,
+    "width": 44,
+    "height": 30
+  },
+  {
+    "testId": "navigate-icon",
+    "order": 3,
+    "x": 67,
+    "y": 30,
+    "width": 23,
+    "height": 23
+  },
+  {
+    "testId": "card-body-container",
+    "order": 4,
+    "x": 15,
+    "y": 68,
+    "width": 770,
+    "height": 222
+  },
+  {
+    "testId": "card-body-0",
+    "order": 5,
+    "x": 15,
+    "y": 68,
+    "width": 770,
+    "height": 222
+  }
+]

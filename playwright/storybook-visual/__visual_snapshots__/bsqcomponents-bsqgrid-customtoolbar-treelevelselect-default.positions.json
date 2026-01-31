@@ -1,0 +1,18 @@
+[
+  {
+    "testId": "tree-level-select",
+    "order": 0,
+    "x": 15,
+    "y": 15,
+    "width": 116,
+    "height": 39
+  },
+  {
+    "testId": "ArrowDropDownIcon",
+    "order": 1,
+    "x": 101,
+    "y": 23,
+    "width": 23,
+    "height": 23
+  }
+]

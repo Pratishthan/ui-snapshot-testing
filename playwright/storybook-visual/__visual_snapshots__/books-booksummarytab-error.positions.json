@@ -1,0 +1,226 @@
+[
+  {
+    "testId": "summary-tab",
+    "order": 0,
+    "x": 15,
+    "y": 15,
+    "width": 770,
+    "height": 315
+  },
+  {
+    "testId": "book-trial-balance-summary",
+    "order": 1,
+    "x": 15,
+    "y": 15,
+    "width": 770,
+    "height": 109
+  },
+  {
+    "testId": "trial-balance-entries-title",
+    "order": 2,
+    "x": 15,
+    "y": 15,
+    "width": 770,
+    "height": 20
+  },
+  {
+    "testId": "source-card",
+    "order": 3,
+    "x": 15,
+    "y": 42,
+    "width": 250,
+    "height": 99
+  },
+  {
+    "testId": "source-card-title",
+    "order": 4,
+    "x": 123,
+    "y": 74,
+    "width": 34,
+    "height": 17
+  },
+  {
+    "testId": "source-card-value",
+    "order": 5,
+    "x": 127,
+    "y": 91,
+    "width": 26,
+    "height": 18
+  },
+  {
+    "testId": "adjustments-card",
+    "order": 6,
+    "x": 275,
+    "y": 42,
+    "width": 250,
+    "height": 99
+  },
+  {
+    "testId": "adjustments-card-title",
+    "order": 7,
+    "x": 369,
+    "y": 74,
+    "width": 63,
+    "height": 17
+  },
+  {
+    "testId": "adjustments-card-value",
+    "order": 8,
+    "x": 396,
+    "y": 91,
+    "width": 9,
+    "height": 18
+  },
+  {
+    "testId": "eliminations-card",
+    "order": 9,
+    "x": 535,
+    "y": 42,
+    "width": 250,
+    "height": 99
+  },
+  {
+    "testId": "eliminations-card-title",
+    "order": 10,
+    "x": 630,
+    "y": 74,
+    "width": 61,
+    "height": 17
+  },
+  {
+    "testId": "eliminations-card-value",
+    "order": 11,
+    "x": 656,
+    "y": 91,
+    "width": 9,
+    "height": 18
+  },
+  {
+    "testId": "book-task-summary",
+    "order": 12,
+    "x": 15,
+    "y": 125,
+    "width": 770,
+    "height": 147
+  },
+  {
+    "testId": "task-overview-title",
+    "order": 13,
+    "x": 15,
+    "y": 133,
+    "width": 770,
+    "height": 20
+  },
+  {
+    "testId": "planned-card",
+    "order": 14,
+    "x": 15,
+    "y": 167,
+    "width": 185,
+    "height": 90
+  },
+  {
+    "testId": "planned-card-title",
+    "order": 15,
+    "x": 84,
+    "y": 183,
+    "width": 47,
+    "height": 20
+  },
+  {
+    "testId": "planned-card-count",
+    "order": 16,
+    "x": 98,
+    "y": 203,
+    "width": 19,
+    "height": 38
+  },
+  {
+    "testId": "overdue-card",
+    "order": 17,
+    "x": 210,
+    "y": 167,
+    "width": 185,
+    "height": 90
+  },
+  {
+    "testId": "overdue-card-title",
+    "order": 18,
+    "x": 277,
+    "y": 183,
+    "width": 51,
+    "height": 20
+  },
+  {
+    "testId": "overdue-card-count",
+    "order": 19,
+    "x": 293,
+    "y": 203,
+    "width": 19,
+    "height": 38
+  },
+  {
+    "testId": "open-card",
+    "order": 20,
+    "x": 405,
+    "y": 167,
+    "width": 185,
+    "height": 90
+  },
+  {
+    "testId": "open-card-title",
+    "order": 21,
+    "x": 482,
+    "y": 183,
+    "width": 32,
+    "height": 20
+  },
+  {
+    "testId": "open-card-count",
+    "order": 22,
+    "x": 488,
+    "y": 203,
+    "width": 19,
+    "height": 38
+  },
+  {
+    "testId": "done-card",
+    "order": 23,
+    "x": 600,
+    "y": 167,
+    "width": 185,
+    "height": 90
+  },
+  {
+    "testId": "done-card-title",
+    "order": 24,
+    "x": 677,
+    "y": 183,
+    "width": 31,
+    "height": 20
+  },
+  {
+    "testId": "done-card-count",
+    "order": 25,
+    "x": 683,
+    "y": 203,
+    "width": 19,
+    "height": 38
+  },
+  {
+    "testId": "book-preparation-checklist-summary",
+    "order": 26,
+    "x": 15,
+    "y": 273,
+    "width": 770,
+    "height": 57
+  },
+  {
+    "testId": "preparation-checklist-title",
+    "order": 27,
+    "x": 15,
+    "y": 288,
+    "width": 770,
+    "height": 20
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "testId": "david",
+    "order": 0,
+    "x": 753,
+    "y": 15,
+    "width": 32,
+    "height": 32
+  },
+  {
+    "testId": "charlie",
+    "order": 1,
+    "x": 729,
+    "y": 15,
+    "width": 32,
+    "height": 32
+  },
+  {
+    "testId": "bob",
+    "order": 2,
+    "x": 705,
+    "y": 15,
+    "width": 32,
+    "height": 32
+  },
+  {
+    "testId": "alice",
+    "order": 3,
+    "x": 681,
+    "y": 15,
+    "width": 32,
+    "height": 32
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "testId": "bsq-dropdown-label",
+    "order": 0,
+    "x": 31,
+    "y": 30,
+    "width": 89,
+    "height": 16
+  },
+  {
+    "testId": "data-model-autocomplete",
+    "order": 1,
+    "x": 135,
+    "y": 23,
+    "width": 300,
+    "height": 63
+  },
+  {
+    "testId": "data-model-input",
+    "order": 2,
+    "x": 135,
+    "y": 23,
+    "width": 270,
+    "height": 30
+  },
+  {
+    "testId": "ExpandMoreRoundedIcon",
+    "order": 3,
+    "x": 416,
+    "y": 30,
+    "width": 19,
+    "height": 19
+  },
+  {
+    "testId": "add-parameter-button-wrapper",
+    "order": 4,
+    "x": 15,
+    "y": 100,
+    "width": 770,
+    "height": 35
+  },
+  {
+    "testId": "bsq-icon-button",
+    "order": 5,
+    "x": 750,
+    "y": 100,
+    "width": 35,
+    "height": 35
+  },
+  {
+    "testId": "filters-container",
+    "order": 6,
+    "x": 15,
+    "y": 151,
+    "width": 770,
+    "height": 67
+  },
+  {
+    "testId": "parameter-config-container",
+    "order": 7,
+    "x": 15,
+    "y": 201,
+    "width": 770,
+    "height": 17
+  },
+  {
+    "testId": "no-filters-message",
+    "order": 8,
+    "x": 15,
+    "y": 201,
+    "width": 770,
+    "height": 17
+  }
+]

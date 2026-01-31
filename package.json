@@ -1,0 +1,75 @@
+{
+    "name": "snapshot-testing",
+    "version": "0.1.0",
+    "author": "vivekkodira@gmail.com",
+    "publishConfig": {
+        "access": "public"
+    },
+    "description": "Visual regression testing library for Storybook with Playwright, featuring position tracking and diff-based testing",
+    "type": "module",
+    "main": "./lib/index.js",
+    "types": "./types/index.d.ts",
+    "bin": {
+        "snapshot-testing": "./cli/index.js"
+    },
+    "exports": {
+        ".": {
+            "import": "./lib/index.js",
+            "types": "./types/index.d.ts"
+        },
+        "./config": {
+            "import": "./config-loader.js",
+            "types": "./config-loader.d.ts"
+        },
+        "./playwright": {
+            "import": "./playwright/index.js",
+            "types": "./playwright/index.d.ts"
+        },
+        "./playwright-config": {
+            "import": "./playwright-config-helper.js",
+            "types": "./playwright-config-helper.d.ts"
+        },
+        "./spec": {
+            "import": "./visual-tests.spec.js"
+        }
+    },
+    "scripts": {
+        "test": "NODE_OPTIONS=--experimental-vm-modules jest",
+        "test:coverage": "NODE_OPTIONS=--experimental-vm-modules jest --coverage"
+    },
+    "keywords": [
+        "storybook",
+        "visual-testing",
+        "visual-regression",
+        "playwright",
+        "screenshot-testing",
+        "ui-testing",
+        "component-testing",
+        "snapshot-testing",
+        "position-tracking",
+        "diff-testing"
+    ],
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/pratishthan/snapshot-testing.git"
+    },
+    "bugs": {
+        "url": "https://github.com/pratishthan/snapshot-testing/issues"
+    },
+    "homepage": "https://github.com/pratishthan/snapshot-testing#readme",
+    "peerDependencies": {
+        "@playwright/test": "^1.40.0"
+    },
+    "dependencies": {
+        "chalk": "^5.3.0",
+        "enquirer": "^2.4.1",
+        "yargs": "^17.7.2"
+    },
+    "devDependencies": {
+        "jest": "^30.2.0"
+    },
+    "engines": {
+        "node": ">=18.0.0"
+    }
+}

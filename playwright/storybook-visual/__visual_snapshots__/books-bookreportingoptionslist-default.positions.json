@@ -1,0 +1,194 @@
+[
+  {
+    "testId": "reporting-options-container",
+    "order": 0,
+    "x": 15,
+    "y": 15,
+    "width": 770,
+    "height": 645
+  },
+  {
+    "testId": "reporting-options-instruction",
+    "order": 1,
+    "x": 38,
+    "y": 38,
+    "width": 725,
+    "height": 23
+  },
+  {
+    "testId": "reporting-options-grid-container",
+    "order": 2,
+    "x": 38,
+    "y": 60,
+    "width": 725,
+    "height": 400
+  },
+  {
+    "testId": "reporting-options-grid",
+    "order": 3,
+    "x": 45,
+    "y": 68,
+    "width": 710,
+    "height": 385
+  },
+  {
+    "testId": "custom-toolbar",
+    "order": 4,
+    "x": 46,
+    "y": 69,
+    "width": 708,
+    "height": 0
+  },
+  {
+    "testId": "toolbar-title",
+    "order": 5,
+    "x": 46,
+    "y": 69,
+    "width": 0,
+    "height": 0
+  },
+  {
+    "testId": "CheckBoxOutlineBlankIcon",
+    "order": 6,
+    "x": 60,
+    "y": 69,
+    "width": 23,
+    "height": 23
+  },
+  {
+    "testId": "SeparatorIcon",
+    "order": 7,
+    "x": 85,
+    "y": 69,
+    "width": 23,
+    "height": 23
+  },
+  {
+    "testId": "ArrowUpwardIcon",
+    "order": 8,
+    "x": 163,
+    "y": 72,
+    "width": 17,
+    "height": 17
+  },
+  {
+    "testId": "SeparatorIcon",
+    "order": 9,
+    "x": 235,
+    "y": 69,
+    "width": 23,
+    "height": 23
+  },
+  {
+    "testId": "ArrowUpwardIcon",
+    "order": 10,
+    "x": 309,
+    "y": 72,
+    "width": 17,
+    "height": 17
+  },
+  {
+    "testId": "SeparatorIcon",
+    "order": 11,
+    "x": 385,
+    "y": 69,
+    "width": 23,
+    "height": 23
+  },
+  {
+    "testId": "ArrowUpwardIcon",
+    "order": 12,
+    "x": 467,
+    "y": 72,
+    "width": 17,
+    "height": 17
+  },
+  {
+    "testId": "SeparatorIcon",
+    "order": 13,
+    "x": 585,
+    "y": 69,
+    "width": 23,
+    "height": 23
+  },
+  {
+    "testId": "ArrowUpwardIcon",
+    "order": 14,
+    "x": 639,
+    "y": 72,
+    "width": 17,
+    "height": 17
+  },
+  {
+    "testId": "SeparatorIcon",
+    "order": 15,
+    "x": 835,
+    "y": 69,
+    "width": 23,
+    "height": 23
+  },
+  {
+    "testId": "ArrowUpwardIcon",
+    "order": 16,
+    "x": 904,
+    "y": 72,
+    "width": 17,
+    "height": 17
+  },
+  {
+    "testId": "SeparatorIcon",
+    "order": 17,
+    "x": 985,
+    "y": 69,
+    "width": 23,
+    "height": 23
+  },
+  {
+    "testId": "CheckBoxOutlineBlankIcon",
+    "order": 18,
+    "x": 59,
+    "y": 149,
+    "width": 23,
+    "height": 23
+  },
+  {
+    "testId": "CheckBoxOutlineBlankIcon",
+    "order": 19,
+    "x": 59,
+    "y": 178,
+    "width": 23,
+    "height": 23
+  },
+  {
+    "testId": "CheckBoxOutlineBlankIcon",
+    "order": 20,
+    "x": 59,
+    "y": 207,
+    "width": 23,
+    "height": 23
+  },
+  {
+    "testId": "CheckBoxOutlineBlankIcon",
+    "order": 21,
+    "x": 59,
+    "y": 236,
+    "width": 23,
+    "height": 23
+  },
+  {
+    "testId": "CheckBoxOutlineBlankIcon",
+    "order": 22,
+    "x": 59,
+    "y": 265,
+    "width": 23,
+    "height": 23
+  },
+  {
+    "testId": "CheckBoxOutlineBlankIcon",
+    "order": 23,
+    "x": 59,
+    "y": 294,
+    "width": 23,
+    "height": 23
+  }
+]

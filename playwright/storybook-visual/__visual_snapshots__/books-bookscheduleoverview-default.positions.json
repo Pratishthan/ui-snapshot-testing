@@ -1,0 +1,794 @@
+[
+  {
+    "testId": "book-schedule-overview-container",
+    "order": 0,
+    "x": 15,
+    "y": 15,
+    "width": 770,
+    "height": 380
+  },
+  {
+    "testId": "book-entity-name",
+    "order": 1,
+    "x": 38,
+    "y": 38,
+    "width": 725,
+    "height": 28
+  },
+  {
+    "testId": "book-details",
+    "order": 2,
+    "x": 38,
+    "y": 73,
+    "width": 725,
+    "height": 20
+  },
+  {
+    "testId": "schedule-book-overview-title",
+    "order": 3,
+    "x": 15,
+    "y": 115,
+    "width": 770,
+    "height": 20
+  },
+  {
+    "testId": "bsq-table-container",
+    "order": 4,
+    "x": 15,
+    "y": 143,
+    "width": 815,
+    "height": 252
+  },
+  {
+    "testId": "schedule-overview-row-0",
+    "order": 5,
+    "x": 38,
+    "y": 208,
+    "width": 770,
+    "height": 71
+  },
+  {
+    "testId": "CancelOutlinedIcon",
+    "order": 6,
+    "x": 543,
+    "y": 235,
+    "width": 15,
+    "height": 15
+  },
+  {
+    "testId": "CancelOutlinedIcon",
+    "order": 7,
+    "x": 653,
+    "y": 235,
+    "width": 15,
+    "height": 15
+  },
+  {
+    "testId": "bsq-chip-2",
+    "order": 8,
+    "x": 750,
+    "y": 230,
+    "width": 23,
+    "height": 24
+  },
+  {
+    "testId": "schedule-overview-row-1",
+    "order": 9,
+    "x": 38,
+    "y": 278,
+    "width": 770,
+    "height": 71
+  },
+  {
+    "testId": "CancelOutlinedIcon",
+    "order": 10,
+    "x": 653,
+    "y": 305,
+    "width": 15,
+    "height": 15
+  },
+  {
+    "testId": "bsq-chip-1",
+    "order": 11,
+    "x": 750,
+    "y": 301,
+    "width": 23,
+    "height": 24
+  },
+  {
+    "testId": "schedule-overview-row-2",
+    "order": 12,
+    "x": 38,
+    "y": 349,
+    "width": 770,
+    "height": 71
+  },
+  {
+    "testId": "CancelOutlinedIcon",
+    "order": 13,
+    "x": 653,
+    "y": 376,
+    "width": 15,
+    "height": 15
+  },
+  {
+    "testId": "bsq-chip-1",
+    "order": 14,
+    "x": 750,
+    "y": 371,
+    "width": 23,
+    "height": 24
+  },
+  {
+    "testId": "schedule-overview-row-3",
+    "order": 15,
+    "x": 38,
+    "y": 419,
+    "width": 770,
+    "height": 71
+  },
+  {
+    "testId": "CancelOutlinedIcon",
+    "order": 16,
+    "x": 543,
+    "y": 446,
+    "width": 15,
+    "height": 15
+  },
+  {
+    "testId": "CancelOutlinedIcon",
+    "order": 17,
+    "x": 653,
+    "y": 446,
+    "width": 15,
+    "height": 15
+  },
+  {
+    "testId": "bsq-chip-1",
+    "order": 18,
+    "x": 750,
+    "y": 442,
+    "width": 23,
+    "height": 24
+  },
+  {
+    "testId": "schedule-overview-row-4",
+    "order": 19,
+    "x": 38,
+    "y": 490,
+    "width": 770,
+    "height": 71
+  },
+  {
+    "testId": "CancelOutlinedIcon",
+    "order": 20,
+    "x": 543,
+    "y": 517,
+    "width": 15,
+    "height": 15
+  },
+  {
+    "testId": "CancelOutlinedIcon",
+    "order": 21,
+    "x": 653,
+    "y": 517,
+    "width": 15,
+    "height": 15
+  },
+  {
+    "testId": "bsq-chip-1",
+    "order": 22,
+    "x": 750,
+    "y": 512,
+    "width": 23,
+    "height": 24
+  },
+  {
+    "testId": "schedule-overview-row-5",
+    "order": 23,
+    "x": 38,
+    "y": 560,
+    "width": 770,
+    "height": 71
+  },
+  {
+    "testId": "CancelOutlinedIcon",
+    "order": 24,
+    "x": 653,
+    "y": 587,
+    "width": 15,
+    "height": 15
+  },
+  {
+    "testId": "bsq-chip-2",
+    "order": 25,
+    "x": 750,
+    "y": 583,
+    "width": 23,
+    "height": 24
+  },
+  {
+    "testId": "schedule-overview-row-6",
+    "order": 26,
+    "x": 38,
+    "y": 631,
+    "width": 770,
+    "height": 71
+  },
+  {
+    "testId": "CancelOutlinedIcon",
+    "order": 27,
+    "x": 653,
+    "y": 658,
+    "width": 15,
+    "height": 15
+  },
+  {
+    "testId": "bsq-chip-2",
+    "order": 28,
+    "x": 750,
+    "y": 653,
+    "width": 23,
+    "height": 24
+  },
+  {
+    "testId": "schedule-overview-row-7",
+    "order": 29,
+    "x": 38,
+    "y": 701,
+    "width": 770,
+    "height": 71
+  },
+  {
+    "testId": "bsq-chip-1",
+    "order": 30,
+    "x": 750,
+    "y": 724,
+    "width": 23,
+    "height": 24
+  },
+  {
+    "testId": "schedule-overview-row-8",
+    "order": 31,
+    "x": 38,
+    "y": 772,
+    "width": 770,
+    "height": 71
+  },
+  {
+    "testId": "bsq-chip-2",
+    "order": 32,
+    "x": 750,
+    "y": 795,
+    "width": 23,
+    "height": 24
+  },
+  {
+    "testId": "schedule-overview-row-9",
+    "order": 33,
+    "x": 38,
+    "y": 842,
+    "width": 770,
+    "height": 71
+  },
+  {
+    "testId": "CancelOutlinedIcon",
+    "order": 34,
+    "x": 543,
+    "y": 870,
+    "width": 15,
+    "height": 15
+  },
+  {
+    "testId": "CancelOutlinedIcon",
+    "order": 35,
+    "x": 653,
+    "y": 870,
+    "width": 15,
+    "height": 15
+  },
+  {
+    "testId": "bsq-chip-1",
+    "order": 36,
+    "x": 750,
+    "y": 865,
+    "width": 23,
+    "height": 24
+  },
+  {
+    "testId": "schedule-overview-row-10",
+    "order": 37,
+    "x": 38,
+    "y": 913,
+    "width": 770,
+    "height": 71
+  },
+  {
+    "testId": "bsq-chip-3",
+    "order": 38,
+    "x": 750,
+    "y": 936,
+    "width": 23,
+    "height": 24
+  },
+  {
+    "testId": "schedule-overview-row-11",
+    "order": 39,
+    "x": 38,
+    "y": 983,
+    "width": 770,
+    "height": 71
+  },
+  {
+    "testId": "CancelOutlinedIcon",
+    "order": 40,
+    "x": 653,
+    "y": 1011,
+    "width": 15,
+    "height": 15
+  },
+  {
+    "testId": "bsq-chip-1",
+    "order": 41,
+    "x": 750,
+    "y": 1006,
+    "width": 23,
+    "height": 24
+  },
+  {
+    "testId": "schedule-overview-row-12",
+    "order": 42,
+    "x": 38,
+    "y": 1054,
+    "width": 770,
+    "height": 71
+  },
+  {
+    "testId": "bsq-chip-2",
+    "order": 43,
+    "x": 750,
+    "y": 1077,
+    "width": 23,
+    "height": 24
+  },
+  {
+    "testId": "schedule-overview-row-13",
+    "order": 44,
+    "x": 38,
+    "y": 1124,
+    "width": 770,
+    "height": 71
+  },
+  {
+    "testId": "CancelOutlinedIcon",
+    "order": 45,
+    "x": 543,
+    "y": 1152,
+    "width": 15,
+    "height": 15
+  },
+  {
+    "testId": "CancelOutlinedIcon",
+    "order": 46,
+    "x": 653,
+    "y": 1152,
+    "width": 15,
+    "height": 15
+  },
+  {
+    "testId": "bsq-chip-1",
+    "order": 47,
+    "x": 750,
+    "y": 1147,
+    "width": 23,
+    "height": 24
+  },
+  {
+    "testId": "schedule-overview-row-14",
+    "order": 48,
+    "x": 38,
+    "y": 1195,
+    "width": 770,
+    "height": 71
+  },
+  {
+    "testId": "bsq-chip-2",
+    "order": 49,
+    "x": 750,
+    "y": 1218,
+    "width": 23,
+    "height": 24
+  },
+  {
+    "testId": "schedule-overview-row-15",
+    "order": 50,
+    "x": 38,
+    "y": 1265,
+    "width": 770,
+    "height": 71
+  },
+  {
+    "testId": "CancelOutlinedIcon",
+    "order": 51,
+    "x": 653,
+    "y": 1293,
+    "width": 15,
+    "height": 15
+  },
+  {
+    "testId": "bsq-chip-1",
+    "order": 52,
+    "x": 750,
+    "y": 1288,
+    "width": 23,
+    "height": 24
+  },
+  {
+    "testId": "schedule-overview-row-16",
+    "order": 53,
+    "x": 38,
+    "y": 1336,
+    "width": 770,
+    "height": 71
+  },
+  {
+    "testId": "bsq-chip-2",
+    "order": 54,
+    "x": 750,
+    "y": 1359,
+    "width": 23,
+    "height": 24
+  },
+  {
+    "testId": "schedule-overview-row-17",
+    "order": 55,
+    "x": 38,
+    "y": 1407,
+    "width": 770,
+    "height": 71
+  },
+  {
+    "testId": "CancelOutlinedIcon",
+    "order": 56,
+    "x": 543,
+    "y": 1434,
+    "width": 15,
+    "height": 15
+  },
+  {
+    "testId": "CancelOutlinedIcon",
+    "order": 57,
+    "x": 653,
+    "y": 1434,
+    "width": 15,
+    "height": 15
+  },
+  {
+    "testId": "bsq-chip-1",
+    "order": 58,
+    "x": 750,
+    "y": 1429,
+    "width": 23,
+    "height": 24
+  },
+  {
+    "testId": "schedule-overview-row-18",
+    "order": 59,
+    "x": 38,
+    "y": 1477,
+    "width": 770,
+    "height": 71
+  },
+  {
+    "testId": "bsq-chip-3",
+    "order": 60,
+    "x": 750,
+    "y": 1500,
+    "width": 23,
+    "height": 24
+  },
+  {
+    "testId": "schedule-overview-row-19",
+    "order": 61,
+    "x": 38,
+    "y": 1548,
+    "width": 770,
+    "height": 71
+  },
+  {
+    "testId": "CancelOutlinedIcon",
+    "order": 62,
+    "x": 653,
+    "y": 1575,
+    "width": 15,
+    "height": 15
+  },
+  {
+    "testId": "bsq-chip-1",
+    "order": 63,
+    "x": 750,
+    "y": 1570,
+    "width": 23,
+    "height": 24
+  },
+  {
+    "testId": "schedule-overview-row-20",
+    "order": 64,
+    "x": 38,
+    "y": 1618,
+    "width": 770,
+    "height": 71
+  },
+  {
+    "testId": "bsq-chip-2",
+    "order": 65,
+    "x": 750,
+    "y": 1641,
+    "width": 23,
+    "height": 24
+  },
+  {
+    "testId": "schedule-overview-row-21",
+    "order": 66,
+    "x": 38,
+    "y": 1689,
+    "width": 770,
+    "height": 71
+  },
+  {
+    "testId": "CancelOutlinedIcon",
+    "order": 67,
+    "x": 543,
+    "y": 1716,
+    "width": 15,
+    "height": 15
+  },
+  {
+    "testId": "CancelOutlinedIcon",
+    "order": 68,
+    "x": 653,
+    "y": 1716,
+    "width": 15,
+    "height": 15
+  },
+  {
+    "testId": "bsq-chip-1",
+    "order": 69,
+    "x": 750,
+    "y": 1711,
+    "width": 23,
+    "height": 24
+  },
+  {
+    "testId": "schedule-overview-row-22",
+    "order": 70,
+    "x": 38,
+    "y": 1759,
+    "width": 770,
+    "height": 71
+  },
+  {
+    "testId": "bsq-chip-2",
+    "order": 71,
+    "x": 750,
+    "y": 1782,
+    "width": 23,
+    "height": 24
+  },
+  {
+    "testId": "schedule-overview-row-23",
+    "order": 72,
+    "x": 38,
+    "y": 1830,
+    "width": 770,
+    "height": 73
+  },
+  {
+    "testId": "CancelOutlinedIcon",
+    "order": 73,
+    "x": 653,
+    "y": 1858,
+    "width": 15,
+    "height": 15
+  },
+  {
+    "testId": "bsq-chip-1",
+    "order": 74,
+    "x": 750,
+    "y": 1854,
+    "width": 23,
+    "height": 24
+  },
+  {
+    "testId": "schedule-overview-row-24",
+    "order": 75,
+    "x": 38,
+    "y": 1903,
+    "width": 770,
+    "height": 71
+  },
+  {
+    "testId": "bsq-chip-2",
+    "order": 76,
+    "x": 750,
+    "y": 1926,
+    "width": 23,
+    "height": 24
+  },
+  {
+    "testId": "schedule-overview-row-25",
+    "order": 77,
+    "x": 38,
+    "y": 1973,
+    "width": 770,
+    "height": 71
+  },
+  {
+    "testId": "CancelOutlinedIcon",
+    "order": 78,
+    "x": 543,
+    "y": 2001,
+    "width": 15,
+    "height": 15
+  },
+  {
+    "testId": "CancelOutlinedIcon",
+    "order": 79,
+    "x": 653,
+    "y": 2001,
+    "width": 15,
+    "height": 15
+  },
+  {
+    "testId": "bsq-chip-1",
+    "order": 80,
+    "x": 750,
+    "y": 1996,
+    "width": 23,
+    "height": 24
+  },
+  {
+    "testId": "schedule-overview-row-26",
+    "order": 81,
+    "x": 38,
+    "y": 2044,
+    "width": 770,
+    "height": 71
+  },
+  {
+    "testId": "bsq-chip-3",
+    "order": 82,
+    "x": 750,
+    "y": 2067,
+    "width": 23,
+    "height": 24
+  },
+  {
+    "testId": "schedule-overview-row-27",
+    "order": 83,
+    "x": 38,
+    "y": 2114,
+    "width": 770,
+    "height": 71
+  },
+  {
+    "testId": "CancelOutlinedIcon",
+    "order": 84,
+    "x": 653,
+    "y": 2142,
+    "width": 15,
+    "height": 15
+  },
+  {
+    "testId": "bsq-chip-1",
+    "order": 85,
+    "x": 750,
+    "y": 2137,
+    "width": 23,
+    "height": 24
+  },
+  {
+    "testId": "schedule-overview-row-28",
+    "order": 86,
+    "x": 38,
+    "y": 2185,
+    "width": 770,
+    "height": 71
+  },
+  {
+    "testId": "bsq-chip-2",
+    "order": 87,
+    "x": 750,
+    "y": 2208,
+    "width": 23,
+    "height": 24
+  },
+  {
+    "testId": "schedule-overview-row-29",
+    "order": 88,
+    "x": 38,
+    "y": 2255,
+    "width": 770,
+    "height": 71
+  },
+  {
+    "testId": "CancelOutlinedIcon",
+    "order": 89,
+    "x": 543,
+    "y": 2283,
+    "width": 15,
+    "height": 15
+  },
+  {
+    "testId": "CancelOutlinedIcon",
+    "order": 90,
+    "x": 653,
+    "y": 2283,
+    "width": 15,
+    "height": 15
+  },
+  {
+    "testId": "bsq-chip-1",
+    "order": 91,
+    "x": 750,
+    "y": 2278,
+    "width": 23,
+    "height": 24
+  },
+  {
+    "testId": "schedule-overview-row-30",
+    "order": 92,
+    "x": 38,
+    "y": 2326,
+    "width": 770,
+    "height": 71
+  },
+  {
+    "testId": "bsq-chip-2",
+    "order": 93,
+    "x": 750,
+    "y": 2349,
+    "width": 23,
+    "height": 24
+  },
+  {
+    "testId": "schedule-overview-row-31",
+    "order": 94,
+    "x": 38,
+    "y": 2396,
+    "width": 770,
+    "height": 71
+  },
+  {
+    "testId": "CancelOutlinedIcon",
+    "order": 95,
+    "x": 653,
+    "y": 2424,
+    "width": 15,
+    "height": 15
+  },
+  {
+    "testId": "bsq-chip-1",
+    "order": 96,
+    "x": 750,
+    "y": 2419,
+    "width": 23,
+    "height": 24
+  },
+  {
+    "testId": "schedule-overview-row-32",
+    "order": 97,
+    "x": 38,
+    "y": 2467,
+    "width": 770,
+    "height": 71
+  },
+  {
+    "testId": "bsq-chip-3",
+    "order": 98,
+    "x": 750,
+    "y": 2490,
+    "width": 23,
+    "height": 24
+  }
+]

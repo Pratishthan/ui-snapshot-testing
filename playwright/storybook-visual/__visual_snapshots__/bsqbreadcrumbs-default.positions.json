@@ -1,0 +1,58 @@
+[
+  {
+    "testId": "breadcrumb-item-Home",
+    "order": 0,
+    "x": 15,
+    "y": 15,
+    "width": 44,
+    "height": 25
+  },
+  {
+    "testId": "bsq-link",
+    "order": 1,
+    "x": 15,
+    "y": 17,
+    "width": 44,
+    "height": 20
+  },
+  {
+    "testId": "breadcrumb-separator",
+    "order": 2,
+    "x": 67,
+    "y": 21,
+    "width": 13,
+    "height": 13
+  },
+  {
+    "testId": "breadcrumb-item-Products",
+    "order": 3,
+    "x": 80,
+    "y": 15,
+    "width": 65,
+    "height": 25
+  },
+  {
+    "testId": "bsq-link",
+    "order": 4,
+    "x": 80,
+    "y": 17,
+    "width": 65,
+    "height": 20
+  },
+  {
+    "testId": "breadcrumb-separator",
+    "order": 5,
+    "x": 153,
+    "y": 21,
+    "width": 13,
+    "height": 13
+  },
+  {
+    "testId": "breadcrumb-last-item-Electronics",
+    "order": 6,
+    "x": 166,
+    "y": 16,
+    "width": 73,
+    "height": 23
+  }
+]

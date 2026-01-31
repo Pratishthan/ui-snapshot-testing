@@ -1,0 +1,522 @@
+[
+  {
+    "testId": "overview-wrapper",
+    "order": 0,
+    "x": 15,
+    "y": 15,
+    "width": 770,
+    "height": 630
+  },
+  {
+    "testId": "overview-header",
+    "order": 1,
+    "x": 15,
+    "y": 15,
+    "width": 770,
+    "height": 265
+  },
+  {
+    "testId": "timeElapsed",
+    "order": 2,
+    "x": 38,
+    "y": 38,
+    "width": 725,
+    "height": 23
+  },
+  {
+    "testId": "entity-name-Nakumoro Telecom",
+    "order": 3,
+    "x": 38,
+    "y": 60,
+    "width": 725,
+    "height": 30
+  },
+  {
+    "testId": "freeze-container",
+    "order": 4,
+    "x": 38,
+    "y": 106,
+    "width": 725,
+    "height": 45
+  },
+  {
+    "testId": "book-refresh-status",
+    "order": 5,
+    "x": 38,
+    "y": 106,
+    "width": 204,
+    "height": 45
+  },
+  {
+    "testId": "refresh-status-icon",
+    "order": 6,
+    "x": 53,
+    "y": 123,
+    "width": 11,
+    "height": 11
+  },
+  {
+    "testId": "refresh-status-title",
+    "order": 7,
+    "x": 76,
+    "y": 120,
+    "width": 39,
+    "height": 17
+  },
+  {
+    "testId": "refresh-status-text",
+    "order": 8,
+    "x": 126,
+    "y": 119,
+    "width": 100,
+    "height": 19
+  },
+  {
+    "testId": "cancel-icon",
+    "order": 9,
+    "x": 264,
+    "y": 119,
+    "width": 19,
+    "height": 19
+  },
+  {
+    "testId": "error-count",
+    "order": 10,
+    "x": 286,
+    "y": 119,
+    "width": 15,
+    "height": 20
+  },
+  {
+    "testId": "warning-icon",
+    "order": 11,
+    "x": 309,
+    "y": 119,
+    "width": 19,
+    "height": 19
+  },
+  {
+    "testId": "warning-count",
+    "order": 12,
+    "x": 332,
+    "y": 119,
+    "width": 15,
+    "height": 20
+  },
+  {
+    "testId": "table-row-12332",
+    "order": 13,
+    "x": 38,
+    "y": 174,
+    "width": 725,
+    "height": 84
+  },
+  {
+    "testId": "keyValue-vertical",
+    "order": 14,
+    "x": 38,
+    "y": 174,
+    "width": 88,
+    "height": 45
+  },
+  {
+    "testId": "keyName-Short Name",
+    "order": 15,
+    "x": 38,
+    "y": 174,
+    "width": 88,
+    "height": 23
+  },
+  {
+    "testId": "valueName-Lorem Ipsum.",
+    "order": 16,
+    "x": 38,
+    "y": 196,
+    "width": 88,
+    "height": 23
+  },
+  {
+    "testId": "keyValue-vertical",
+    "order": 17,
+    "x": 156,
+    "y": 174,
+    "width": 46,
+    "height": 45
+  },
+  {
+    "testId": "keyName-Book #",
+    "order": 18,
+    "x": 156,
+    "y": 174,
+    "width": 46,
+    "height": 23
+  },
+  {
+    "testId": "valueName-12332",
+    "order": 19,
+    "x": 156,
+    "y": 196,
+    "width": 44,
+    "height": 23
+  },
+  {
+    "testId": "keyValue-vertical",
+    "order": 20,
+    "x": 232,
+    "y": 174,
+    "width": 57,
+    "height": 45
+  },
+  {
+    "testId": "keyName-Scenario",
+    "order": 21,
+    "x": 232,
+    "y": 174,
+    "width": 57,
+    "height": 23
+  },
+  {
+    "testId": "valueName-Actual",
+    "order": 22,
+    "x": 232,
+    "y": 196,
+    "width": 43,
+    "height": 23
+  },
+  {
+    "testId": "keyValue-vertical",
+    "order": 23,
+    "x": 319,
+    "y": 174,
+    "width": 134,
+    "height": 45
+  },
+  {
+    "testId": "keyName-Taxonomy",
+    "order": 24,
+    "x": 319,
+    "y": 174,
+    "width": 134,
+    "height": 23
+  },
+  {
+    "testId": "valueName-IFRS New Taxonomy",
+    "order": 25,
+    "x": 319,
+    "y": 196,
+    "width": 134,
+    "height": 23
+  },
+  {
+    "testId": "keyValue-vertical",
+    "order": 26,
+    "x": 482,
+    "y": 174,
+    "width": 62,
+    "height": 45
+  },
+  {
+    "testId": "keyName-Currency",
+    "order": 27,
+    "x": 482,
+    "y": 174,
+    "width": 62,
+    "height": 23
+  },
+  {
+    "testId": "valueName-EUR",
+    "order": 28,
+    "x": 482,
+    "y": 196,
+    "width": 29,
+    "height": 23
+  },
+  {
+    "testId": "progress-bar",
+    "order": 29,
+    "x": 38,
+    "y": 241,
+    "width": 489,
+    "height": 10
+  },
+  {
+    "testId": "remaining",
+    "order": 30,
+    "x": 534,
+    "y": 235,
+    "width": 105,
+    "height": 23
+  },
+  {
+    "testId": "task-overview",
+    "order": 31,
+    "x": 38,
+    "y": 304,
+    "width": 725,
+    "height": 340
+  },
+  {
+    "testId": "card-accordion",
+    "order": 32,
+    "x": 38,
+    "y": 304,
+    "width": 725,
+    "height": 340
+  },
+  {
+    "testId": "card-header",
+    "order": 33,
+    "x": 38,
+    "y": 304,
+    "width": 725,
+    "height": 53
+  },
+  {
+    "testId": "card-title",
+    "order": 34,
+    "x": 38,
+    "y": 315,
+    "width": 44,
+    "height": 30
+  },
+  {
+    "testId": "navigate-icon",
+    "order": 35,
+    "x": 90,
+    "y": 319,
+    "width": 23,
+    "height": 23
+  },
+  {
+    "testId": "task-status-icon",
+    "order": 36,
+    "x": 617,
+    "y": 326,
+    "width": 9,
+    "height": 9
+  },
+  {
+    "testId": "timeElapsed",
+    "order": 37,
+    "x": 638,
+    "y": 319,
+    "width": 109,
+    "height": 23
+  },
+  {
+    "testId": "card-body-container",
+    "order": 38,
+    "x": 38,
+    "y": 356,
+    "width": 725,
+    "height": 267
+  },
+  {
+    "testId": "card-body-0",
+    "order": 39,
+    "x": 38,
+    "y": 356,
+    "width": 725,
+    "height": 280
+  },
+  {
+    "testId": "loading-task-overview-chart",
+    "order": 40,
+    "x": 122,
+    "y": 373,
+    "width": 210,
+    "height": 210
+  },
+  {
+    "testId": "prepare-overview",
+    "order": 41,
+    "x": 38,
+    "y": 664,
+    "width": 725,
+    "height": 282
+  },
+  {
+    "testId": "card-accordion",
+    "order": 42,
+    "x": 38,
+    "y": 664,
+    "width": 725,
+    "height": 282
+  },
+  {
+    "testId": "card-header",
+    "order": 43,
+    "x": 38,
+    "y": 664,
+    "width": 725,
+    "height": 53
+  },
+  {
+    "testId": "card-title",
+    "order": 44,
+    "x": 38,
+    "y": 675,
+    "width": 66,
+    "height": 30
+  },
+  {
+    "testId": "navigate-icon",
+    "order": 45,
+    "x": 112,
+    "y": 679,
+    "width": 23,
+    "height": 23
+  },
+  {
+    "testId": "card-body-container",
+    "order": 46,
+    "x": 38,
+    "y": 716,
+    "width": 725,
+    "height": 221
+  },
+  {
+    "testId": "card-body-0",
+    "order": 47,
+    "x": 38,
+    "y": 716,
+    "width": 725,
+    "height": 222
+  },
+  {
+    "testId": "control-grid-item",
+    "order": 48,
+    "x": 38,
+    "y": 966,
+    "width": 725,
+    "height": 405
+  },
+  {
+    "testId": "card-accordion",
+    "order": 49,
+    "x": 38,
+    "y": 966,
+    "width": 725,
+    "height": 405
+  },
+  {
+    "testId": "card-header",
+    "order": 50,
+    "x": 38,
+    "y": 966,
+    "width": 725,
+    "height": 53
+  },
+  {
+    "testId": "card-title",
+    "order": 51,
+    "x": 38,
+    "y": 977,
+    "width": 201,
+    "height": 30
+  },
+  {
+    "testId": "navigate-icon",
+    "order": 52,
+    "x": 246,
+    "y": 981,
+    "width": 23,
+    "height": 23
+  },
+  {
+    "testId": "card-body-container",
+    "order": 53,
+    "x": 38,
+    "y": 1019,
+    "width": 725,
+    "height": 318
+  },
+  {
+    "testId": "card-body-0",
+    "order": 54,
+    "x": 38,
+    "y": 1019,
+    "width": 363,
+    "height": 345
+  },
+  {
+    "testId": "validation-title",
+    "order": 55,
+    "x": 55,
+    "y": 1036,
+    "width": 329,
+    "height": 24
+  },
+  {
+    "testId": "loading-validation-overview",
+    "order": 56,
+    "x": 55,
+    "y": 1075,
+    "width": 329,
+    "height": 264
+  },
+  {
+    "testId": "card-body-1",
+    "order": 57,
+    "x": 400,
+    "y": 1019,
+    "width": 363,
+    "height": 345
+  },
+  {
+    "testId": "loading-control-overview",
+    "order": 58,
+    "x": 417,
+    "y": 1036,
+    "width": 329,
+    "height": 132
+  },
+  {
+    "testId": "loading-control-overview-heading",
+    "order": 59,
+    "x": 417,
+    "y": 1043,
+    "width": 99,
+    "height": 19
+  },
+  {
+    "testId": "loading-control-overview-tb-label",
+    "order": 60,
+    "x": 417,
+    "y": 1088,
+    "width": 82,
+    "height": 12
+  },
+  {
+    "testId": "loading-control-overview-tb-value",
+    "order": 61,
+    "x": 680,
+    "y": 1088,
+    "width": 66,
+    "height": 12
+  },
+  {
+    "testId": "loading-control-overview-non-tb-label",
+    "order": 62,
+    "x": 417,
+    "y": 1116,
+    "width": 99,
+    "height": 12
+  },
+  {
+    "testId": "loading-control-overview-non-tb-value",
+    "order": 63,
+    "x": 680,
+    "y": 1116,
+    "width": 66,
+    "height": 12
+  },
+  {
+    "testId": "loading-control-overview-status",
+    "order": 64,
+    "x": 499,
+    "y": 1152,
+    "width": 164,
+    "height": 12
+  }
+]

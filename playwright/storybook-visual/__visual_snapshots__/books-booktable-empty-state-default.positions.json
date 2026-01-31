@@ -1,0 +1,106 @@
+[
+  {
+    "testId": "book-table-container",
+    "order": 0,
+    "x": 15,
+    "y": 15,
+    "width": 815,
+    "height": 112
+  },
+  {
+    "testId": "book-table-header-entity_name",
+    "order": 1,
+    "x": 38,
+    "y": 15,
+    "width": 66,
+    "height": 34
+  },
+  {
+    "testId": "book-table-header-freeze_period",
+    "order": 2,
+    "x": 103,
+    "y": 15,
+    "width": 25,
+    "height": 34
+  },
+  {
+    "testId": "book-table-header-short_name",
+    "order": 3,
+    "x": 128,
+    "y": 15,
+    "width": 105,
+    "height": 34
+  },
+  {
+    "testId": "book-table-header-book_id",
+    "order": 4,
+    "x": 233,
+    "y": 15,
+    "width": 79,
+    "height": 34
+  },
+  {
+    "testId": "book-table-header-book_type",
+    "order": 5,
+    "x": 313,
+    "y": 15,
+    "width": 57,
+    "height": 34
+  },
+  {
+    "testId": "book-table-header-reporting_currency",
+    "order": 6,
+    "x": 370,
+    "y": 15,
+    "width": 88,
+    "height": 34
+  },
+  {
+    "testId": "book-table-header-validation_status",
+    "order": 7,
+    "x": 458,
+    "y": 15,
+    "width": 93,
+    "height": 34
+  },
+  {
+    "testId": "book-table-header-status",
+    "order": 8,
+    "x": 551,
+    "y": 15,
+    "width": 68,
+    "height": 34
+  },
+  {
+    "testId": "book-table-header-completed_on",
+    "order": 9,
+    "x": 619,
+    "y": 15,
+    "width": 78,
+    "height": 34
+  },
+  {
+    "testId": "book-table-header-leaf_node",
+    "order": 10,
+    "x": 697,
+    "y": 15,
+    "width": 86,
+    "height": 34
+  },
+  {
+    "testId": "book-table-header-id",
+    "order": 11,
+    "x": 783,
+    "y": 15,
+    "width": 25,
+    "height": 34
+  },
+  {
+    "testId": "book-table-empty-message",
+    "order": 12,
+    "x": 38,
+    "y": 49,
+    "width": 770,
+    "height": 79
+  }
+]

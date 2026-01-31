@@ -1,0 +1,186 @@
+[
+  {
+    "testId": "book-reporting-options-copy-container",
+    "order": 0,
+    "x": 15,
+    "y": 15,
+    "width": 770,
+    "height": 600
+  },
+  {
+    "testId": "copy-currency-dropdown",
+    "order": 1,
+    "x": 30,
+    "y": 38,
+    "width": 231,
+    "height": 59
+  },
+  {
+    "testId": "copy-currency-dropdown-input",
+    "order": 2,
+    "x": 30,
+    "y": 62,
+    "width": 175,
+    "height": 30
+  },
+  {
+    "testId": "CloseIcon",
+    "order": 3,
+    "x": 219,
+    "y": 69,
+    "width": 19,
+    "height": 19
+  },
+  {
+    "testId": "ExpandMoreRoundedIcon",
+    "order": 4,
+    "x": 242,
+    "y": 69,
+    "width": 19,
+    "height": 19
+  },
+  {
+    "testId": "copy-scenario-dropdown",
+    "order": 5,
+    "x": 285,
+    "y": 38,
+    "width": 231,
+    "height": 59
+  },
+  {
+    "testId": "copy-scenario-dropdown-input",
+    "order": 6,
+    "x": 285,
+    "y": 62,
+    "width": 175,
+    "height": 30
+  },
+  {
+    "testId": "CloseIcon",
+    "order": 7,
+    "x": 474,
+    "y": 69,
+    "width": 19,
+    "height": 19
+  },
+  {
+    "testId": "ExpandMoreRoundedIcon",
+    "order": 8,
+    "x": 497,
+    "y": 69,
+    "width": 19,
+    "height": 19
+  },
+  {
+    "testId": "copy-taxonomy-dropdown",
+    "order": 9,
+    "x": 539,
+    "y": 38,
+    "width": 231,
+    "height": 59
+  },
+  {
+    "testId": "copy-taxonomy-dropdown-input",
+    "order": 10,
+    "x": 539,
+    "y": 62,
+    "width": 175,
+    "height": 30
+  },
+  {
+    "testId": "CloseIcon",
+    "order": 11,
+    "x": 728,
+    "y": 69,
+    "width": 19,
+    "height": 19
+  },
+  {
+    "testId": "ExpandMoreRoundedIcon",
+    "order": 12,
+    "x": 751,
+    "y": 69,
+    "width": 19,
+    "height": 19
+  },
+  {
+    "testId": "copy-coa-dropdown",
+    "order": 13,
+    "x": 30,
+    "y": 121,
+    "width": 231,
+    "height": 59
+  },
+  {
+    "testId": "copy-coa-dropdown-input",
+    "order": 14,
+    "x": 30,
+    "y": 145,
+    "width": 175,
+    "height": 30
+  },
+  {
+    "testId": "CloseIcon",
+    "order": 15,
+    "x": 219,
+    "y": 152,
+    "width": 19,
+    "height": 19
+  },
+  {
+    "testId": "ExpandMoreRoundedIcon",
+    "order": 16,
+    "x": 242,
+    "y": 152,
+    "width": 19,
+    "height": 19
+  },
+  {
+    "testId": "copy-report-model-dropdown",
+    "order": 17,
+    "x": 285,
+    "y": 121,
+    "width": 231,
+    "height": 59
+  },
+  {
+    "testId": "copy-report-model-dropdown-input",
+    "order": 18,
+    "x": 285,
+    "y": 145,
+    "width": 201,
+    "height": 30
+  },
+  {
+    "testId": "ExpandMoreRoundedIcon",
+    "order": 19,
+    "x": 497,
+    "y": 152,
+    "width": 19,
+    "height": 19
+  },
+  {
+    "testId": "copy-linked-book-field",
+    "order": 20,
+    "x": 30,
+    "y": 204,
+    "width": 400,
+    "height": 47
+  },
+  {
+    "testId": "edit-linked-book-button",
+    "order": 21,
+    "x": 403,
+    "y": 222,
+    "width": 27,
+    "height": 27
+  },
+  {
+    "testId": "EditOutlinedIcon",
+    "order": 22,
+    "x": 407,
+    "y": 226,
+    "width": 19,
+    "height": 19
+  }
+]

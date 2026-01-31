@@ -1,0 +1,274 @@
+[
+  {
+    "testId": "additional-settings-grid",
+    "order": 0,
+    "x": 23,
+    "y": 23,
+    "width": 755,
+    "height": 585
+  },
+  {
+    "testId": "custom-toolbar",
+    "order": 1,
+    "x": 24,
+    "y": 24,
+    "width": 753,
+    "height": 0
+  },
+  {
+    "testId": "toolbar-title",
+    "order": 2,
+    "x": 24,
+    "y": 24,
+    "width": 0,
+    "height": 0
+  },
+  {
+    "testId": "CheckBoxOutlineBlankIcon",
+    "order": 3,
+    "x": 37,
+    "y": 24,
+    "width": 23,
+    "height": 23
+  },
+  {
+    "testId": "SeparatorIcon",
+    "order": 4,
+    "x": 62,
+    "y": 24,
+    "width": 23,
+    "height": 23
+  },
+  {
+    "testId": "ArrowUpwardIcon",
+    "order": 5,
+    "x": 98,
+    "y": 27,
+    "width": 17,
+    "height": 17
+  },
+  {
+    "testId": "SeparatorIcon",
+    "order": 6,
+    "x": 212,
+    "y": 24,
+    "width": 23,
+    "height": 23
+  },
+  {
+    "testId": "ArrowUpwardIcon",
+    "order": 7,
+    "x": 284,
+    "y": 27,
+    "width": 17,
+    "height": 17
+  },
+  {
+    "testId": "SeparatorIcon",
+    "order": 8,
+    "x": 612,
+    "y": 24,
+    "width": 23,
+    "height": 23
+  },
+  {
+    "testId": "SeparatorIcon",
+    "order": 9,
+    "x": 912,
+    "y": 24,
+    "width": 23,
+    "height": 23
+  },
+  {
+    "testId": "CheckBoxOutlineBlankIcon",
+    "order": 10,
+    "x": 37,
+    "y": 52,
+    "width": 23,
+    "height": 23
+  },
+  {
+    "testId": "book-type-select-ds_st",
+    "order": 11,
+    "x": 634,
+    "y": 53,
+    "width": 280,
+    "height": 22
+  },
+  {
+    "testId": "ArrowDropDownIcon",
+    "order": 12,
+    "x": 888,
+    "y": 54,
+    "width": 19,
+    "height": 19
+  },
+  {
+    "testId": "CheckBoxOutlineBlankIcon",
+    "order": 13,
+    "x": 37,
+    "y": 81,
+    "width": 23,
+    "height": 23
+  },
+  {
+    "testId": "book-type-select-fd_st",
+    "order": 14,
+    "x": 634,
+    "y": 82,
+    "width": 280,
+    "height": 22
+  },
+  {
+    "testId": "ArrowDropDownIcon",
+    "order": 15,
+    "x": 888,
+    "y": 83,
+    "width": 19,
+    "height": 19
+  },
+  {
+    "testId": "CheckBoxOutlineBlankIcon",
+    "order": 16,
+    "x": 37,
+    "y": 110,
+    "width": 23,
+    "height": 23
+  },
+  {
+    "testId": "book-type-select-dim_st",
+    "order": 17,
+    "x": 634,
+    "y": 111,
+    "width": 280,
+    "height": 22
+  },
+  {
+    "testId": "ArrowDropDownIcon",
+    "order": 18,
+    "x": 888,
+    "y": 112,
+    "width": 19,
+    "height": 19
+  },
+  {
+    "testId": "CheckBoxOutlineBlankIcon",
+    "order": 19,
+    "x": 37,
+    "y": 139,
+    "width": 23,
+    "height": 23
+  },
+  {
+    "testId": "book-type-select-ibt_st",
+    "order": 20,
+    "x": 634,
+    "y": 140,
+    "width": 280,
+    "height": 22
+  },
+  {
+    "testId": "ArrowDropDownIcon",
+    "order": 21,
+    "x": 888,
+    "y": 141,
+    "width": 19,
+    "height": 19
+  },
+  {
+    "testId": "CheckBoxOutlineBlankIcon",
+    "order": 22,
+    "x": 37,
+    "y": 168,
+    "width": 23,
+    "height": 23
+  },
+  {
+    "testId": "book-type-select-brp_st",
+    "order": 23,
+    "x": 634,
+    "y": 169,
+    "width": 280,
+    "height": 22
+  },
+  {
+    "testId": "ArrowDropDownIcon",
+    "order": 24,
+    "x": 888,
+    "y": 170,
+    "width": 19,
+    "height": 19
+  },
+  {
+    "testId": "CheckBoxOutlineBlankIcon",
+    "order": 25,
+    "x": 37,
+    "y": 197,
+    "width": 23,
+    "height": 23
+  },
+  {
+    "testId": "book-type-select-rcc_st",
+    "order": 26,
+    "x": 634,
+    "y": 198,
+    "width": 280,
+    "height": 22
+  },
+  {
+    "testId": "ArrowDropDownIcon",
+    "order": 27,
+    "x": 888,
+    "y": 199,
+    "width": 19,
+    "height": 19
+  },
+  {
+    "testId": "CheckBoxOutlineBlankIcon",
+    "order": 28,
+    "x": 37,
+    "y": 226,
+    "width": 23,
+    "height": 23
+  },
+  {
+    "testId": "book-type-select-sas_st",
+    "order": 29,
+    "x": 634,
+    "y": 227,
+    "width": 280,
+    "height": 22
+  },
+  {
+    "testId": "ArrowDropDownIcon",
+    "order": 30,
+    "x": 888,
+    "y": 228,
+    "width": 19,
+    "height": 19
+  },
+  {
+    "testId": "CheckBoxOutlineBlankIcon",
+    "order": 31,
+    "x": 37,
+    "y": 255,
+    "width": 23,
+    "height": 23
+  },
+  {
+    "testId": "book-type-select-lb_st",
+    "order": 32,
+    "x": 634,
+    "y": 256,
+    "width": 280,
+    "height": 22
+  },
+  {
+    "testId": "ArrowDropDownIcon",
+    "order": 33,
+    "x": 888,
+    "y": 257,
+    "width": 19,
+    "height": 19
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "testId": "common-grid-toolbar",
+    "order": 0,
+    "x": 15,
+    "y": 266,
+    "width": 1020,
+    "height": 69
+  },
+  {
+    "testId": "bsq-icon-button-toolbar-option-switch-to-mui",
+    "order": 1,
+    "x": 58,
+    "y": 274,
+    "width": 34,
+    "height": 24
+  },
+  {
+    "testId": "toolbar-dropdown-expand",
+    "order": 2,
+    "x": 153,
+    "y": 266,
+    "width": 40,
+    "height": 40
+  },
+  {
+    "testId": "bsq-icon-button-toolbar-option-base-data",
+    "order": 3,
+    "x": 262,
+    "y": 274,
+    "width": 34,
+    "height": 24
+  },
+  {
+    "testId": "toolbar-dropdown-save-report-config",
+    "order": 4,
+    "x": 355,
+    "y": 266,
+    "width": 40,
+    "height": 40
+  },
+  {
+    "testId": "toolbar-dropdown-grid-charts",
+    "order": 5,
+    "x": 456,
+    "y": 266,
+    "width": 40,
+    "height": 40
+  },
+  {
+    "testId": "toolbar-dropdown-export",
+    "order": 6,
+    "x": 557,
+    "y": 266,
+    "width": 39,
+    "height": 39
+  },
+  {
+    "testId": "FileDownloadIcon",
+    "order": 7,
+    "x": 565,
+    "y": 274,
+    "width": 23,
+    "height": 23
+  },
+  {
+    "testId": "bsq-icon-button-toolbar-option-fields",
+    "order": 8,
+    "x": 660,
+    "y": 274,
+    "width": 30,
+    "height": 24
+  },
+  {
+    "testId": "bsq-icon-button-toolbar-option-options",
+    "order": 9,
+    "x": 759,
+    "y": 274,
+    "width": 34,
+    "height": 24
+  },
+  {
+    "testId": "toolbar-dropdown-format",
+    "order": 10,
+    "x": 851,
+    "y": 266,
+    "width": 40,
+    "height": 40
+  },
+  {
+    "testId": "bsq-icon-button-toolbar-option-fullscreen",
+    "order": 11,
+    "x": 961,
+    "y": 274,
+    "width": 34,
+    "height": 24
+  }
+]

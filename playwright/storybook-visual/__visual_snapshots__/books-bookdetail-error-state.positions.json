@@ -1,0 +1,258 @@
+[
+  {
+    "testId": "book-info",
+    "order": 0,
+    "x": -559,
+    "y": 15,
+    "width": 770,
+    "height": 115
+  },
+  {
+    "testId": "book-title",
+    "order": 1,
+    "x": -559,
+    "y": 30,
+    "width": 770,
+    "height": 19
+  },
+  {
+    "testId": "breadcrumb-last-item-Nakumoro Telecom",
+    "order": 2,
+    "x": -559,
+    "y": 56,
+    "width": 128,
+    "height": 23
+  },
+  {
+    "testId": "book-subheader",
+    "order": 3,
+    "x": -559,
+    "y": 86,
+    "width": 770,
+    "height": 20
+  },
+  {
+    "testId": "CircleIcon",
+    "order": 4,
+    "x": -514,
+    "y": 91,
+    "width": 9,
+    "height": 9
+  },
+  {
+    "testId": "CircleIcon",
+    "order": 5,
+    "x": -373,
+    "y": 91,
+    "width": 9,
+    "height": 9
+  },
+  {
+    "testId": "CircleIcon",
+    "order": 6,
+    "x": -322,
+    "y": 91,
+    "width": 9,
+    "height": 9
+  },
+  {
+    "testId": "timeElapsed",
+    "order": 7,
+    "x": -306,
+    "y": 86,
+    "width": 220,
+    "height": 20
+  },
+  {
+    "testId": "book-status-section",
+    "order": 8,
+    "x": -559,
+    "y": 153,
+    "width": 770,
+    "height": 215
+  },
+  {
+    "testId": "status-section",
+    "order": 9,
+    "x": -574,
+    "y": 153,
+    "width": 186,
+    "height": 45
+  },
+  {
+    "testId": "book-refresh-status",
+    "order": 10,
+    "x": -574,
+    "y": 153,
+    "width": 186,
+    "height": 45
+  },
+  {
+    "testId": "refresh-status-icon",
+    "order": 11,
+    "x": -559,
+    "y": 170,
+    "width": 10,
+    "height": 10
+  },
+  {
+    "testId": "refresh-status-title",
+    "order": 12,
+    "x": -537,
+    "y": 167,
+    "width": 39,
+    "height": 17
+  },
+  {
+    "testId": "refresh-status-text",
+    "order": 13,
+    "x": -503,
+    "y": 166,
+    "width": 100,
+    "height": 19
+  },
+  {
+    "testId": "validation-section",
+    "order": 14,
+    "x": -377,
+    "y": 153,
+    "width": 105,
+    "height": 45
+  },
+  {
+    "testId": "cancel-icon",
+    "order": 15,
+    "x": -362,
+    "y": 166,
+    "width": 19,
+    "height": 19
+  },
+  {
+    "testId": "error-count",
+    "order": 16,
+    "x": -340,
+    "y": 166,
+    "width": 15,
+    "height": 20
+  },
+  {
+    "testId": "warning-icon",
+    "order": 17,
+    "x": -317,
+    "y": 166,
+    "width": 19,
+    "height": 19
+  },
+  {
+    "testId": "warning-count",
+    "order": 18,
+    "x": -294,
+    "y": 166,
+    "width": 15,
+    "height": 20
+  },
+  {
+    "testId": "trial-balance-title",
+    "order": 19,
+    "x": -559,
+    "y": 205,
+    "width": 134,
+    "height": 23
+  },
+  {
+    "testId": "trial-balance-entry",
+    "order": 20,
+    "x": -425,
+    "y": 198,
+    "width": 72,
+    "height": 23
+  },
+  {
+    "testId": "paste-icon",
+    "order": 21,
+    "x": -425,
+    "y": 198,
+    "width": 23,
+    "height": 23
+  },
+  {
+    "testId": "trial-balance-label",
+    "order": 22,
+    "x": -399,
+    "y": 198,
+    "width": 46,
+    "height": 23
+  },
+  {
+    "testId": "trial-balance-entry",
+    "order": 23,
+    "x": -353,
+    "y": 198,
+    "width": 110,
+    "height": 23
+  },
+  {
+    "testId": "paste-icon",
+    "order": 24,
+    "x": -353,
+    "y": 198,
+    "width": 23,
+    "height": 23
+  },
+  {
+    "testId": "trial-balance-label",
+    "order": 25,
+    "x": -327,
+    "y": 198,
+    "width": 83,
+    "height": 23
+  },
+  {
+    "testId": "trial-balance-entry",
+    "order": 26,
+    "x": -244,
+    "y": 198,
+    "width": 107,
+    "height": 23
+  },
+  {
+    "testId": "paste-icon",
+    "order": 27,
+    "x": -244,
+    "y": 198,
+    "width": 23,
+    "height": 23
+  },
+  {
+    "testId": "trial-balance-label",
+    "order": 28,
+    "x": -217,
+    "y": 198,
+    "width": 81,
+    "height": 23
+  },
+  {
+    "testId": "trend-section",
+    "order": 29,
+    "x": -559,
+    "y": 243,
+    "width": 770,
+    "height": 125
+  },
+  {
+    "testId": "go-to-overview-btn",
+    "order": 30,
+    "x": -559,
+    "y": 390,
+    "width": 770,
+    "height": 40
+  },
+  {
+    "testId": "button-label",
+    "order": 31,
+    "x": -220,
+    "y": 401,
+    "width": 93,
+    "height": 19
+  }
+]

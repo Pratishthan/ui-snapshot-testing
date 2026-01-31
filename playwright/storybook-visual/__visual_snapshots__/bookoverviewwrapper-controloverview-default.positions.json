@@ -1,0 +1,26 @@
+[
+  {
+    "testId": "amount",
+    "order": 0,
+    "x": 744,
+    "y": 57,
+    "width": 41,
+    "height": 16
+  },
+  {
+    "testId": "amount",
+    "order": 1,
+    "x": 744,
+    "y": 85,
+    "width": 41,
+    "height": 16
+  },
+  {
+    "testId": "tbValueMatching",
+    "order": 2,
+    "x": 279,
+    "y": 127,
+    "width": 241,
+    "height": 20
+  }
+]

@@ -1,0 +1,146 @@
+[
+  {
+    "testId": "book-table-item-12332",
+    "order": 0,
+    "x": 15,
+    "y": 15,
+    "width": 1134,
+    "height": 56
+  },
+  {
+    "testId": "entity-name",
+    "order": 1,
+    "x": 32,
+    "y": 24,
+    "width": 192,
+    "height": 38
+  },
+  {
+    "testId": "freeze-icon",
+    "order": 2,
+    "x": 242,
+    "y": 35,
+    "width": 12,
+    "height": 12
+  },
+  {
+    "testId": "short-name",
+    "order": 3,
+    "x": 272,
+    "y": 33,
+    "width": 150,
+    "height": 19
+  },
+  {
+    "testId": "bookId",
+    "order": 4,
+    "x": 440,
+    "y": 33,
+    "width": 38,
+    "height": 19
+  },
+  {
+    "testId": "bookType",
+    "order": 5,
+    "x": 496,
+    "y": 33,
+    "width": 80,
+    "height": 19
+  },
+  {
+    "testId": "currency",
+    "order": 6,
+    "x": 594,
+    "y": 32,
+    "width": 70,
+    "height": 21
+  },
+  {
+    "testId": "cancel-icon",
+    "order": 7,
+    "x": 688,
+    "y": 33,
+    "width": 19,
+    "height": 19
+  },
+  {
+    "testId": "error-count",
+    "order": 8,
+    "x": 711,
+    "y": 33,
+    "width": 15,
+    "height": 20
+  },
+  {
+    "testId": "warning-icon",
+    "order": 9,
+    "x": 733,
+    "y": 33,
+    "width": 19,
+    "height": 19
+  },
+  {
+    "testId": "warning-count",
+    "order": 10,
+    "x": 756,
+    "y": 33,
+    "width": 15,
+    "height": 20
+  },
+  {
+    "testId": "book-refresh-status",
+    "order": 11,
+    "x": 779,
+    "y": 20,
+    "width": 143,
+    "height": 45
+  },
+  {
+    "testId": "refresh-status-icon",
+    "order": 12,
+    "x": 794,
+    "y": 37,
+    "width": 11,
+    "height": 11
+  },
+  {
+    "testId": "refresh-status-text",
+    "order": 13,
+    "x": 809,
+    "y": 33,
+    "width": 97,
+    "height": 19
+  },
+  {
+    "testId": "refresh",
+    "order": 14,
+    "x": 930,
+    "y": 33,
+    "width": 123,
+    "height": 19
+  },
+  {
+    "testId": "schedule",
+    "order": 15,
+    "x": 1072,
+    "y": 31,
+    "width": 24,
+    "height": 24
+  },
+  {
+    "testId": "more-options-menu",
+    "order": 16,
+    "x": 1113,
+    "y": 29,
+    "width": 27,
+    "height": 27
+  },
+  {
+    "testId": "MoreVertIcon",
+    "order": 17,
+    "x": 1117,
+    "y": 33,
+    "width": 19,
+    "height": 19
+  }
+]

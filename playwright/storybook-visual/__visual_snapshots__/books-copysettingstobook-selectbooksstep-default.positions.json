@@ -1,0 +1,162 @@
+[
+  {
+    "testId": "select-books-grid",
+    "order": 0,
+    "x": 23,
+    "y": 45,
+    "width": 755,
+    "height": 562
+  },
+  {
+    "testId": "custom-toolbar",
+    "order": 1,
+    "x": 24,
+    "y": 46,
+    "width": 753,
+    "height": 0
+  },
+  {
+    "testId": "toolbar-title",
+    "order": 2,
+    "x": 24,
+    "y": 46,
+    "width": 0,
+    "height": 0
+  },
+  {
+    "testId": "CheckBoxOutlineBlankIcon",
+    "order": 3,
+    "x": 37,
+    "y": 47,
+    "width": 23,
+    "height": 23
+  },
+  {
+    "testId": "SeparatorIcon",
+    "order": 4,
+    "x": 62,
+    "y": 47,
+    "width": 23,
+    "height": 23
+  },
+  {
+    "testId": "ArrowUpwardIcon",
+    "order": 5,
+    "x": 131,
+    "y": 50,
+    "width": 17,
+    "height": 17
+  },
+  {
+    "testId": "SeparatorIcon",
+    "order": 6,
+    "x": 212,
+    "y": 47,
+    "width": 23,
+    "height": 23
+  },
+  {
+    "testId": "ArrowUpwardIcon",
+    "order": 7,
+    "x": 307,
+    "y": 50,
+    "width": 17,
+    "height": 17
+  },
+  {
+    "testId": "SeparatorIcon",
+    "order": 8,
+    "x": 512,
+    "y": 47,
+    "width": 23,
+    "height": 23
+  },
+  {
+    "testId": "ArrowUpwardIcon",
+    "order": 9,
+    "x": 604,
+    "y": 50,
+    "width": 17,
+    "height": 17
+  },
+  {
+    "testId": "SeparatorIcon",
+    "order": 10,
+    "x": 762,
+    "y": 47,
+    "width": 23,
+    "height": 23
+  },
+  {
+    "testId": "ArrowUpwardIcon",
+    "order": 11,
+    "x": 881,
+    "y": 50,
+    "width": 17,
+    "height": 17
+  },
+  {
+    "testId": "SeparatorIcon",
+    "order": 12,
+    "x": 912,
+    "y": 47,
+    "width": 23,
+    "height": 23
+  },
+  {
+    "testId": "ArrowUpwardIcon",
+    "order": 13,
+    "x": 1019,
+    "y": 50,
+    "width": 17,
+    "height": 17
+  },
+  {
+    "testId": "SeparatorIcon",
+    "order": 14,
+    "x": 1062,
+    "y": 47,
+    "width": 23,
+    "height": 23
+  },
+  {
+    "testId": "CheckBoxOutlineBlankIcon",
+    "order": 15,
+    "x": 37,
+    "y": 127,
+    "width": 23,
+    "height": 23
+  },
+  {
+    "testId": "CheckBoxOutlineBlankIcon",
+    "order": 16,
+    "x": 37,
+    "y": 156,
+    "width": 23,
+    "height": 23
+  },
+  {
+    "testId": "CheckBoxOutlineBlankIcon",
+    "order": 17,
+    "x": 37,
+    "y": 185,
+    "width": 23,
+    "height": 23
+  },
+  {
+    "testId": "CheckBoxOutlineBlankIcon",
+    "order": 18,
+    "x": 37,
+    "y": 214,
+    "width": 23,
+    "height": 23
+  },
+  {
+    "testId": "CheckBoxOutlineBlankIcon",
+    "order": 19,
+    "x": 37,
+    "y": 243,
+    "width": 23,
+    "height": 23
+  }
+]

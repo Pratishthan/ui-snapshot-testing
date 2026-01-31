@@ -1,0 +1,130 @@
+[
+  {
+    "testId": "book-navigation-footer",
+    "order": 0,
+    "x": 261,
+    "y": 265,
+    "width": 279,
+    "height": 70
+  },
+  {
+    "testId": "analyse-button",
+    "order": 1,
+    "x": 261,
+    "y": 265,
+    "width": 64,
+    "height": 70
+  },
+  {
+    "testId": "button-icon",
+    "order": 2,
+    "x": 282,
+    "y": 278,
+    "width": 23,
+    "height": 30
+  },
+  {
+    "testId": "SignalCellularAltRoundedIcon",
+    "order": 3,
+    "x": 282,
+    "y": 278,
+    "width": 23,
+    "height": 23
+  },
+  {
+    "testId": "button-label",
+    "order": 4,
+    "x": 270,
+    "y": 308,
+    "width": 46,
+    "height": 19
+  },
+  {
+    "testId": "prepare-button",
+    "order": 5,
+    "x": 332,
+    "y": 265,
+    "width": 64,
+    "height": 70
+  },
+  {
+    "testId": "button-icon",
+    "order": 6,
+    "x": 353,
+    "y": 278,
+    "width": 23,
+    "height": 30
+  },
+  {
+    "testId": "FileUploadOutlinedIcon",
+    "order": 7,
+    "x": 353,
+    "y": 278,
+    "width": 23,
+    "height": 23
+  },
+  {
+    "testId": "button-label",
+    "order": 8,
+    "x": 341,
+    "y": 308,
+    "width": 46,
+    "height": 19
+  },
+  {
+    "testId": "configure-button",
+    "order": 9,
+    "x": 404,
+    "y": 265,
+    "width": 64,
+    "height": 70
+  },
+  {
+    "testId": "button-icon",
+    "order": 10,
+    "x": 421,
+    "y": 282,
+    "width": 30,
+    "height": 23
+  },
+  {
+    "testId": "TuneRoundedIcon",
+    "order": 11,
+    "x": 428,
+    "y": 282,
+    "width": 23,
+    "height": 23
+  },
+  {
+    "testId": "button-label",
+    "order": 12,
+    "x": 404,
+    "y": 308,
+    "width": 63,
+    "height": 19
+  },
+  {
+    "testId": "tasks-button",
+    "order": 13,
+    "x": 475,
+    "y": 265,
+    "width": 64,
+    "height": 70
+  },
+  {
+    "testId": "button-icon",
+    "order": 14,
+    "x": 497,
+    "y": 277,
+    "width": 21,
+    "height": 31
+  },
+  {
+    "testId": "button-label",
+    "order": 15,
+    "x": 492,
+    "y": 309,
+    "width": 31,
+    "height": 19
+  }
+]

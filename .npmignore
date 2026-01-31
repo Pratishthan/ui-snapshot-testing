@@ -1,0 +1,22 @@
+# Development & Testing
+__tests__/
+coverage/
+examples/
+docs_internal/
+scripts/
+
+# Dependencies
+node_modules/
+package-lock.json
+
+# Build & Config
+jest.config.js
+.gitignore
+.DS_Store
+
+# Temporary / Generated
+playwright/storybook-visual/__visual_snapshots__/
+playwright/report/
+test-results/
+.stories-cache.json
+*.log

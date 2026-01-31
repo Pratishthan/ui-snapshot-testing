@@ -1,0 +1,34 @@
+[
+  {
+    "testId": "card-accordion",
+    "order": 0,
+    "x": 15,
+    "y": 15,
+    "width": 770,
+    "height": 299
+  },
+  {
+    "testId": "card-body-container",
+    "order": 1,
+    "x": 15,
+    "y": 15,
+    "width": 770,
+    "height": 299
+  },
+  {
+    "testId": "card-body-0",
+    "order": 2,
+    "x": 15,
+    "y": 15,
+    "width": 770,
+    "height": 299
+  },
+  {
+    "testId": "card-header-0",
+    "order": 3,
+    "x": 16,
+    "y": 16,
+    "width": 768,
+    "height": 77
+  }
+]

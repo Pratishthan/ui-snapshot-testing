@@ -1,0 +1,250 @@
+/**
+ * Update Command - Update visual test snapshots
+ */
+
+import { spawn } from "child_process";
+import chalk from "chalk";
+import enquirer from "enquirer";
+import path from "path";
+import fs from "fs";
+import { loadConfig } from "../../config-loader.js";
+import { readFailuresFromJsonl } from "../../lib/failure-handler.js";
+import {
+  fetchStoriesFromStorybook,
+  sanitizeSnapshotName,
+} from "../../lib/story-discovery.js";
+import {
+  generateTestFiles,
+  cleanupTestFiles,
+} from "../../lib/test-runner-utils.js";
+
+export const updateCommand = (yargs) => {
+  yargs.command(
+    "update [options]",
+    "Update visual test snapshots",
+    (yargs) => {
+      return yargs
+        .option("incremental", {
+          type: "boolean",
+          description: "Only update missing snapshots",
+          default: false,
+        })
+        .option("interactive", {
+          alias: "i",
+          type: "boolean",
+          description: "Interactively select which snapshots to update",
+          default: false,
+        })
+        .option("story-ids", {
+          type: "string",
+          description: "Comma-separated story IDs to update",
+        })
+        .option("config", {
+          alias: "c",
+          type: "string",
+          description: "Path to config file",
+        })
+        .example("$0 update", "Update all snapshots")
+        .example("$0 update --incremental", "Update only missing snapshots")
+        .example(
+          "$0 update --interactive",
+          "Interactively select snapshots to update",
+        )
+        .example(
+          "$0 update --story-ids button--default,input--error",
+          "Update specific stories",
+        );
+    },
+    async (argv) => {
+      try {
+        console.log(chalk.blue("📸 Updating visual test snapshots...\n"));
+
+        const config = await loadConfig({ configFile: argv.config });
+
+        let storyIds = [];
+
+        // Interactive mode
+        if (argv.interactive) {
+          const failuresFile = path.join(
+            process.cwd(),
+            config.paths.logsDir,
+            "visual-test-failures.jsonl",
+          );
+          const failures = await readFailuresFromJsonl(failuresFile);
+
+          if (failures.length === 0) {
+            console.log(chalk.yellow("No failures found. Nothing to update."));
+            return;
+          }
+
+          const choices = failures.map((f) => {
+            return {
+              name: f.id,
+              message: f.id,
+              value: f.id,
+            };
+          });
+
+          const { selectedStories } = await enquirer.prompt({
+            type: "multiselect",
+            name: "selectedStories",
+            message: "Select stories to update:",
+            choices,
+            result(names) {
+              return this.map(names);
+            },
+          });
+
+          storyIds = Object.keys(selectedStories);
+
+          if (storyIds.length === 0) {
+            console.log(chalk.yellow("No stories selected. Exiting."));
+            return;
+          }
+
+          console.log(
+            chalk.gray(`\nSelected ${storyIds.length} stories for update\n`),
+          );
+        } else if (argv.storyIds) {
+          storyIds = argv.storyIds.split(",").map((id) => id.trim());
+        }
+
+        if (storyIds.length > 0) {
+          config.filters = config.filters || {};
+          config.filters.storyIds = storyIds;
+        }
+
+        // Fetch stories
+        console.log(chalk.blue("🔍 Discovering stories..."));
+
+        // In incremental update mode, we need to fetch ALL matching stories first,
+        // then filter for those that are missing snapshots.
+        // In normal update mode, we usually only want to update EXISTING snapshots (default behavior).
+
+        const includeAllForFiltering = !!argv.incremental;
+        let stories = await fetchStoriesFromStorybook(
+          config,
+          includeAllForFiltering,
+        ); // true = include match even if no snapshot
+
+        if (argv.incremental) {
+          console.log(
+            chalk.gray(
+              `Checking ${stories.length} stories for missing snapshots...`,
+            ),
+          );
+          const snapshotDir = path.join(
+            process.cwd(),
+            config.paths.snapshotsDir,
+          );
+
+          stories = stories.filter((story) => {
+            const baseName = sanitizeSnapshotName(story.id);
+            const imagePath = path.join(snapshotDir, `${baseName}.png`);
+            const jsonPath = path.join(
+              snapshotDir,
+              `${baseName}.positions.json`,
+            );
+
+            // Check config to see what should exist
+            // Defaults to true if undefined
+            const imageEnabled = config.snapshot?.image?.enabled !== false;
+            const positionEnabled =
+              config.snapshot?.position?.enabled !== false;
+
+            const imageMissing = imageEnabled && !fs.existsSync(imagePath);
+            const jsonMissing = positionEnabled && !fs.existsSync(jsonPath);
+
+            // In incremental mode, we want to run the test if ANYTHING is missing
+            return imageMissing || jsonMissing;
+          });
+
+          if (stories.length === 0) {
+            console.log(
+              chalk.green("✨ No missing snapshots found. Nothing to update."),
+            );
+            return;
+          }
+        }
+
+        console.log(
+          chalk.green(`✅ Found ${stories.length} stories to update`),
+        );
+
+        // Generate test files
+        const { dataFile, specFile } = generateTestFiles(config, stories);
+
+        // Build Playwright command
+        const playwrightArgs = [
+          "test",
+          specFile,
+          `--config=${config.paths.playwrightConfig}`,
+          `--config=${config.paths.playwrightConfig}`,
+          config.playwrightConfig?.project
+            ? `--project=${config.playwrightConfig.project}`
+            : "--project=chromium",
+          "--update-snapshots",
+        ];
+
+        // Set environment variables
+        const env = {
+          ...process.env,
+          UPDATE_SNAPSHOTS: "1",
+          VISUAL_TESTS_DATA_FILE: dataFile,
+        };
+
+        if (argv.incremental) {
+          env.INCREMENTAL_UPDATE_MODE = "1";
+        }
+
+        if (storyIds.length > 0) {
+          env.STORY_IDS = storyIds.join(",");
+          console.log(
+            chalk.gray(`Updating ${storyIds.length} specific stories\n`),
+          );
+        }
+
+        // Run Playwright
+        // Resolve playwright path locally to avoid dependency on global npx
+        const playwrightPath = path.resolve(
+          process.cwd(),
+          "node_modules",
+          ".bin",
+          "playwright",
+        );
+
+        const executable = fs.existsSync(playwrightPath)
+          ? playwrightPath
+          : "npx";
+
+        const args =
+          executable === playwrightPath
+            ? ["test", ...playwrightArgs.slice(1)]
+            : ["playwright", ...playwrightArgs];
+
+        // Run Playwright
+        const playwrightProcess = spawn(executable, args, {
+          stdio: "inherit",
+          shell: false, // Security: Disable shell to prevent command injection
+          env,
+        });
+
+        const exitCode = await new Promise((resolve) => {
+          playwrightProcess.on("exit", (code) => resolve(code || 0));
+        });
+
+        if (exitCode === 0) {
+          console.log(chalk.green("\n✅ Snapshots updated successfully"));
+        } else {
+          console.log(chalk.red("\n❌ Snapshot update failed"));
+          process.exit(exitCode);
+        }
+        // Clean up temp files
+        cleanupTestFiles({ dataFile, specFile });
+      } catch (error) {
+        console.error(chalk.red("Error updating snapshots:"), error.message);
+        process.exit(1);
+      }
+    },
+  );
+};

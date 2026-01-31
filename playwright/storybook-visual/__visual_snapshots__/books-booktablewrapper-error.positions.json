@@ -1,0 +1,226 @@
+[
+  {
+    "testId": "book-table-wrapper",
+    "order": 0,
+    "x": 0,
+    "y": 0,
+    "width": 800,
+    "height": 600
+  },
+  {
+    "testId": "entities-title",
+    "order": 1,
+    "x": 28,
+    "y": 15,
+    "width": 120,
+    "height": 30
+  },
+  {
+    "testId": "search-input",
+    "order": 2,
+    "x": 28,
+    "y": 53,
+    "width": 744,
+    "height": 30
+  },
+  {
+    "testId": "bsq-icon-button",
+    "order": 3,
+    "x": 34,
+    "y": 52,
+    "width": 32,
+    "height": 32
+  },
+  {
+    "testId": "filter-by-label",
+    "order": 4,
+    "x": 28,
+    "y": 144,
+    "width": 52,
+    "height": 19
+  },
+  {
+    "testId": "taxonomy-dropdown",
+    "order": 5,
+    "x": 96,
+    "y": 137,
+    "width": 163,
+    "height": 30
+  },
+  {
+    "testId": "ExpandMoreOutlinedIcon",
+    "order": 6,
+    "x": 229,
+    "y": 140,
+    "width": 23,
+    "height": 23
+  },
+  {
+    "testId": "scenario-dropdown",
+    "order": 7,
+    "x": 282,
+    "y": 137,
+    "width": 120,
+    "height": 30
+  },
+  {
+    "testId": "ExpandMoreOutlinedIcon",
+    "order": 8,
+    "x": 373,
+    "y": 140,
+    "width": 23,
+    "height": 23
+  },
+  {
+    "testId": "settings-button",
+    "order": 9,
+    "x": 28,
+    "y": 91,
+    "width": 40,
+    "height": 30
+  },
+  {
+    "testId": "export-button",
+    "order": 10,
+    "x": 72,
+    "y": 91,
+    "width": 90,
+    "height": 30
+  },
+  {
+    "testId": "button-label",
+    "order": 11,
+    "x": 83,
+    "y": 96,
+    "width": 39,
+    "height": 20
+  },
+  {
+    "testId": "button-icon",
+    "order": 12,
+    "x": 134,
+    "y": 95,
+    "width": 17,
+    "height": 26
+  },
+  {
+    "testId": "FileDownloadOutlinedIcon",
+    "order": 13,
+    "x": 134,
+    "y": 97,
+    "width": 17,
+    "height": 17
+  },
+  {
+    "testId": "book-table-container",
+    "order": 14,
+    "x": 0,
+    "y": 194,
+    "width": 845,
+    "height": 406
+  },
+  {
+    "testId": "book-table-header-entity_name",
+    "order": 15,
+    "x": 23,
+    "y": 194,
+    "width": 98,
+    "height": 47
+  },
+  {
+    "testId": "book-table-header-freeze_period",
+    "order": 16,
+    "x": 120,
+    "y": 194,
+    "width": 22,
+    "height": 47
+  },
+  {
+    "testId": "book-table-header-short_name",
+    "order": 17,
+    "x": 142,
+    "y": 194,
+    "width": 94,
+    "height": 47
+  },
+  {
+    "testId": "book-table-header-book_id",
+    "order": 18,
+    "x": 236,
+    "y": 194,
+    "width": 71,
+    "height": 47
+  },
+  {
+    "testId": "book-table-header-book_type",
+    "order": 19,
+    "x": 308,
+    "y": 194,
+    "width": 95,
+    "height": 47
+  },
+  {
+    "testId": "type-filter-icon-button",
+    "order": 20,
+    "x": 348,
+    "y": 203,
+    "width": 28,
+    "height": 28
+  },
+  {
+    "testId": "book-table-header-reporting_currency",
+    "order": 21,
+    "x": 403,
+    "y": 194,
+    "width": 79,
+    "height": 47
+  },
+  {
+    "testId": "book-table-header-validation_status",
+    "order": 22,
+    "x": 482,
+    "y": 194,
+    "width": 84,
+    "height": 47
+  },
+  {
+    "testId": "book-table-header-status",
+    "order": 23,
+    "x": 565,
+    "y": 194,
+    "width": 60,
+    "height": 47
+  },
+  {
+    "testId": "book-table-header-completed_on",
+    "order": 24,
+    "x": 626,
+    "y": 194,
+    "width": 97,
+    "height": 47
+  },
+  {
+    "testId": "book-table-header-leaf_node",
+    "order": 25,
+    "x": 723,
+    "y": 194,
+    "width": 77,
+    "height": 47
+  },
+  {
+    "testId": "book-table-header-id",
+    "order": 26,
+    "x": 800,
+    "y": 194,
+    "width": 22,
+    "height": 47
+  },
+  {
+    "testId": "book-table-error-message",
+    "order": 27,
+    "x": 23,
+    "y": 241,
+    "width": 800,
+    "height": 79
+  }
+]

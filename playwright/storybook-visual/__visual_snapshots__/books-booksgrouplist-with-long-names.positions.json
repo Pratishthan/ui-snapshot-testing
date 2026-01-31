@@ -1,0 +1,274 @@
+[
+  {
+    "testId": "all-books-text",
+    "order": 0,
+    "x": 15,
+    "y": 29,
+    "width": 54,
+    "height": 21
+  },
+  {
+    "testId": "toggle-expand-collapse",
+    "order": 1,
+    "x": 700,
+    "y": 23,
+    "width": 84,
+    "height": 35
+  },
+  {
+    "testId": "button-label",
+    "order": 2,
+    "x": 708,
+    "y": 29,
+    "width": 68,
+    "height": 23
+  },
+  {
+    "testId": "accordion-1",
+    "order": 3,
+    "x": 15,
+    "y": 68,
+    "width": 764,
+    "height": 296
+  },
+  {
+    "testId": "truncated-short-name",
+    "order": 4,
+    "x": 75,
+    "y": 82,
+    "width": 100,
+    "height": 22
+  },
+  {
+    "testId": "ExpandMoreIcon",
+    "order": 5,
+    "x": 738,
+    "y": 77,
+    "width": 33,
+    "height": 33
+  },
+  {
+    "testId": "book-list-item-1",
+    "order": 6,
+    "x": 40,
+    "y": 125,
+    "width": 714,
+    "height": 222
+  },
+  {
+    "testId": "bookId",
+    "order": 7,
+    "x": 40,
+    "y": 133,
+    "width": 714,
+    "height": 23
+  },
+  {
+    "testId": "bookType",
+    "order": 8,
+    "x": 40,
+    "y": 168,
+    "width": 714,
+    "height": 21
+  },
+  {
+    "testId": "taxonomy",
+    "order": 9,
+    "x": 40,
+    "y": 201,
+    "width": 714,
+    "height": 21
+  },
+  {
+    "testId": "currency",
+    "order": 10,
+    "x": 40,
+    "y": 234,
+    "width": 38,
+    "height": 68
+  },
+  {
+    "testId": "progress-bar",
+    "order": 11,
+    "x": 419,
+    "y": 320,
+    "width": 286,
+    "height": 10
+  },
+  {
+    "testId": "remaining",
+    "order": 12,
+    "x": 713,
+    "y": 313,
+    "width": 41,
+    "height": 23
+  },
+  {
+    "testId": "accordion-2",
+    "order": 13,
+    "x": 15,
+    "y": 372,
+    "width": 764,
+    "height": 296
+  },
+  {
+    "testId": "truncated-short-name",
+    "order": 14,
+    "x": 75,
+    "y": 386,
+    "width": 100,
+    "height": 22
+  },
+  {
+    "testId": "ExpandMoreIcon",
+    "order": 15,
+    "x": 738,
+    "y": 381,
+    "width": 33,
+    "height": 33
+  },
+  {
+    "testId": "book-list-item-2",
+    "order": 16,
+    "x": 40,
+    "y": 429,
+    "width": 714,
+    "height": 222
+  },
+  {
+    "testId": "bookId",
+    "order": 17,
+    "x": 40,
+    "y": 437,
+    "width": 714,
+    "height": 23
+  },
+  {
+    "testId": "bookType",
+    "order": 18,
+    "x": 40,
+    "y": 472,
+    "width": 714,
+    "height": 21
+  },
+  {
+    "testId": "taxonomy",
+    "order": 19,
+    "x": 40,
+    "y": 505,
+    "width": 714,
+    "height": 21
+  },
+  {
+    "testId": "currency",
+    "order": 20,
+    "x": 40,
+    "y": 538,
+    "width": 38,
+    "height": 68
+  },
+  {
+    "testId": "lock-icon",
+    "order": 21,
+    "x": 85,
+    "y": 562,
+    "width": 19,
+    "height": 19
+  },
+  {
+    "testId": "progress-bar",
+    "order": 22,
+    "x": 419,
+    "y": 623,
+    "width": 286,
+    "height": 10
+  },
+  {
+    "testId": "remaining",
+    "order": 23,
+    "x": 713,
+    "y": 617,
+    "width": 41,
+    "height": 23
+  },
+  {
+    "testId": "accordion-3",
+    "order": 24,
+    "x": 15,
+    "y": 676,
+    "width": 764,
+    "height": 296
+  },
+  {
+    "testId": "truncated-short-name",
+    "order": 25,
+    "x": 75,
+    "y": 690,
+    "width": 100,
+    "height": 22
+  },
+  {
+    "testId": "ExpandMoreIcon",
+    "order": 26,
+    "x": 738,
+    "y": 685,
+    "width": 33,
+    "height": 33
+  },
+  {
+    "testId": "book-list-item-3",
+    "order": 27,
+    "x": 40,
+    "y": 733,
+    "width": 714,
+    "height": 222
+  },
+  {
+    "testId": "bookId",
+    "order": 28,
+    "x": 40,
+    "y": 741,
+    "width": 714,
+    "height": 23
+  },
+  {
+    "testId": "bookType",
+    "order": 29,
+    "x": 40,
+    "y": 776,
+    "width": 714,
+    "height": 21
+  },
+  {
+    "testId": "taxonomy",
+    "order": 30,
+    "x": 40,
+    "y": 809,
+    "width": 714,
+    "height": 21
+  },
+  {
+    "testId": "currency",
+    "order": 31,
+    "x": 40,
+    "y": 842,
+    "width": 38,
+    "height": 68
+  },
+  {
+    "testId": "progress-bar",
+    "order": 32,
+    "x": 419,
+    "y": 927,
+    "width": 286,
+    "height": 10
+  },
+  {
+    "testId": "remaining",
+    "order": 33,
+    "x": 713,
+    "y": 921,
+    "width": 41,
+    "height": 23
+  }
+]

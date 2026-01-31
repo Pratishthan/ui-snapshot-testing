@@ -1,0 +1,4 @@
+.stories-cache.json
+logs/
+node_modules/
+docs_internal/

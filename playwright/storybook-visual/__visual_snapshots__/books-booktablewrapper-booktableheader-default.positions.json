@@ -1,0 +1,106 @@
+[
+  {
+    "testId": "entities-title",
+    "order": 0,
+    "x": 43,
+    "y": 30,
+    "width": 120,
+    "height": 30
+  },
+  {
+    "testId": "search-input",
+    "order": 1,
+    "x": 43,
+    "y": 68,
+    "width": 714,
+    "height": 30
+  },
+  {
+    "testId": "bsq-icon-button",
+    "order": 2,
+    "x": 49,
+    "y": 67,
+    "width": 32,
+    "height": 32
+  },
+  {
+    "testId": "filter-by-label",
+    "order": 3,
+    "x": 43,
+    "y": 159,
+    "width": 52,
+    "height": 19
+  },
+  {
+    "testId": "taxonomy-dropdown",
+    "order": 4,
+    "x": 111,
+    "y": 152,
+    "width": 142,
+    "height": 30
+  },
+  {
+    "testId": "ExpandMoreOutlinedIcon",
+    "order": 5,
+    "x": 223,
+    "y": 155,
+    "width": 23,
+    "height": 23
+  },
+  {
+    "testId": "scenario-dropdown",
+    "order": 6,
+    "x": 276,
+    "y": 152,
+    "width": 134,
+    "height": 30
+  },
+  {
+    "testId": "ExpandMoreOutlinedIcon",
+    "order": 7,
+    "x": 380,
+    "y": 155,
+    "width": 23,
+    "height": 23
+  },
+  {
+    "testId": "settings-button",
+    "order": 8,
+    "x": 43,
+    "y": 106,
+    "width": 40,
+    "height": 30
+  },
+  {
+    "testId": "export-button",
+    "order": 9,
+    "x": 87,
+    "y": 106,
+    "width": 90,
+    "height": 30
+  },
+  {
+    "testId": "button-label",
+    "order": 10,
+    "x": 98,
+    "y": 111,
+    "width": 39,
+    "height": 20
+  },
+  {
+    "testId": "button-icon",
+    "order": 11,
+    "x": 149,
+    "y": 110,
+    "width": 17,
+    "height": 26
+  },
+  {
+    "testId": "FileDownloadOutlinedIcon",
+    "order": 12,
+    "x": 149,
+    "y": 112,
+    "width": 17,
+    "height": 17
+  }
+]

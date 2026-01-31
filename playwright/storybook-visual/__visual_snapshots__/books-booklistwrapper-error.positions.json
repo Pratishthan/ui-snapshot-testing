@@ -1,0 +1,82 @@
+[
+  {
+    "testId": "breadcrumbs",
+    "order": 0,
+    "x": 28,
+    "y": 23,
+    "width": 62,
+    "height": 23
+  },
+  {
+    "testId": "breadcrumb-last-item-All Books",
+    "order": 1,
+    "x": 28,
+    "y": 23,
+    "width": 62,
+    "height": 23
+  },
+  {
+    "testId": "bsq-search-input",
+    "order": 2,
+    "x": 28,
+    "y": 53,
+    "width": 429,
+    "height": 38
+  },
+  {
+    "testId": "bsq-icon-button",
+    "order": 3,
+    "x": 34,
+    "y": 52,
+    "width": 39,
+    "height": 39
+  },
+  {
+    "testId": "SearchIcon",
+    "order": 4,
+    "x": 42,
+    "y": 60,
+    "width": 23,
+    "height": 23
+  },
+  {
+    "testId": "book-list",
+    "order": 5,
+    "x": 28,
+    "y": 98,
+    "width": 455,
+    "height": 427
+  },
+  {
+    "testId": "noBooksContainer",
+    "order": 6,
+    "x": 28,
+    "y": 98,
+    "width": 444,
+    "height": 360
+  },
+  {
+    "testId": "go-back-to-all-books",
+    "order": 7,
+    "x": 151,
+    "y": 299,
+    "width": 197,
+    "height": 49
+  },
+  {
+    "testId": "button-label",
+    "order": 8,
+    "x": 174,
+    "y": 314,
+    "width": 152,
+    "height": 19
+  },
+  {
+    "testId": "book-details",
+    "order": 9,
+    "x": 500,
+    "y": 0,
+    "width": 300,
+    "height": 547
+  }
+]

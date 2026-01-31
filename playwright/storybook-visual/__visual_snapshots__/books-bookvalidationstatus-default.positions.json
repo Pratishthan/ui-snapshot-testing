@@ -1,0 +1,1034 @@
+[
+  {
+    "testId": "book-validation-status-container",
+    "order": 0,
+    "x": 15,
+    "y": 15,
+    "width": 770,
+    "height": 1250
+  },
+  {
+    "testId": "alert-section-error",
+    "order": 1,
+    "x": 15,
+    "y": 15,
+    "width": 770,
+    "height": 303
+  },
+  {
+    "testId": "alert-type-error",
+    "order": 2,
+    "x": 16,
+    "y": 16,
+    "width": 768,
+    "height": 31
+  },
+  {
+    "testId": "error-icon",
+    "order": 3,
+    "x": 24,
+    "y": 25,
+    "width": 13,
+    "height": 13
+  },
+  {
+    "testId": "alert-type-title-error",
+    "order": 4,
+    "x": 44,
+    "y": 24,
+    "width": 47,
+    "height": 16
+  },
+  {
+    "testId": "accordion-validation-102-0",
+    "order": 5,
+    "x": 16,
+    "y": 47,
+    "width": 768,
+    "height": 48
+  },
+  {
+    "testId": "rule-name-102",
+    "order": 6,
+    "x": 40,
+    "y": 62,
+    "width": 703,
+    "height": 18
+  },
+  {
+    "testId": "custom-expand-icon",
+    "order": 7,
+    "x": 757,
+    "y": 64,
+    "width": 11,
+    "height": 15
+  },
+  {
+    "testId": "message-102",
+    "order": 8,
+    "x": 40,
+    "y": 103,
+    "width": 729,
+    "height": 32
+  },
+  {
+    "testId": "accordion-validation-107-1",
+    "order": 9,
+    "x": 16,
+    "y": 95,
+    "width": 768,
+    "height": 48
+  },
+  {
+    "testId": "rule-name-107",
+    "order": 10,
+    "x": 40,
+    "y": 110,
+    "width": 703,
+    "height": 18
+  },
+  {
+    "testId": "custom-expand-icon",
+    "order": 11,
+    "x": 757,
+    "y": 112,
+    "width": 11,
+    "height": 15
+  },
+  {
+    "testId": "message-107",
+    "order": 12,
+    "x": 40,
+    "y": 159,
+    "width": 729,
+    "height": 40
+  },
+  {
+    "testId": "accordion-validation-108-2",
+    "order": 13,
+    "x": 16,
+    "y": 143,
+    "width": 768,
+    "height": 48
+  },
+  {
+    "testId": "rule-name-108",
+    "order": 14,
+    "x": 40,
+    "y": 158,
+    "width": 703,
+    "height": 18
+  },
+  {
+    "testId": "custom-expand-icon",
+    "order": 15,
+    "x": 757,
+    "y": 160,
+    "width": 11,
+    "height": 15
+  },
+  {
+    "testId": "message-108",
+    "order": 16,
+    "x": 40,
+    "y": 199,
+    "width": 729,
+    "height": 32
+  },
+  {
+    "testId": "accordion-validation-109-3",
+    "order": 17,
+    "x": 16,
+    "y": 191,
+    "width": 768,
+    "height": 48
+  },
+  {
+    "testId": "rule-name-109",
+    "order": 18,
+    "x": 40,
+    "y": 206,
+    "width": 703,
+    "height": 18
+  },
+  {
+    "testId": "custom-expand-icon",
+    "order": 19,
+    "x": 757,
+    "y": 208,
+    "width": 11,
+    "height": 15
+  },
+  {
+    "testId": "message-109",
+    "order": 20,
+    "x": 40,
+    "y": 247,
+    "width": 729,
+    "height": 32
+  },
+  {
+    "testId": "accordion-validation-110-4",
+    "order": 21,
+    "x": 16,
+    "y": 239,
+    "width": 768,
+    "height": 48
+  },
+  {
+    "testId": "rule-name-110",
+    "order": 22,
+    "x": 40,
+    "y": 254,
+    "width": 703,
+    "height": 18
+  },
+  {
+    "testId": "custom-expand-icon",
+    "order": 23,
+    "x": 757,
+    "y": 256,
+    "width": 11,
+    "height": 15
+  },
+  {
+    "testId": "message-110",
+    "order": 24,
+    "x": 40,
+    "y": 295,
+    "width": 729,
+    "height": 32
+  },
+  {
+    "testId": "accordion-validation-111-5",
+    "order": 25,
+    "x": 16,
+    "y": 287,
+    "width": 768,
+    "height": 48
+  },
+  {
+    "testId": "rule-name-111",
+    "order": 26,
+    "x": 40,
+    "y": 302,
+    "width": 703,
+    "height": 18
+  },
+  {
+    "testId": "custom-expand-icon",
+    "order": 27,
+    "x": 757,
+    "y": 304,
+    "width": 11,
+    "height": 15
+  },
+  {
+    "testId": "message-111",
+    "order": 28,
+    "x": 40,
+    "y": 343,
+    "width": 729,
+    "height": 32
+  },
+  {
+    "testId": "accordion-validation-112-6",
+    "order": 29,
+    "x": 16,
+    "y": 335,
+    "width": 768,
+    "height": 48
+  },
+  {
+    "testId": "rule-name-112",
+    "order": 30,
+    "x": 40,
+    "y": 350,
+    "width": 703,
+    "height": 18
+  },
+  {
+    "testId": "custom-expand-icon",
+    "order": 31,
+    "x": 757,
+    "y": 352,
+    "width": 11,
+    "height": 15
+  },
+  {
+    "testId": "message-112",
+    "order": 32,
+    "x": 40,
+    "y": 399,
+    "width": 729,
+    "height": 59
+  },
+  {
+    "testId": "alert-section-warning",
+    "order": 33,
+    "x": 15,
+    "y": 341,
+    "width": 770,
+    "height": 273
+  },
+  {
+    "testId": "alert-type-warning",
+    "order": 34,
+    "x": 16,
+    "y": 342,
+    "width": 768,
+    "height": 31
+  },
+  {
+    "testId": "warning-icon",
+    "order": 35,
+    "x": 24,
+    "y": 351,
+    "width": 13,
+    "height": 13
+  },
+  {
+    "testId": "alert-type-title-warning",
+    "order": 36,
+    "x": 44,
+    "y": 349,
+    "width": 58,
+    "height": 16
+  },
+  {
+    "testId": "accordion-validation-104-0",
+    "order": 37,
+    "x": 16,
+    "y": 373,
+    "width": 768,
+    "height": 48
+  },
+  {
+    "testId": "rule-name-104",
+    "order": 38,
+    "x": 40,
+    "y": 388,
+    "width": 703,
+    "height": 18
+  },
+  {
+    "testId": "custom-expand-icon",
+    "order": 39,
+    "x": 757,
+    "y": 389,
+    "width": 11,
+    "height": 15
+  },
+  {
+    "testId": "message-104",
+    "order": 40,
+    "x": 40,
+    "y": 429,
+    "width": 729,
+    "height": 176
+  },
+  {
+    "testId": "accordion-validation-113-1",
+    "order": 41,
+    "x": 16,
+    "y": 421,
+    "width": 768,
+    "height": 48
+  },
+  {
+    "testId": "rule-name-113",
+    "order": 42,
+    "x": 40,
+    "y": 436,
+    "width": 703,
+    "height": 18
+  },
+  {
+    "testId": "custom-expand-icon",
+    "order": 43,
+    "x": 757,
+    "y": 437,
+    "width": 11,
+    "height": 15
+  },
+  {
+    "testId": "message-113",
+    "order": 44,
+    "x": 40,
+    "y": 477,
+    "width": 729,
+    "height": 32
+  },
+  {
+    "testId": "accordion-validation-114-2",
+    "order": 45,
+    "x": 16,
+    "y": 469,
+    "width": 768,
+    "height": 48
+  },
+  {
+    "testId": "rule-name-114",
+    "order": 46,
+    "x": 40,
+    "y": 484,
+    "width": 703,
+    "height": 18
+  },
+  {
+    "testId": "custom-expand-icon",
+    "order": 47,
+    "x": 757,
+    "y": 485,
+    "width": 11,
+    "height": 15
+  },
+  {
+    "testId": "message-114",
+    "order": 48,
+    "x": 40,
+    "y": 525,
+    "width": 729,
+    "height": 32
+  },
+  {
+    "testId": "accordion-validation-115-3",
+    "order": 49,
+    "x": 16,
+    "y": 517,
+    "width": 768,
+    "height": 48
+  },
+  {
+    "testId": "rule-name-115",
+    "order": 50,
+    "x": 40,
+    "y": 532,
+    "width": 703,
+    "height": 18
+  },
+  {
+    "testId": "custom-expand-icon",
+    "order": 51,
+    "x": 757,
+    "y": 533,
+    "width": 11,
+    "height": 15
+  },
+  {
+    "testId": "message-115",
+    "order": 52,
+    "x": 40,
+    "y": 573,
+    "width": 729,
+    "height": 32
+  },
+  {
+    "testId": "accordion-validation-116-4",
+    "order": 53,
+    "x": 16,
+    "y": 565,
+    "width": 768,
+    "height": 48
+  },
+  {
+    "testId": "rule-name-116",
+    "order": 54,
+    "x": 40,
+    "y": 580,
+    "width": 703,
+    "height": 18
+  },
+  {
+    "testId": "custom-expand-icon",
+    "order": 55,
+    "x": 757,
+    "y": 581,
+    "width": 11,
+    "height": 15
+  },
+  {
+    "testId": "message-116",
+    "order": 56,
+    "x": 40,
+    "y": 621,
+    "width": 729,
+    "height": 32
+  },
+  {
+    "testId": "alert-section-success",
+    "order": 57,
+    "x": 15,
+    "y": 636,
+    "width": 770,
+    "height": 303
+  },
+  {
+    "testId": "alert-type-success",
+    "order": 58,
+    "x": 16,
+    "y": 637,
+    "width": 768,
+    "height": 31
+  },
+  {
+    "testId": "success-icon",
+    "order": 59,
+    "x": 24,
+    "y": 646,
+    "width": 13,
+    "height": 13
+  },
+  {
+    "testId": "alert-type-title-success",
+    "order": 60,
+    "x": 44,
+    "y": 645,
+    "width": 54,
+    "height": 16
+  },
+  {
+    "testId": "accordion-validation-105-0",
+    "order": 61,
+    "x": 16,
+    "y": 668,
+    "width": 768,
+    "height": 48
+  },
+  {
+    "testId": "rule-name-105",
+    "order": 62,
+    "x": 40,
+    "y": 683,
+    "width": 703,
+    "height": 18
+  },
+  {
+    "testId": "custom-expand-icon",
+    "order": 63,
+    "x": 757,
+    "y": 685,
+    "width": 11,
+    "height": 15
+  },
+  {
+    "testId": "no-message-105",
+    "order": 64,
+    "x": 40,
+    "y": 724,
+    "width": 729,
+    "height": 20
+  },
+  {
+    "testId": "accordion-validation-106-1",
+    "order": 65,
+    "x": 16,
+    "y": 716,
+    "width": 768,
+    "height": 48
+  },
+  {
+    "testId": "rule-name-106",
+    "order": 66,
+    "x": 40,
+    "y": 731,
+    "width": 703,
+    "height": 18
+  },
+  {
+    "testId": "custom-expand-icon",
+    "order": 67,
+    "x": 757,
+    "y": 733,
+    "width": 11,
+    "height": 15
+  },
+  {
+    "testId": "no-message-106",
+    "order": 68,
+    "x": 40,
+    "y": 772,
+    "width": 729,
+    "height": 20
+  },
+  {
+    "testId": "accordion-validation-201-2",
+    "order": 69,
+    "x": 16,
+    "y": 764,
+    "width": 768,
+    "height": 48
+  },
+  {
+    "testId": "rule-name-201",
+    "order": 70,
+    "x": 40,
+    "y": 779,
+    "width": 703,
+    "height": 18
+  },
+  {
+    "testId": "custom-expand-icon",
+    "order": 71,
+    "x": 757,
+    "y": 781,
+    "width": 11,
+    "height": 15
+  },
+  {
+    "testId": "message-201",
+    "order": 72,
+    "x": 40,
+    "y": 820,
+    "width": 729,
+    "height": 16
+  },
+  {
+    "testId": "accordion-validation-202-3",
+    "order": 73,
+    "x": 16,
+    "y": 812,
+    "width": 768,
+    "height": 48
+  },
+  {
+    "testId": "rule-name-202",
+    "order": 74,
+    "x": 40,
+    "y": 827,
+    "width": 703,
+    "height": 18
+  },
+  {
+    "testId": "custom-expand-icon",
+    "order": 75,
+    "x": 757,
+    "y": 829,
+    "width": 11,
+    "height": 15
+  },
+  {
+    "testId": "message-202",
+    "order": 76,
+    "x": 40,
+    "y": 868,
+    "width": 729,
+    "height": 16
+  },
+  {
+    "testId": "accordion-validation-203-4",
+    "order": 77,
+    "x": 16,
+    "y": 860,
+    "width": 768,
+    "height": 48
+  },
+  {
+    "testId": "rule-name-203",
+    "order": 78,
+    "x": 40,
+    "y": 875,
+    "width": 703,
+    "height": 18
+  },
+  {
+    "testId": "custom-expand-icon",
+    "order": 79,
+    "x": 757,
+    "y": 877,
+    "width": 11,
+    "height": 15
+  },
+  {
+    "testId": "message-203",
+    "order": 80,
+    "x": 40,
+    "y": 916,
+    "width": 729,
+    "height": 16
+  },
+  {
+    "testId": "accordion-validation-204-5",
+    "order": 81,
+    "x": 16,
+    "y": 908,
+    "width": 768,
+    "height": 48
+  },
+  {
+    "testId": "rule-name-204",
+    "order": 82,
+    "x": 40,
+    "y": 923,
+    "width": 703,
+    "height": 18
+  },
+  {
+    "testId": "custom-expand-icon",
+    "order": 83,
+    "x": 757,
+    "y": 925,
+    "width": 11,
+    "height": 15
+  },
+  {
+    "testId": "message-204",
+    "order": 84,
+    "x": 40,
+    "y": 964,
+    "width": 729,
+    "height": 16
+  },
+  {
+    "testId": "accordion-validation-205-6",
+    "order": 85,
+    "x": 16,
+    "y": 956,
+    "width": 768,
+    "height": 48
+  },
+  {
+    "testId": "rule-name-205",
+    "order": 86,
+    "x": 40,
+    "y": 971,
+    "width": 703,
+    "height": 18
+  },
+  {
+    "testId": "custom-expand-icon",
+    "order": 87,
+    "x": 757,
+    "y": 973,
+    "width": 11,
+    "height": 15
+  },
+  {
+    "testId": "message-205",
+    "order": 88,
+    "x": 40,
+    "y": 1012,
+    "width": 729,
+    "height": 16
+  },
+  {
+    "testId": "accordion-validation-206-7",
+    "order": 89,
+    "x": 16,
+    "y": 1004,
+    "width": 768,
+    "height": 48
+  },
+  {
+    "testId": "rule-name-206",
+    "order": 90,
+    "x": 40,
+    "y": 1019,
+    "width": 703,
+    "height": 18
+  },
+  {
+    "testId": "custom-expand-icon",
+    "order": 91,
+    "x": 757,
+    "y": 1021,
+    "width": 11,
+    "height": 15
+  },
+  {
+    "testId": "message-206",
+    "order": 92,
+    "x": 40,
+    "y": 1060,
+    "width": 729,
+    "height": 16
+  },
+  {
+    "testId": "accordion-validation-207-8",
+    "order": 93,
+    "x": 16,
+    "y": 1052,
+    "width": 768,
+    "height": 48
+  },
+  {
+    "testId": "rule-name-207",
+    "order": 94,
+    "x": 40,
+    "y": 1067,
+    "width": 703,
+    "height": 18
+  },
+  {
+    "testId": "custom-expand-icon",
+    "order": 95,
+    "x": 757,
+    "y": 1069,
+    "width": 11,
+    "height": 15
+  },
+  {
+    "testId": "message-207",
+    "order": 96,
+    "x": 40,
+    "y": 1108,
+    "width": 729,
+    "height": 16
+  },
+  {
+    "testId": "alert-section-to_be_validated",
+    "order": 97,
+    "x": 15,
+    "y": 962,
+    "width": 770,
+    "height": 303
+  },
+  {
+    "testId": "alert-type-to_be_validated",
+    "order": 98,
+    "x": 16,
+    "y": 963,
+    "width": 768,
+    "height": 31
+  },
+  {
+    "testId": "pending-icon",
+    "order": 99,
+    "x": 24,
+    "y": 972,
+    "width": 13,
+    "height": 13
+  },
+  {
+    "testId": "alert-type-title-to_be_validated",
+    "order": 100,
+    "x": 44,
+    "y": 970,
+    "width": 91,
+    "height": 16
+  },
+  {
+    "testId": "accordion-validation-301-0",
+    "order": 101,
+    "x": 16,
+    "y": 994,
+    "width": 768,
+    "height": 48
+  },
+  {
+    "testId": "rule-name-301",
+    "order": 102,
+    "x": 40,
+    "y": 1009,
+    "width": 703,
+    "height": 18
+  },
+  {
+    "testId": "custom-expand-icon",
+    "order": 103,
+    "x": 757,
+    "y": 1010,
+    "width": 11,
+    "height": 15
+  },
+  {
+    "testId": "message-301",
+    "order": 104,
+    "x": 40,
+    "y": 1050,
+    "width": 729,
+    "height": 32
+  },
+  {
+    "testId": "accordion-validation-302-1",
+    "order": 105,
+    "x": 16,
+    "y": 1042,
+    "width": 768,
+    "height": 48
+  },
+  {
+    "testId": "rule-name-302",
+    "order": 106,
+    "x": 40,
+    "y": 1057,
+    "width": 703,
+    "height": 18
+  },
+  {
+    "testId": "custom-expand-icon",
+    "order": 107,
+    "x": 757,
+    "y": 1058,
+    "width": 11,
+    "height": 15
+  },
+  {
+    "testId": "message-302",
+    "order": 108,
+    "x": 40,
+    "y": 1098,
+    "width": 729,
+    "height": 32
+  },
+  {
+    "testId": "accordion-validation-303-2",
+    "order": 109,
+    "x": 16,
+    "y": 1090,
+    "width": 768,
+    "height": 48
+  },
+  {
+    "testId": "rule-name-303",
+    "order": 110,
+    "x": 40,
+    "y": 1105,
+    "width": 703,
+    "height": 18
+  },
+  {
+    "testId": "custom-expand-icon",
+    "order": 111,
+    "x": 757,
+    "y": 1106,
+    "width": 11,
+    "height": 15
+  },
+  {
+    "testId": "message-303",
+    "order": 112,
+    "x": 40,
+    "y": 1146,
+    "width": 729,
+    "height": 32
+  },
+  {
+    "testId": "accordion-validation-304-3",
+    "order": 113,
+    "x": 16,
+    "y": 1138,
+    "width": 768,
+    "height": 48
+  },
+  {
+    "testId": "rule-name-304",
+    "order": 114,
+    "x": 40,
+    "y": 1153,
+    "width": 703,
+    "height": 18
+  },
+  {
+    "testId": "custom-expand-icon",
+    "order": 115,
+    "x": 757,
+    "y": 1154,
+    "width": 11,
+    "height": 15
+  },
+  {
+    "testId": "message-304",
+    "order": 116,
+    "x": 40,
+    "y": 1194,
+    "width": 729,
+    "height": 32
+  },
+  {
+    "testId": "accordion-validation-305-4",
+    "order": 117,
+    "x": 16,
+    "y": 1186,
+    "width": 768,
+    "height": 48
+  },
+  {
+    "testId": "rule-name-305",
+    "order": 118,
+    "x": 40,
+    "y": 1201,
+    "width": 703,
+    "height": 18
+  },
+  {
+    "testId": "custom-expand-icon",
+    "order": 119,
+    "x": 757,
+    "y": 1202,
+    "width": 11,
+    "height": 15
+  },
+  {
+    "testId": "message-305",
+    "order": 120,
+    "x": 40,
+    "y": 1242,
+    "width": 729,
+    "height": 32
+  },
+  {
+    "testId": "accordion-validation-306-5",
+    "order": 121,
+    "x": 16,
+    "y": 1234,
+    "width": 768,
+    "height": 48
+  },
+  {
+    "testId": "rule-name-306",
+    "order": 122,
+    "x": 40,
+    "y": 1249,
+    "width": 703,
+    "height": 18
+  },
+  {
+    "testId": "custom-expand-icon",
+    "order": 123,
+    "x": 757,
+    "y": 1250,
+    "width": 11,
+    "height": 15
+  },
+  {
+    "testId": "message-306",
+    "order": 124,
+    "x": 40,
+    "y": 1290,
+    "width": 729,
+    "height": 16
+  },
+  {
+    "testId": "accordion-validation-307-6",
+    "order": 125,
+    "x": 16,
+    "y": 1282,
+    "width": 768,
+    "height": 48
+  },
+  {
+    "testId": "rule-name-307",
+    "order": 126,
+    "x": 40,
+    "y": 1297,
+    "width": 703,
+    "height": 18
+  },
+  {
+    "testId": "custom-expand-icon",
+    "order": 127,
+    "x": 757,
+    "y": 1298,
+    "width": 11,
+    "height": 15
+  },
+  {
+    "testId": "message-307",
+    "order": 128,
+    "x": 40,
+    "y": 1338,
+    "width": 729,
+    "height": 32
+  }
+]

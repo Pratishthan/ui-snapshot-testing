@@ -1,0 +1,1450 @@
+[
+  {
+    "testId": "book-table-wrapper",
+    "order": 0,
+    "x": 0,
+    "y": 0,
+    "width": 800,
+    "height": 600
+  },
+  {
+    "testId": "entities-title",
+    "order": 1,
+    "x": 28,
+    "y": 15,
+    "width": 120,
+    "height": 30
+  },
+  {
+    "testId": "search-input",
+    "order": 2,
+    "x": 28,
+    "y": 53,
+    "width": 744,
+    "height": 30
+  },
+  {
+    "testId": "bsq-icon-button",
+    "order": 3,
+    "x": 34,
+    "y": 52,
+    "width": 32,
+    "height": 32
+  },
+  {
+    "testId": "filter-by-label",
+    "order": 4,
+    "x": 28,
+    "y": 144,
+    "width": 52,
+    "height": 19
+  },
+  {
+    "testId": "taxonomy-dropdown",
+    "order": 5,
+    "x": 96,
+    "y": 137,
+    "width": 163,
+    "height": 30
+  },
+  {
+    "testId": "ExpandMoreOutlinedIcon",
+    "order": 6,
+    "x": 229,
+    "y": 140,
+    "width": 23,
+    "height": 23
+  },
+  {
+    "testId": "scenario-dropdown",
+    "order": 7,
+    "x": 282,
+    "y": 137,
+    "width": 120,
+    "height": 30
+  },
+  {
+    "testId": "ExpandMoreOutlinedIcon",
+    "order": 8,
+    "x": 373,
+    "y": 140,
+    "width": 23,
+    "height": 23
+  },
+  {
+    "testId": "settings-button",
+    "order": 9,
+    "x": 28,
+    "y": 91,
+    "width": 40,
+    "height": 30
+  },
+  {
+    "testId": "export-button",
+    "order": 10,
+    "x": 72,
+    "y": 91,
+    "width": 90,
+    "height": 30
+  },
+  {
+    "testId": "button-label",
+    "order": 11,
+    "x": 83,
+    "y": 96,
+    "width": 39,
+    "height": 20
+  },
+  {
+    "testId": "button-icon",
+    "order": 12,
+    "x": 134,
+    "y": 95,
+    "width": 17,
+    "height": 26
+  },
+  {
+    "testId": "FileDownloadOutlinedIcon",
+    "order": 13,
+    "x": 134,
+    "y": 97,
+    "width": 17,
+    "height": 17
+  },
+  {
+    "testId": "book-table-container",
+    "order": 14,
+    "x": 0,
+    "y": 194,
+    "width": 845,
+    "height": 406
+  },
+  {
+    "testId": "book-table-header-entity_name",
+    "order": 15,
+    "x": 23,
+    "y": 194,
+    "width": 218,
+    "height": 48
+  },
+  {
+    "testId": "book-table-header-freeze_period",
+    "order": 16,
+    "x": 241,
+    "y": 194,
+    "width": 30,
+    "height": 48
+  },
+  {
+    "testId": "book-table-header-short_name",
+    "order": 17,
+    "x": 271,
+    "y": 194,
+    "width": 168,
+    "height": 48
+  },
+  {
+    "testId": "book-table-header-book_id",
+    "order": 18,
+    "x": 439,
+    "y": 194,
+    "width": 56,
+    "height": 48
+  },
+  {
+    "testId": "book-table-header-book_type",
+    "order": 19,
+    "x": 495,
+    "y": 194,
+    "width": 98,
+    "height": 48
+  },
+  {
+    "testId": "type-filter-icon-button",
+    "order": 20,
+    "x": 535,
+    "y": 203,
+    "width": 28,
+    "height": 28
+  },
+  {
+    "testId": "book-table-header-reporting_currency",
+    "order": 21,
+    "x": 593,
+    "y": 194,
+    "width": 88,
+    "height": 48
+  },
+  {
+    "testId": "book-table-header-validation_status",
+    "order": 22,
+    "x": 681,
+    "y": 194,
+    "width": 105,
+    "height": 48
+  },
+  {
+    "testId": "book-table-header-status",
+    "order": 23,
+    "x": 786,
+    "y": 194,
+    "width": 94,
+    "height": 48
+  },
+  {
+    "testId": "book-table-header-completed_on",
+    "order": 24,
+    "x": 880,
+    "y": 194,
+    "width": 141,
+    "height": 48
+  },
+  {
+    "testId": "book-table-header-leaf_node",
+    "order": 25,
+    "x": 1021,
+    "y": 194,
+    "width": 63,
+    "height": 48
+  },
+  {
+    "testId": "book-table-header-id",
+    "order": 26,
+    "x": 1084,
+    "y": 194,
+    "width": 45,
+    "height": 48
+  },
+  {
+    "testId": "book-table-item-12342",
+    "order": 27,
+    "x": 23,
+    "y": 242,
+    "width": 1106,
+    "height": 46
+  },
+  {
+    "testId": "entity-name",
+    "order": 28,
+    "x": 40,
+    "y": 255,
+    "width": 112,
+    "height": 19
+  },
+  {
+    "testId": "freeze-icon",
+    "order": 29,
+    "x": 250,
+    "y": 257,
+    "width": 12,
+    "height": 12
+  },
+  {
+    "testId": "short-name",
+    "order": 30,
+    "x": 280,
+    "y": 255,
+    "width": 150,
+    "height": 19
+  },
+  {
+    "testId": "bookId",
+    "order": 31,
+    "x": 448,
+    "y": 255,
+    "width": 38,
+    "height": 19
+  },
+  {
+    "testId": "bookType",
+    "order": 32,
+    "x": 504,
+    "y": 255,
+    "width": 80,
+    "height": 19
+  },
+  {
+    "testId": "currency",
+    "order": 33,
+    "x": 602,
+    "y": 254,
+    "width": 70,
+    "height": 21
+  },
+  {
+    "testId": "cancel-icon",
+    "order": 34,
+    "x": 696,
+    "y": 255,
+    "width": 19,
+    "height": 19
+  },
+  {
+    "testId": "error-count",
+    "order": 35,
+    "x": 718,
+    "y": 254,
+    "width": 15,
+    "height": 20
+  },
+  {
+    "testId": "warning-icon",
+    "order": 36,
+    "x": 741,
+    "y": 255,
+    "width": 19,
+    "height": 19
+  },
+  {
+    "testId": "warning-count",
+    "order": 37,
+    "x": 763,
+    "y": 254,
+    "width": 15,
+    "height": 20
+  },
+  {
+    "testId": "book-refresh-status",
+    "order": 38,
+    "x": 786,
+    "y": 242,
+    "width": 94,
+    "height": 45
+  },
+  {
+    "testId": "refresh-status-icon",
+    "order": 39,
+    "x": 801,
+    "y": 259,
+    "width": 11,
+    "height": 11
+  },
+  {
+    "testId": "refresh-status-text",
+    "order": 40,
+    "x": 817,
+    "y": 255,
+    "width": 48,
+    "height": 19
+  },
+  {
+    "testId": "refresh",
+    "order": 41,
+    "x": 889,
+    "y": 255,
+    "width": 123,
+    "height": 19
+  },
+  {
+    "testId": "schedule",
+    "order": 42,
+    "x": 1041,
+    "y": 252,
+    "width": 24,
+    "height": 24
+  },
+  {
+    "testId": "more-options-menu",
+    "order": 43,
+    "x": 1093,
+    "y": 251,
+    "width": 27,
+    "height": 27
+  },
+  {
+    "testId": "MoreVertIcon",
+    "order": 44,
+    "x": 1097,
+    "y": 255,
+    "width": 19,
+    "height": 19
+  },
+  {
+    "testId": "book-table-item-12333",
+    "order": 45,
+    "x": 23,
+    "y": 288,
+    "width": 1106,
+    "height": 46
+  },
+  {
+    "testId": "entity-name",
+    "order": 46,
+    "x": 40,
+    "y": 301,
+    "width": 105,
+    "height": 19
+  },
+  {
+    "testId": "short-name",
+    "order": 47,
+    "x": 280,
+    "y": 301,
+    "width": 150,
+    "height": 19
+  },
+  {
+    "testId": "bookId",
+    "order": 48,
+    "x": 448,
+    "y": 301,
+    "width": 38,
+    "height": 19
+  },
+  {
+    "testId": "bookType",
+    "order": 49,
+    "x": 504,
+    "y": 301,
+    "width": 80,
+    "height": 19
+  },
+  {
+    "testId": "currency",
+    "order": 50,
+    "x": 602,
+    "y": 300,
+    "width": 70,
+    "height": 21
+  },
+  {
+    "testId": "warning-icon",
+    "order": 51,
+    "x": 718,
+    "y": 301,
+    "width": 19,
+    "height": 19
+  },
+  {
+    "testId": "warning-count",
+    "order": 52,
+    "x": 741,
+    "y": 300,
+    "width": 15,
+    "height": 20
+  },
+  {
+    "testId": "book-refresh-status",
+    "order": 53,
+    "x": 786,
+    "y": 288,
+    "width": 94,
+    "height": 45
+  },
+  {
+    "testId": "refresh-status-icon",
+    "order": 54,
+    "x": 801,
+    "y": 305,
+    "width": 11,
+    "height": 11
+  },
+  {
+    "testId": "refresh-status-text",
+    "order": 55,
+    "x": 817,
+    "y": 301,
+    "width": 48,
+    "height": 19
+  },
+  {
+    "testId": "refresh",
+    "order": 56,
+    "x": 889,
+    "y": 301,
+    "width": 123,
+    "height": 19
+  },
+  {
+    "testId": "schedule",
+    "order": 57,
+    "x": 1041,
+    "y": 298,
+    "width": 24,
+    "height": 24
+  },
+  {
+    "testId": "more-options-menu",
+    "order": 58,
+    "x": 1093,
+    "y": 297,
+    "width": 27,
+    "height": 27
+  },
+  {
+    "testId": "MoreVertIcon",
+    "order": 59,
+    "x": 1097,
+    "y": 301,
+    "width": 19,
+    "height": 19
+  },
+  {
+    "testId": "book-table-item-12334",
+    "order": 60,
+    "x": 23,
+    "y": 334,
+    "width": 1106,
+    "height": 46
+  },
+  {
+    "testId": "entity-name",
+    "order": 61,
+    "x": 40,
+    "y": 347,
+    "width": 127,
+    "height": 19
+  },
+  {
+    "testId": "short-name",
+    "order": 62,
+    "x": 280,
+    "y": 347,
+    "width": 150,
+    "height": 19
+  },
+  {
+    "testId": "bookId",
+    "order": 63,
+    "x": 448,
+    "y": 347,
+    "width": 38,
+    "height": 19
+  },
+  {
+    "testId": "bookType",
+    "order": 64,
+    "x": 504,
+    "y": 347,
+    "width": 80,
+    "height": 19
+  },
+  {
+    "testId": "currency",
+    "order": 65,
+    "x": 602,
+    "y": 346,
+    "width": 70,
+    "height": 21
+  },
+  {
+    "testId": "cancel-icon",
+    "order": 66,
+    "x": 718,
+    "y": 347,
+    "width": 19,
+    "height": 19
+  },
+  {
+    "testId": "error-count",
+    "order": 67,
+    "x": 741,
+    "y": 346,
+    "width": 15,
+    "height": 20
+  },
+  {
+    "testId": "book-refresh-status",
+    "order": 68,
+    "x": 786,
+    "y": 334,
+    "width": 94,
+    "height": 45
+  },
+  {
+    "testId": "refresh-status-icon",
+    "order": 69,
+    "x": 801,
+    "y": 351,
+    "width": 11,
+    "height": 11
+  },
+  {
+    "testId": "refresh-status-text",
+    "order": 70,
+    "x": 817,
+    "y": 347,
+    "width": 48,
+    "height": 19
+  },
+  {
+    "testId": "refresh",
+    "order": 71,
+    "x": 889,
+    "y": 347,
+    "width": 123,
+    "height": 19
+  },
+  {
+    "testId": "schedule",
+    "order": 72,
+    "x": 1041,
+    "y": 344,
+    "width": 24,
+    "height": 24
+  },
+  {
+    "testId": "more-options-menu",
+    "order": 73,
+    "x": 1093,
+    "y": 343,
+    "width": 27,
+    "height": 27
+  },
+  {
+    "testId": "MoreVertIcon",
+    "order": 74,
+    "x": 1097,
+    "y": 347,
+    "width": 19,
+    "height": 19
+  },
+  {
+    "testId": "book-table-item-12335",
+    "order": 75,
+    "x": 23,
+    "y": 380,
+    "width": 1106,
+    "height": 46
+  },
+  {
+    "testId": "entity-name",
+    "order": 76,
+    "x": 40,
+    "y": 393,
+    "width": 140,
+    "height": 19
+  },
+  {
+    "testId": "short-name",
+    "order": 77,
+    "x": 280,
+    "y": 393,
+    "width": 150,
+    "height": 19
+  },
+  {
+    "testId": "bookId",
+    "order": 78,
+    "x": 448,
+    "y": 393,
+    "width": 38,
+    "height": 19
+  },
+  {
+    "testId": "bookType",
+    "order": 79,
+    "x": 504,
+    "y": 393,
+    "width": 80,
+    "height": 19
+  },
+  {
+    "testId": "currency",
+    "order": 80,
+    "x": 602,
+    "y": 392,
+    "width": 70,
+    "height": 21
+  },
+  {
+    "testId": "cancel-icon",
+    "order": 81,
+    "x": 718,
+    "y": 393,
+    "width": 19,
+    "height": 19
+  },
+  {
+    "testId": "error-count",
+    "order": 82,
+    "x": 741,
+    "y": 392,
+    "width": 15,
+    "height": 20
+  },
+  {
+    "testId": "book-refresh-status",
+    "order": 83,
+    "x": 786,
+    "y": 380,
+    "width": 94,
+    "height": 45
+  },
+  {
+    "testId": "refresh-status-icon",
+    "order": 84,
+    "x": 801,
+    "y": 397,
+    "width": 11,
+    "height": 11
+  },
+  {
+    "testId": "refresh-status-text",
+    "order": 85,
+    "x": 817,
+    "y": 393,
+    "width": 48,
+    "height": 19
+  },
+  {
+    "testId": "refresh",
+    "order": 86,
+    "x": 889,
+    "y": 393,
+    "width": 123,
+    "height": 19
+  },
+  {
+    "testId": "schedule",
+    "order": 87,
+    "x": 1041,
+    "y": 390,
+    "width": 24,
+    "height": 24
+  },
+  {
+    "testId": "more-options-menu",
+    "order": 88,
+    "x": 1093,
+    "y": 389,
+    "width": 27,
+    "height": 27
+  },
+  {
+    "testId": "MoreVertIcon",
+    "order": 89,
+    "x": 1097,
+    "y": 393,
+    "width": 19,
+    "height": 19
+  },
+  {
+    "testId": "book-table-item-12336",
+    "order": 90,
+    "x": 23,
+    "y": 426,
+    "width": 1106,
+    "height": 46
+  },
+  {
+    "testId": "entity-name",
+    "order": 91,
+    "x": 40,
+    "y": 439,
+    "width": 90,
+    "height": 19
+  },
+  {
+    "testId": "short-name",
+    "order": 92,
+    "x": 280,
+    "y": 439,
+    "width": 150,
+    "height": 19
+  },
+  {
+    "testId": "bookId",
+    "order": 93,
+    "x": 448,
+    "y": 439,
+    "width": 38,
+    "height": 19
+  },
+  {
+    "testId": "bookType",
+    "order": 94,
+    "x": 504,
+    "y": 439,
+    "width": 80,
+    "height": 19
+  },
+  {
+    "testId": "currency",
+    "order": 95,
+    "x": 602,
+    "y": 438,
+    "width": 70,
+    "height": 21
+  },
+  {
+    "testId": "cancel-icon",
+    "order": 96,
+    "x": 718,
+    "y": 439,
+    "width": 19,
+    "height": 19
+  },
+  {
+    "testId": "error-count",
+    "order": 97,
+    "x": 741,
+    "y": 438,
+    "width": 15,
+    "height": 20
+  },
+  {
+    "testId": "book-refresh-status",
+    "order": 98,
+    "x": 786,
+    "y": 426,
+    "width": 94,
+    "height": 45
+  },
+  {
+    "testId": "refresh-status-icon",
+    "order": 99,
+    "x": 801,
+    "y": 443,
+    "width": 11,
+    "height": 11
+  },
+  {
+    "testId": "refresh-status-text",
+    "order": 100,
+    "x": 817,
+    "y": 439,
+    "width": 48,
+    "height": 19
+  },
+  {
+    "testId": "refresh",
+    "order": 101,
+    "x": 889,
+    "y": 439,
+    "width": 123,
+    "height": 19
+  },
+  {
+    "testId": "schedule",
+    "order": 102,
+    "x": 1041,
+    "y": 436,
+    "width": 24,
+    "height": 24
+  },
+  {
+    "testId": "more-options-menu",
+    "order": 103,
+    "x": 1093,
+    "y": 435,
+    "width": 27,
+    "height": 27
+  },
+  {
+    "testId": "MoreVertIcon",
+    "order": 104,
+    "x": 1097,
+    "y": 439,
+    "width": 19,
+    "height": 19
+  },
+  {
+    "testId": "book-table-item-12337",
+    "order": 105,
+    "x": 23,
+    "y": 472,
+    "width": 1106,
+    "height": 46
+  },
+  {
+    "testId": "entity-name",
+    "order": 106,
+    "x": 40,
+    "y": 485,
+    "width": 99,
+    "height": 19
+  },
+  {
+    "testId": "short-name",
+    "order": 107,
+    "x": 280,
+    "y": 485,
+    "width": 150,
+    "height": 19
+  },
+  {
+    "testId": "bookId",
+    "order": 108,
+    "x": 448,
+    "y": 485,
+    "width": 38,
+    "height": 19
+  },
+  {
+    "testId": "bookType",
+    "order": 109,
+    "x": 504,
+    "y": 485,
+    "width": 80,
+    "height": 19
+  },
+  {
+    "testId": "currency",
+    "order": 110,
+    "x": 602,
+    "y": 484,
+    "width": 70,
+    "height": 21
+  },
+  {
+    "testId": "cancel-icon",
+    "order": 111,
+    "x": 718,
+    "y": 485,
+    "width": 19,
+    "height": 19
+  },
+  {
+    "testId": "error-count",
+    "order": 112,
+    "x": 741,
+    "y": 484,
+    "width": 15,
+    "height": 20
+  },
+  {
+    "testId": "book-refresh-status",
+    "order": 113,
+    "x": 786,
+    "y": 472,
+    "width": 94,
+    "height": 45
+  },
+  {
+    "testId": "refresh-status-icon",
+    "order": 114,
+    "x": 801,
+    "y": 489,
+    "width": 11,
+    "height": 11
+  },
+  {
+    "testId": "refresh-status-text",
+    "order": 115,
+    "x": 817,
+    "y": 485,
+    "width": 48,
+    "height": 19
+  },
+  {
+    "testId": "refresh",
+    "order": 116,
+    "x": 889,
+    "y": 485,
+    "width": 123,
+    "height": 19
+  },
+  {
+    "testId": "schedule",
+    "order": 117,
+    "x": 1041,
+    "y": 482,
+    "width": 24,
+    "height": 24
+  },
+  {
+    "testId": "more-options-menu",
+    "order": 118,
+    "x": 1093,
+    "y": 481,
+    "width": 27,
+    "height": 27
+  },
+  {
+    "testId": "MoreVertIcon",
+    "order": 119,
+    "x": 1097,
+    "y": 485,
+    "width": 19,
+    "height": 19
+  },
+  {
+    "testId": "book-table-item-12338",
+    "order": 120,
+    "x": 23,
+    "y": 518,
+    "width": 1106,
+    "height": 46
+  },
+  {
+    "testId": "entity-name",
+    "order": 121,
+    "x": 40,
+    "y": 531,
+    "width": 86,
+    "height": 19
+  },
+  {
+    "testId": "short-name",
+    "order": 122,
+    "x": 280,
+    "y": 531,
+    "width": 150,
+    "height": 19
+  },
+  {
+    "testId": "bookId",
+    "order": 123,
+    "x": 448,
+    "y": 531,
+    "width": 38,
+    "height": 19
+  },
+  {
+    "testId": "bookType",
+    "order": 124,
+    "x": 504,
+    "y": 531,
+    "width": 80,
+    "height": 19
+  },
+  {
+    "testId": "currency",
+    "order": 125,
+    "x": 602,
+    "y": 530,
+    "width": 70,
+    "height": 21
+  },
+  {
+    "testId": "cancel-icon",
+    "order": 126,
+    "x": 718,
+    "y": 531,
+    "width": 19,
+    "height": 19
+  },
+  {
+    "testId": "error-count",
+    "order": 127,
+    "x": 741,
+    "y": 530,
+    "width": 15,
+    "height": 20
+  },
+  {
+    "testId": "book-refresh-status",
+    "order": 128,
+    "x": 786,
+    "y": 518,
+    "width": 94,
+    "height": 45
+  },
+  {
+    "testId": "refresh-status-icon",
+    "order": 129,
+    "x": 801,
+    "y": 535,
+    "width": 11,
+    "height": 11
+  },
+  {
+    "testId": "refresh-status-text",
+    "order": 130,
+    "x": 817,
+    "y": 531,
+    "width": 48,
+    "height": 19
+  },
+  {
+    "testId": "refresh",
+    "order": 131,
+    "x": 889,
+    "y": 531,
+    "width": 123,
+    "height": 19
+  },
+  {
+    "testId": "schedule",
+    "order": 132,
+    "x": 1041,
+    "y": 528,
+    "width": 24,
+    "height": 24
+  },
+  {
+    "testId": "more-options-menu",
+    "order": 133,
+    "x": 1093,
+    "y": 527,
+    "width": 27,
+    "height": 27
+  },
+  {
+    "testId": "MoreVertIcon",
+    "order": 134,
+    "x": 1097,
+    "y": 531,
+    "width": 19,
+    "height": 19
+  },
+  {
+    "testId": "book-table-item-12339",
+    "order": 135,
+    "x": 23,
+    "y": 564,
+    "width": 1106,
+    "height": 46
+  },
+  {
+    "testId": "entity-name",
+    "order": 136,
+    "x": 40,
+    "y": 577,
+    "width": 94,
+    "height": 19
+  },
+  {
+    "testId": "short-name",
+    "order": 137,
+    "x": 280,
+    "y": 577,
+    "width": 150,
+    "height": 19
+  },
+  {
+    "testId": "bookId",
+    "order": 138,
+    "x": 448,
+    "y": 577,
+    "width": 38,
+    "height": 19
+  },
+  {
+    "testId": "bookType",
+    "order": 139,
+    "x": 504,
+    "y": 577,
+    "width": 80,
+    "height": 19
+  },
+  {
+    "testId": "currency",
+    "order": 140,
+    "x": 602,
+    "y": 576,
+    "width": 70,
+    "height": 21
+  },
+  {
+    "testId": "cancel-icon",
+    "order": 141,
+    "x": 718,
+    "y": 577,
+    "width": 19,
+    "height": 19
+  },
+  {
+    "testId": "error-count",
+    "order": 142,
+    "x": 741,
+    "y": 576,
+    "width": 15,
+    "height": 20
+  },
+  {
+    "testId": "book-refresh-status",
+    "order": 143,
+    "x": 786,
+    "y": 564,
+    "width": 94,
+    "height": 45
+  },
+  {
+    "testId": "refresh-status-icon",
+    "order": 144,
+    "x": 801,
+    "y": 581,
+    "width": 11,
+    "height": 11
+  },
+  {
+    "testId": "refresh-status-text",
+    "order": 145,
+    "x": 817,
+    "y": 577,
+    "width": 48,
+    "height": 19
+  },
+  {
+    "testId": "refresh",
+    "order": 146,
+    "x": 889,
+    "y": 577,
+    "width": 123,
+    "height": 19
+  },
+  {
+    "testId": "schedule",
+    "order": 147,
+    "x": 1041,
+    "y": 574,
+    "width": 24,
+    "height": 24
+  },
+  {
+    "testId": "more-options-menu",
+    "order": 148,
+    "x": 1093,
+    "y": 573,
+    "width": 27,
+    "height": 27
+  },
+  {
+    "testId": "MoreVertIcon",
+    "order": 149,
+    "x": 1097,
+    "y": 577,
+    "width": 19,
+    "height": 19
+  },
+  {
+    "testId": "book-table-item-12340",
+    "order": 150,
+    "x": 23,
+    "y": 610,
+    "width": 1106,
+    "height": 46
+  },
+  {
+    "testId": "entity-name",
+    "order": 151,
+    "x": 40,
+    "y": 623,
+    "width": 104,
+    "height": 19
+  },
+  {
+    "testId": "short-name",
+    "order": 152,
+    "x": 280,
+    "y": 623,
+    "width": 150,
+    "height": 19
+  },
+  {
+    "testId": "bookId",
+    "order": 153,
+    "x": 448,
+    "y": 623,
+    "width": 38,
+    "height": 19
+  },
+  {
+    "testId": "bookType",
+    "order": 154,
+    "x": 504,
+    "y": 623,
+    "width": 80,
+    "height": 19
+  },
+  {
+    "testId": "currency",
+    "order": 155,
+    "x": 602,
+    "y": 622,
+    "width": 70,
+    "height": 21
+  },
+  {
+    "testId": "cancel-icon",
+    "order": 156,
+    "x": 718,
+    "y": 623,
+    "width": 19,
+    "height": 19
+  },
+  {
+    "testId": "error-count",
+    "order": 157,
+    "x": 741,
+    "y": 622,
+    "width": 15,
+    "height": 20
+  },
+  {
+    "testId": "book-refresh-status",
+    "order": 158,
+    "x": 786,
+    "y": 610,
+    "width": 94,
+    "height": 45
+  },
+  {
+    "testId": "refresh-status-icon",
+    "order": 159,
+    "x": 801,
+    "y": 627,
+    "width": 11,
+    "height": 11
+  },
+  {
+    "testId": "refresh-status-text",
+    "order": 160,
+    "x": 817,
+    "y": 623,
+    "width": 48,
+    "height": 19
+  },
+  {
+    "testId": "refresh",
+    "order": 161,
+    "x": 889,
+    "y": 623,
+    "width": 123,
+    "height": 19
+  },
+  {
+    "testId": "schedule",
+    "order": 162,
+    "x": 1041,
+    "y": 620,
+    "width": 24,
+    "height": 24
+  },
+  {
+    "testId": "more-options-menu",
+    "order": 163,
+    "x": 1093,
+    "y": 619,
+    "width": 27,
+    "height": 27
+  },
+  {
+    "testId": "MoreVertIcon",
+    "order": 164,
+    "x": 1097,
+    "y": 623,
+    "width": 19,
+    "height": 19
+  },
+  {
+    "testId": "book-table-item-12341",
+    "order": 165,
+    "x": 23,
+    "y": 656,
+    "width": 1106,
+    "height": 46
+  },
+  {
+    "testId": "entity-name",
+    "order": 166,
+    "x": 40,
+    "y": 669,
+    "width": 104,
+    "height": 19
+  },
+  {
+    "testId": "consolidated-icon",
+    "order": 167,
+    "x": 152,
+    "y": 670,
+    "width": 16,
+    "height": 16
+  },
+  {
+    "testId": "short-name",
+    "order": 168,
+    "x": 280,
+    "y": 669,
+    "width": 150,
+    "height": 19
+  },
+  {
+    "testId": "bookId",
+    "order": 169,
+    "x": 448,
+    "y": 669,
+    "width": 38,
+    "height": 19
+  },
+  {
+    "testId": "bookType",
+    "order": 170,
+    "x": 504,
+    "y": 669,
+    "width": 80,
+    "height": 19
+  },
+  {
+    "testId": "currency",
+    "order": 171,
+    "x": 602,
+    "y": 668,
+    "width": 70,
+    "height": 21
+  },
+  {
+    "testId": "cancel-icon",
+    "order": 172,
+    "x": 718,
+    "y": 669,
+    "width": 19,
+    "height": 19
+  },
+  {
+    "testId": "error-count",
+    "order": 173,
+    "x": 741,
+    "y": 668,
+    "width": 15,
+    "height": 20
+  },
+  {
+    "testId": "book-refresh-status",
+    "order": 174,
+    "x": 786,
+    "y": 656,
+    "width": 94,
+    "height": 45
+  },
+  {
+    "testId": "refresh-status-icon",
+    "order": 175,
+    "x": 801,
+    "y": 673,
+    "width": 11,
+    "height": 11
+  },
+  {
+    "testId": "refresh-status-text",
+    "order": 176,
+    "x": 817,
+    "y": 669,
+    "width": 48,
+    "height": 19
+  },
+  {
+    "testId": "refresh",
+    "order": 177,
+    "x": 889,
+    "y": 669,
+    "width": 123,
+    "height": 19
+  },
+  {
+    "testId": "schedule",
+    "order": 178,
+    "x": 1041,
+    "y": 666,
+    "width": 24,
+    "height": 24
+  },
+  {
+    "testId": "more-options-menu",
+    "order": 179,
+    "x": 1093,
+    "y": 665,
+    "width": 27,
+    "height": 27
+  },
+  {
+    "testId": "MoreVertIcon",
+    "order": 180,
+    "x": 1097,
+    "y": 669,
+    "width": 19,
+    "height": 19
+  }
+]

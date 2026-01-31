@@ -1,0 +1,42 @@
+[
+  {
+    "testId": "category-dropdown",
+    "order": 0,
+    "x": 15,
+    "y": 15,
+    "width": 770,
+    "height": 38
+  },
+  {
+    "testId": "category-dropdown-button",
+    "order": 1,
+    "x": 15,
+    "y": 15,
+    "width": 107,
+    "height": 38
+  },
+  {
+    "testId": "button-label",
+    "order": 2,
+    "x": 31,
+    "y": 24,
+    "width": 49,
+    "height": 20
+  },
+  {
+    "testId": "button-icon",
+    "order": 3,
+    "x": 84,
+    "y": 22,
+    "width": 23,
+    "height": 29
+  },
+  {
+    "testId": "ExpandMoreIcon",
+    "order": 4,
+    "x": 84,
+    "y": 22,
+    "width": 23,
+    "height": 23
+  }
+]

@@ -1,0 +1,466 @@
+[
+  {
+    "testId": "report-textfield-widget title",
+    "order": 0,
+    "x": 31,
+    "y": 15,
+    "width": 770,
+    "height": 76
+  },
+  {
+    "testId": "report-textfield-description",
+    "order": 1,
+    "x": 31,
+    "y": 115,
+    "width": 770,
+    "height": 76
+  },
+  {
+    "testId": "visualisation-title",
+    "order": 2,
+    "x": 31,
+    "y": 220,
+    "width": 110,
+    "height": 20
+  },
+  {
+    "testId": "bsq-search-input",
+    "order": 3,
+    "x": 597,
+    "y": 207,
+    "width": 205,
+    "height": 38
+  },
+  {
+    "testId": "bsq-icon-button",
+    "order": 4,
+    "x": 603,
+    "y": 207,
+    "width": 39,
+    "height": 39
+  },
+  {
+    "testId": "SearchIcon",
+    "order": 5,
+    "x": 611,
+    "y": 215,
+    "width": 23,
+    "height": 23
+  },
+  {
+    "testId": "visualisation-PV",
+    "order": 6,
+    "x": 23,
+    "y": 275,
+    "width": 137,
+    "height": 17
+  },
+  {
+    "testId": "visualisation-PV-icon",
+    "order": 7,
+    "x": 23,
+    "y": 299,
+    "width": 137,
+    "height": 92
+  },
+  {
+    "testId": "visualisation-FV",
+    "order": 8,
+    "x": 151,
+    "y": 275,
+    "width": 137,
+    "height": 17
+  },
+  {
+    "testId": "visualisation-FV-icon",
+    "order": 9,
+    "x": 151,
+    "y": 299,
+    "width": 137,
+    "height": 92
+  },
+  {
+    "testId": "visualisation-PL",
+    "order": 10,
+    "x": 279,
+    "y": 275,
+    "width": 137,
+    "height": 17
+  },
+  {
+    "testId": "visualisation-PL-icon",
+    "order": 11,
+    "x": 279,
+    "y": 299,
+    "width": 137,
+    "height": 92
+  },
+  {
+    "testId": "visualisation-LV",
+    "order": 12,
+    "x": 408,
+    "y": 275,
+    "width": 137,
+    "height": 17
+  },
+  {
+    "testId": "visualisation-LV-icon",
+    "order": 13,
+    "x": 408,
+    "y": 299,
+    "width": 137,
+    "height": 92
+  },
+  {
+    "testId": "visualisation-pie-basic",
+    "order": 14,
+    "x": 536,
+    "y": 275,
+    "width": 137,
+    "height": 17
+  },
+  {
+    "testId": "visualisation-pie-basic-icon",
+    "order": 15,
+    "x": 536,
+    "y": 299,
+    "width": 137,
+    "height": 92
+  },
+  {
+    "testId": "visualisation-line-basic",
+    "order": 16,
+    "x": 664,
+    "y": 275,
+    "width": 137,
+    "height": 17
+  },
+  {
+    "testId": "visualisation-line-basic-icon",
+    "order": 17,
+    "x": 664,
+    "y": 299,
+    "width": 137,
+    "height": 92
+  },
+  {
+    "testId": "visualisation-spline-basic",
+    "order": 18,
+    "x": 23,
+    "y": 444,
+    "width": 137,
+    "height": 17
+  },
+  {
+    "testId": "visualisation-spline-basic-icon",
+    "order": 19,
+    "x": 23,
+    "y": 468,
+    "width": 137,
+    "height": 92
+  },
+  {
+    "testId": "visualisation-water-fall",
+    "order": 20,
+    "x": 151,
+    "y": 444,
+    "width": 137,
+    "height": 17
+  },
+  {
+    "testId": "visualisation-water-fall-icon",
+    "order": 21,
+    "x": 151,
+    "y": 468,
+    "width": 137,
+    "height": 92
+  },
+  {
+    "testId": "visualisation-heat-map",
+    "order": 22,
+    "x": 279,
+    "y": 444,
+    "width": 137,
+    "height": 17
+  },
+  {
+    "testId": "visualisation-heat-map-icon",
+    "order": 23,
+    "x": 279,
+    "y": 468,
+    "width": 137,
+    "height": 92
+  },
+  {
+    "testId": "visualisation-column-basic",
+    "order": 24,
+    "x": 408,
+    "y": 444,
+    "width": 137,
+    "height": 17
+  },
+  {
+    "testId": "visualisation-column-basic-icon",
+    "order": 25,
+    "x": 408,
+    "y": 468,
+    "width": 137,
+    "height": 92
+  },
+  {
+    "testId": "visualisation-column-stacked",
+    "order": 26,
+    "x": 536,
+    "y": 444,
+    "width": 137,
+    "height": 17
+  },
+  {
+    "testId": "visualisation-column-stacked-icon",
+    "order": 27,
+    "x": 536,
+    "y": 468,
+    "width": 137,
+    "height": 92
+  },
+  {
+    "testId": "visualisation-column-stacked-percent",
+    "order": 28,
+    "x": 664,
+    "y": 444,
+    "width": 137,
+    "height": 17
+  },
+  {
+    "testId": "visualisation-column-stacked-percent-icon",
+    "order": 29,
+    "x": 664,
+    "y": 468,
+    "width": 137,
+    "height": 92
+  },
+  {
+    "testId": "visualisation-bar-basic",
+    "order": 30,
+    "x": 23,
+    "y": 613,
+    "width": 137,
+    "height": 17
+  },
+  {
+    "testId": "visualisation-bar-basic-icon",
+    "order": 31,
+    "x": 23,
+    "y": 637,
+    "width": 137,
+    "height": 92
+  },
+  {
+    "testId": "visualisation-bar-stacked",
+    "order": 32,
+    "x": 151,
+    "y": 613,
+    "width": 137,
+    "height": 17
+  },
+  {
+    "testId": "visualisation-bar-stacked-icon",
+    "order": 33,
+    "x": 151,
+    "y": 637,
+    "width": 137,
+    "height": 92
+  },
+  {
+    "testId": "visualisation-bar-stacked-percent",
+    "order": 34,
+    "x": 279,
+    "y": 613,
+    "width": 137,
+    "height": 17
+  },
+  {
+    "testId": "visualisation-bar-stacked-percent-icon",
+    "order": 35,
+    "x": 279,
+    "y": 637,
+    "width": 137,
+    "height": 92
+  },
+  {
+    "testId": "visualisation-area-basic",
+    "order": 36,
+    "x": 408,
+    "y": 613,
+    "width": 137,
+    "height": 17
+  },
+  {
+    "testId": "visualisation-area-basic-icon",
+    "order": 37,
+    "x": 408,
+    "y": 637,
+    "width": 137,
+    "height": 92
+  },
+  {
+    "testId": "visualisation-area-stacked",
+    "order": 38,
+    "x": 536,
+    "y": 613,
+    "width": 137,
+    "height": 17
+  },
+  {
+    "testId": "visualisation-area-stacked-icon",
+    "order": 39,
+    "x": 536,
+    "y": 637,
+    "width": 137,
+    "height": 92
+  },
+  {
+    "testId": "visualisation-area-stacked-percent",
+    "order": 40,
+    "x": 664,
+    "y": 613,
+    "width": 137,
+    "height": 17
+  },
+  {
+    "testId": "visualisation-area-stacked-percent-icon",
+    "order": 41,
+    "x": 664,
+    "y": 637,
+    "width": 137,
+    "height": 92
+  },
+  {
+    "testId": "visualisation-area-spline-basic",
+    "order": 42,
+    "x": 23,
+    "y": 782,
+    "width": 137,
+    "height": 17
+  },
+  {
+    "testId": "visualisation-area-spline-basic-icon",
+    "order": 43,
+    "x": 23,
+    "y": 806,
+    "width": 137,
+    "height": 92
+  },
+  {
+    "testId": "visualisation-area-spline-stacked",
+    "order": 44,
+    "x": 151,
+    "y": 782,
+    "width": 137,
+    "height": 17
+  },
+  {
+    "testId": "visualisation-area-spline-stacked-icon",
+    "order": 45,
+    "x": 151,
+    "y": 806,
+    "width": 137,
+    "height": 92
+  },
+  {
+    "testId": "visualisation-area-spline-stacked-percent",
+    "order": 46,
+    "x": 279,
+    "y": 782,
+    "width": 137,
+    "height": 17
+  },
+  {
+    "testId": "visualisation-area-spline-stacked-percent-icon",
+    "order": 47,
+    "x": 279,
+    "y": 806,
+    "width": 137,
+    "height": 92
+  },
+  {
+    "testId": "visualisation-roller-chart",
+    "order": 48,
+    "x": 408,
+    "y": 812,
+    "width": 137,
+    "height": 17
+  },
+  {
+    "testId": "visualisation-roller-chart-icon",
+    "order": 49,
+    "x": 408,
+    "y": 836,
+    "width": 137,
+    "height": 32
+  },
+  {
+    "testId": "visualisation-single-fact-chart",
+    "order": 50,
+    "x": 536,
+    "y": 812,
+    "width": 137,
+    "height": 17
+  },
+  {
+    "testId": "visualisation-single-fact-chart-icon",
+    "order": 51,
+    "x": 536,
+    "y": 836,
+    "width": 137,
+    "height": 32
+  },
+  {
+    "testId": "visualisation-comparison-chart",
+    "order": 52,
+    "x": 664,
+    "y": 812,
+    "width": 137,
+    "height": 17
+  },
+  {
+    "testId": "visualisation-comparison-chart-icon",
+    "order": 53,
+    "x": 664,
+    "y": 836,
+    "width": 137,
+    "height": 32
+  },
+  {
+    "testId": "visualisation-progress-chart",
+    "order": 54,
+    "x": 23,
+    "y": 950,
+    "width": 137,
+    "height": 17
+  },
+  {
+    "testId": "visualisation-progress-chart-icon",
+    "order": 55,
+    "x": 23,
+    "y": 975,
+    "width": 137,
+    "height": 32
+  },
+  {
+    "testId": "visualisation-pivot-single-fact-chart",
+    "order": 56,
+    "x": 151,
+    "y": 950,
+    "width": 137,
+    "height": 17
+  },
+  {
+    "testId": "visualisation-pivot-single-fact-chart-icon",
+    "order": 57,
+    "x": 151,
+    "y": 975,
+    "width": 137,
+    "height": 32
+  }
+]

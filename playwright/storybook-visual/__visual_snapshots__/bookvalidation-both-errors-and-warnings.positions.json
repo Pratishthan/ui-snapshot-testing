@@ -1,0 +1,34 @@
+[
+  {
+    "testId": "cancel-icon",
+    "order": 0,
+    "x": 362,
+    "y": 28,
+    "width": 19,
+    "height": 19
+  },
+  {
+    "testId": "error-count",
+    "order": 1,
+    "x": 385,
+    "y": 28,
+    "width": 15,
+    "height": 20
+  },
+  {
+    "testId": "warning-icon",
+    "order": 2,
+    "x": 408,
+    "y": 28,
+    "width": 19,
+    "height": 19
+  },
+  {
+    "testId": "warning-count",
+    "order": 3,
+    "x": 430,
+    "y": 28,
+    "width": 15,
+    "height": 20
+  }
+]

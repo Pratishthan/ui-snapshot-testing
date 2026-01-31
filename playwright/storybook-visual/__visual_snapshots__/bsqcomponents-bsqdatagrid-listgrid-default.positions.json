@@ -1,0 +1,66 @@
+[
+  {
+    "testId": "custom-toolbar",
+    "order": 0,
+    "x": 24,
+    "y": 24,
+    "width": 753,
+    "height": 0
+  },
+  {
+    "testId": "toolbar-title",
+    "order": 1,
+    "x": 24,
+    "y": 24,
+    "width": 0,
+    "height": 0
+  },
+  {
+    "testId": "ArrowUpwardIcon",
+    "order": 2,
+    "x": 53,
+    "y": 27,
+    "width": 17,
+    "height": 17
+  },
+  {
+    "testId": "SeparatorIcon",
+    "order": 3,
+    "x": 162,
+    "y": 24,
+    "width": 23,
+    "height": 23
+  },
+  {
+    "testId": "ArrowUpwardIcon",
+    "order": 4,
+    "x": 222,
+    "y": 27,
+    "width": 17,
+    "height": 17
+  },
+  {
+    "testId": "SeparatorIcon",
+    "order": 5,
+    "x": 312,
+    "y": 24,
+    "width": 23,
+    "height": 23
+  },
+  {
+    "testId": "KeyboardArrowLeftIcon",
+    "order": 6,
+    "x": 706,
+    "y": 380,
+    "width": 23,
+    "height": 23
+  },
+  {
+    "testId": "KeyboardArrowRightIcon",
+    "order": 7,
+    "x": 744,
+    "y": 380,
+    "width": 23,
+    "height": 23
+  }
+]

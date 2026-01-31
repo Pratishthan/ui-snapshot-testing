@@ -1,0 +1,154 @@
+[
+  {
+    "testId": "common-header",
+    "order": 0,
+    "x": 15,
+    "y": 15,
+    "width": 770,
+    "height": 145
+  },
+  {
+    "testId": "breadcrumbs-container",
+    "order": 1,
+    "x": 15,
+    "y": 15,
+    "width": 511,
+    "height": 23
+  },
+  {
+    "testId": "breadcrumbs",
+    "order": 2,
+    "x": 15,
+    "y": 15,
+    "width": 511,
+    "height": 23
+  },
+  {
+    "testId": "breadcrumb-last-item-Analyse - Dashboard",
+    "order": 3,
+    "x": 15,
+    "y": 15,
+    "width": 136,
+    "height": 23
+  },
+  {
+    "testId": "search-input-container",
+    "order": 4,
+    "x": 15,
+    "y": 46,
+    "width": 381,
+    "height": 38
+  },
+  {
+    "testId": "design-mode-toggle-container",
+    "order": 5,
+    "x": 15,
+    "y": 64,
+    "width": 0,
+    "height": 0
+  },
+  {
+    "testId": "search-input-container",
+    "order": 6,
+    "x": 23,
+    "y": 46,
+    "width": 373,
+    "height": 38
+  },
+  {
+    "testId": "search-input",
+    "order": 7,
+    "x": 23,
+    "y": 46,
+    "width": 373,
+    "height": 38
+  },
+  {
+    "testId": "bsq-icon-button",
+    "order": 8,
+    "x": 29,
+    "y": 45,
+    "width": 39,
+    "height": 39
+  },
+  {
+    "testId": "SearchIcon",
+    "order": 9,
+    "x": 37,
+    "y": 53,
+    "width": 23,
+    "height": 23
+  },
+  {
+    "testId": "filter-container",
+    "order": 10,
+    "x": 15,
+    "y": 115,
+    "width": 770,
+    "height": 48
+  },
+  {
+    "testId": "filter-divider",
+    "order": 11,
+    "x": 15,
+    "y": 131,
+    "width": 37,
+    "height": 17
+  },
+  {
+    "testId": "category-dropdown",
+    "order": 12,
+    "x": 77,
+    "y": 120,
+    "width": 106,
+    "height": 38
+  },
+  {
+    "testId": "category-dropdown-button",
+    "order": 13,
+    "x": 77,
+    "y": 120,
+    "width": 106,
+    "height": 38
+  },
+  {
+    "testId": "button-label",
+    "order": 14,
+    "x": 93,
+    "y": 129,
+    "width": 48,
+    "height": 20
+  },
+  {
+    "testId": "button-icon",
+    "order": 15,
+    "x": 144,
+    "y": 127,
+    "width": 23,
+    "height": 29
+  },
+  {
+    "testId": "ExpandMoreIcon",
+    "order": 16,
+    "x": 144,
+    "y": 127,
+    "width": 23,
+    "height": 23
+  },
+  {
+    "testId": "toggle-expand-collapse",
+    "order": 17,
+    "x": 700,
+    "y": 122,
+    "width": 84,
+    "height": 35
+  },
+  {
+    "testId": "button-label",
+    "order": 18,
+    "x": 708,
+    "y": 128,
+    "width": 68,
+    "height": 23
+  }
+]

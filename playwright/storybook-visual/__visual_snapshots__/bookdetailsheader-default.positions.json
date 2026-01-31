@@ -1,0 +1,74 @@
+[
+  {
+    "testId": "book-details-header",
+    "order": 0,
+    "x": 15,
+    "y": 15,
+    "width": 770,
+    "height": 68
+  },
+  {
+    "testId": "book-initial",
+    "order": 1,
+    "x": 15,
+    "y": 17,
+    "width": 80,
+    "height": 65
+  },
+  {
+    "testId": "book-entity-name",
+    "order": 2,
+    "x": 103,
+    "y": 26,
+    "width": 137,
+    "height": 23
+  },
+  {
+    "testId": "book-id",
+    "order": 3,
+    "x": 103,
+    "y": 52,
+    "width": 47,
+    "height": 20
+  },
+  {
+    "testId": "book-short-name",
+    "order": 4,
+    "x": 0,
+    "y": 0,
+    "width": 0,
+    "height": 0
+  },
+  {
+    "testId": "book-scenario",
+    "order": 5,
+    "x": 163,
+    "y": 52,
+    "width": 46,
+    "height": 20
+  },
+  {
+    "testId": "book-reporting-currency",
+    "order": 6,
+    "x": 222,
+    "y": 52,
+    "width": 35,
+    "height": 20
+  },
+  {
+    "testId": "book-taxonomy-name",
+    "order": 7,
+    "x": 270,
+    "y": 52,
+    "width": 126,
+    "height": 20
+  },
+  {
+    "testId": "book-type",
+    "order": 8,
+    "x": 409,
+    "y": 52,
+    "width": 74,
+    "height": 20
+  }
+]

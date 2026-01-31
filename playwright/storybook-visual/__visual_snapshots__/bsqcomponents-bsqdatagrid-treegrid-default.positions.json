@@ -1,0 +1,26 @@
+[
+  {
+    "testId": "custom-toolbar",
+    "order": 0,
+    "x": 24,
+    "y": 24,
+    "width": 753,
+    "height": 0
+  },
+  {
+    "testId": "toolbar-title",
+    "order": 1,
+    "x": 24,
+    "y": 24,
+    "width": 0,
+    "height": 0
+  },
+  {
+    "testId": "SeparatorIcon",
+    "order": 2,
+    "x": 765,
+    "y": 24,
+    "width": 23,
+    "height": 23
+  }
+]

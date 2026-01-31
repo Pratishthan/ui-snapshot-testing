@@ -1,0 +1,290 @@
+[
+  {
+    "testId": "book-tree-container",
+    "order": 0,
+    "x": 15,
+    "y": 15,
+    "width": 758,
+    "height": 336
+  },
+  {
+    "testId": "tree",
+    "order": 1,
+    "x": 55,
+    "y": 38,
+    "width": 718,
+    "height": 314
+  },
+  {
+    "testId": "tree-node-1991",
+    "order": 2,
+    "x": 55,
+    "y": 38,
+    "width": 718,
+    "height": 314
+  },
+  {
+    "testId": "root-node",
+    "order": 3,
+    "x": 55,
+    "y": 38,
+    "width": 718,
+    "height": 190
+  },
+  {
+    "testId": "truncated-short-name",
+    "order": 4,
+    "x": 119,
+    "y": 50,
+    "width": 84,
+    "height": 22
+  },
+  {
+    "testId": "book-list-item-1991",
+    "order": 5,
+    "x": 68,
+    "y": 76,
+    "width": 689,
+    "height": 143
+  },
+  {
+    "testId": "bookType",
+    "order": 6,
+    "x": 68,
+    "y": 84,
+    "width": 689,
+    "height": 21
+  },
+  {
+    "testId": "taxonomy",
+    "order": 7,
+    "x": 68,
+    "y": 117,
+    "width": 689,
+    "height": 21
+  },
+  {
+    "testId": "currency",
+    "order": 8,
+    "x": 68,
+    "y": 150,
+    "width": 38,
+    "height": 23
+  },
+  {
+    "testId": "lock-icon",
+    "order": 9,
+    "x": 128,
+    "y": 152,
+    "width": 19,
+    "height": 19
+  },
+  {
+    "testId": "bookId",
+    "order": 10,
+    "x": 90,
+    "y": 185,
+    "width": 59,
+    "height": 23
+  },
+  {
+    "testId": "progress-bar",
+    "order": 11,
+    "x": 390,
+    "y": 191,
+    "width": 261,
+    "height": 10
+  },
+  {
+    "testId": "remaining",
+    "order": 12,
+    "x": 659,
+    "y": 185,
+    "width": 98,
+    "height": 23
+  },
+  {
+    "testId": "child-container-1991",
+    "order": 13,
+    "x": 74,
+    "y": 227,
+    "width": 700,
+    "height": 124
+  },
+  {
+    "testId": "tree-node-1992",
+    "order": 14,
+    "x": 74,
+    "y": 227,
+    "width": 700,
+    "height": 62
+  },
+  {
+    "testId": "book-item-container-1992",
+    "order": 15,
+    "x": 74,
+    "y": 227,
+    "width": 700,
+    "height": 62
+  },
+  {
+    "testId": "horizontal-line-1992",
+    "order": 16,
+    "x": 74,
+    "y": 263,
+    "width": 15,
+    "height": 1
+  },
+  {
+    "testId": "book-tree-item-1992",
+    "order": 17,
+    "x": 89,
+    "y": 242,
+    "width": 685,
+    "height": 47
+  },
+  {
+    "testId": "book-tree-item",
+    "order": 18,
+    "x": 89,
+    "y": 242,
+    "width": 685,
+    "height": 47
+  },
+  {
+    "testId": "prefix",
+    "order": 19,
+    "x": 101,
+    "y": 251,
+    "width": 30,
+    "height": 30
+  },
+  {
+    "testId": "shortName",
+    "order": 20,
+    "x": 143,
+    "y": 255,
+    "width": 61,
+    "height": 21
+  },
+  {
+    "testId": "fullName",
+    "order": 21,
+    "x": 204,
+    "y": 255,
+    "width": 186,
+    "height": 21
+  },
+  {
+    "testId": "bookId",
+    "order": 22,
+    "x": 487,
+    "y": 255,
+    "width": 58,
+    "height": 23
+  },
+  {
+    "testId": "progress-bar",
+    "order": 23,
+    "x": 557,
+    "y": 261,
+    "width": 95,
+    "height": 10
+  },
+  {
+    "testId": "remaining",
+    "order": 24,
+    "x": 660,
+    "y": 255,
+    "width": 98,
+    "height": 23
+  },
+  {
+    "testId": "tree-node-1993",
+    "order": 25,
+    "x": 74,
+    "y": 289,
+    "width": 700,
+    "height": 62
+  },
+  {
+    "testId": "book-item-container-1993",
+    "order": 26,
+    "x": 74,
+    "y": 289,
+    "width": 700,
+    "height": 62
+  },
+  {
+    "testId": "horizontal-line-1993",
+    "order": 27,
+    "x": 74,
+    "y": 325,
+    "width": 15,
+    "height": 1
+  },
+  {
+    "testId": "book-tree-item-1993",
+    "order": 28,
+    "x": 89,
+    "y": 304,
+    "width": 685,
+    "height": 47
+  },
+  {
+    "testId": "book-tree-item",
+    "order": 29,
+    "x": 89,
+    "y": 304,
+    "width": 685,
+    "height": 47
+  },
+  {
+    "testId": "prefix",
+    "order": 30,
+    "x": 101,
+    "y": 313,
+    "width": 30,
+    "height": 30
+  },
+  {
+    "testId": "shortName",
+    "order": 31,
+    "x": 143,
+    "y": 317,
+    "width": 81,
+    "height": 21
+  },
+  {
+    "testId": "fullName",
+    "order": 32,
+    "x": 224,
+    "y": 317,
+    "width": 208,
+    "height": 21
+  },
+  {
+    "testId": "bookId",
+    "order": 33,
+    "x": 487,
+    "y": 317,
+    "width": 58,
+    "height": 23
+  },
+  {
+    "testId": "progress-bar",
+    "order": 34,
+    "x": 557,
+    "y": 323,
+    "width": 95,
+    "height": 10
+  },
+  {
+    "testId": "remaining",
+    "order": 35,
+    "x": 660,
+    "y": 317,
+    "width": 98,
+    "height": 23
+  }
+]

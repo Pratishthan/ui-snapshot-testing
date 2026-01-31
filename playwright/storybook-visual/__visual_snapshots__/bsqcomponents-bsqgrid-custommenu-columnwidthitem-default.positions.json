@@ -1,0 +1,18 @@
+[
+  {
+    "testId": "SettingsApplicationsIcon",
+    "order": 0,
+    "x": 31,
+    "y": 31,
+    "width": 19,
+    "height": 19
+  },
+  {
+    "testId": "custom-menu-item-textfield",
+    "order": 1,
+    "x": 67,
+    "y": 21,
+    "width": 195,
+    "height": 39
+  }
+]

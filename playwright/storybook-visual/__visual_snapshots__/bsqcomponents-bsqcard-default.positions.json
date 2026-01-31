@@ -1,0 +1,18 @@
+[
+  {
+    "testId": "bsq-card-title",
+    "order": 0,
+    "x": 244,
+    "y": 245,
+    "width": 85,
+    "height": 18
+  },
+  {
+    "testId": "bsq-card-description",
+    "order": 1,
+    "x": 244,
+    "y": 277,
+    "width": 315,
+    "height": 16
+  }
+]
