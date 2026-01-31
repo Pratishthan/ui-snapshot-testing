@@ -361,6 +361,34 @@ export const loadConfig = async (options = {}) => {
   if (configFilePath) {
     const fileConfig = await loadConfigFile(configFilePath);
     config = deepMerge(config, fileConfig);
+
+    // Apply mobile configuration if enabled
+    // Mobile config is nested under snapshot.mobile
+    if (options.mobile && fileConfig.snapshot?.mobile?.enabled) {
+      // Merge mobile-specific testMatcher if provided
+      if (fileConfig.snapshot.mobile.testMatcher) {
+        config.testMatcher = deepMerge(
+          config.testMatcher || {},
+          fileConfig.snapshot.mobile.testMatcher,
+        );
+      }
+
+      // Merge mobile-specific settings
+      // For viewports, we'll set them in playwrightConfig.use
+      if (
+        fileConfig.snapshot.mobile.viewports &&
+        fileConfig.snapshot.mobile.viewports.length > 0
+      ) {
+        // Use the first viewport for now (multi-viewport support can be added later)
+        const viewport = fileConfig.snapshot.mobile.viewports[0];
+        config.playwrightConfig = config.playwrightConfig || {};
+        config.playwrightConfig.use = config.playwrightConfig.use || {};
+        config.playwrightConfig.use.viewport = {
+          width: viewport.width,
+          height: viewport.height,
+        };
+      }
+    }
   }
 
   // 3. Merge programmatic options (highest priority)

@@ -74,6 +74,20 @@ export default {
       // Size threshold (pixels)
       sizeThreshold: parseInt(process.env.SIZE_THRESHOLD || "5", 10),
     },
+
+    // Mobile snapshot configuration (overrides when --mobile flag is used)
+    mobile: {
+      // Enable mobile snapshots
+      enabled: true,
+
+      // Mobile viewport configurations (array of viewports to test)
+      // Future: Can be overridden at story level via story.parameters.mobileViewports
+      viewports: [
+        { width: 375, height: 667, name: "iPhone SE" },
+        // { width: 390, height: 844, name: 'iPhone 12/13' },
+        // { width: 360, height: 640, name: 'Android Small' },
+      ],
+    },
   },
 
   // Storybook configuration

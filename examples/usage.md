@@ -153,3 +153,81 @@ export default {
   },
 };
 ```
+
+---
+
+## Mobile Snapshots
+
+Test your stories with mobile viewports using the `--mobile` flag.
+
+### Configuration
+
+Add mobile configuration to `visual-tests.config.js`:
+
+```javascript
+export default {
+  snapshot: {
+    mobile: {
+      // Enable mobile snapshots
+      enabled: true,
+
+      // Override test matcher for mobile (optional)
+      // Only stories with 'visual-mobile' tag will be tested in mobile mode
+      testMatcher: {
+        tags: ["visual-mobile"],
+      },
+
+      // Define mobile viewports to test
+      viewports: [
+        { width: 375, height: 667, name: "iPhone SE" },
+        { width: 390, height: 844, name: "iPhone 12/13" },
+        { width: 360, height: 640, name: "Android Small" },
+      ],
+    },
+  },
+};
+```
+
+### Story Tagging
+
+Tag stories that should be tested in mobile mode:
+
+```typescript
+// ForgotPassword.stories.tsx
+export const Default: Story = {
+  tags: ['visual', 'visual-mobile'],  // Include both tags
+  args: { ... },
+};
+```
+
+### Running Mobile Tests
+
+| Action                      | Command                                                             |
+| :-------------------------- | :------------------------------------------------------------------ |
+| **Run Mobile Tests**        | `npx snapshot-testing run --mobile`                                 |
+| **Update Mobile Snapshots** | `npx snapshot-testing run --mobile --update-snapshots`              |
+| **Test Specific Story**     | `npx snapshot-testing run --mobile --include-paths "path/to/story"` |
+
+### Behavior
+
+- **Snapshot Directory**: Mobile snapshots are stored in a `mobile/` subdirectory (e.g., `__visual_snapshots__/mobile/`)
+- **Viewport Selection**: Currently uses the first viewport from the `viewports` array
+- **Tag Filtering**: When `testMatcher` is configured in `snapshot.mobile`, only stories with matching tags are tested
+- **Independent Snapshots**: Mobile and desktop snapshots are stored separately and compared independently
+
+### Example Package.json Scripts
+
+```json
+{
+  "scripts": {
+    "test:visual:mobile": "npm run warmup-storybook && npx snapshot-testing run --mobile",
+    "test:visual:mobile:update": "npm run warmup-storybook && npx snapshot-testing run --mobile --update-snapshots"
+  }
+}
+```
+
+### Future Enhancements
+
+- **Multi-viewport support**: Run tests across all configured viewports
+- **Story-level viewport override**: Override viewports per story via `story.parameters.mobileViewports`
+- **Parallel viewport testing**: Generate snapshots for all viewports concurrently

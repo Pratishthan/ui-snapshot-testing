@@ -13,7 +13,9 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Load the consumer's visual-tests.config.js
-const visualTestConfig = await loadConfig();
+// Check for mobile mode environment variable
+const isMobile = process.env.VISUAL_TEST_MOBILE === "true";
+const visualTestConfig = await loadConfig({ mobile: isMobile });
 
 // Build Playwright configuration from visual test config
 const config = {
@@ -22,10 +24,10 @@ const config = {
   testMatch: /visual-tests.*\.spec\.js/,
 
   // Snapshot configuration
-  // Snapshot configuration
   snapshotDir: path.resolve(
     process.cwd(),
     visualTestConfig.paths?.snapshotsDir || "./playwright/__visual_snapshots__",
+    isMobile ? "mobile" : "",
   ),
   snapshotPathTemplate: "{snapshotDir}/{arg}{ext}",
 

@@ -51,6 +51,11 @@ export const runCommand = (yargs) => {
           description: "Update snapshots instead of comparing",
           default: false,
         })
+        .option("mobile", {
+          type: "boolean",
+          description: "Run in mobile mode (uses mobile config overrides)",
+          default: false,
+        })
         .example("$0 run", "Run visual tests with default settings")
         .example(
           "$0 run --include-paths components/Button",
@@ -64,6 +69,7 @@ export const runCommand = (yargs) => {
         // Load configuration
         const configOptions = {
           configFile: argv.config,
+          mobile: argv.mobile,
         };
 
         if (argv.storybookPort) {
@@ -138,8 +144,10 @@ export const runCommand = (yargs) => {
           CI: "1",
           // Keep legacy env vars just in case, though they shouldn't be needed for core logic anymore
           // VISUAL_TEST_MODE: config.mode,
+          // VISUAL_TEST_MODE: config.mode,
           STORYBOOK_PORT: config.storybook.port,
           VISUAL_TEST_UPDATE_SNAPSHOTS: argv.updateSnapshots ? "true" : "false",
+          VISUAL_TEST_MOBILE: argv.mobile ? "true" : "false",
         };
 
         // Run Playwright
