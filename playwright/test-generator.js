@@ -180,7 +180,7 @@ export function generateVisualTestsFromData(options = {}) {
             try {
               expect(screenshot).toMatchSnapshot(`${snapshotName}.png`, {
                 maxDiffPixelRatio,
-                maxDiffPixels: config.snapshot?.image?.maxDiffPixels,
+                threshold: config.snapshot?.image?.threshold,
                 threshold: config.snapshot?.image?.threshold,
               });
             } catch (snapshotError) {

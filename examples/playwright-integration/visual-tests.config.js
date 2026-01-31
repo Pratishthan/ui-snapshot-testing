@@ -20,7 +20,7 @@ export default {
       maxDiffPixelRatio: 0.01,
 
       // Maximum number of different pixels
-      maxDiffPixels: 100,
+      threshold: 0.2,
 
       // Threshold for pixel comparison (0-1)
       threshold: 0.2,

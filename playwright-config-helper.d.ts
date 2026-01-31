@@ -13,7 +13,7 @@ export interface VisualTestConfig {
     type?: "image" | "json" | "both";
     image?: {
       maxDiffPixelRatio?: number;
-      maxDiffPixels?: number;
+      threshold?: number;
       threshold?: number;
     };
     position?: {

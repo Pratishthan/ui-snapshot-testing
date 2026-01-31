@@ -102,7 +102,7 @@ export default {
 
   snapshot: {
     maxDiffPixelRatio: 0.01,
-    maxDiffPixels: 100,
+
     threshold: 0.2,
   },
 

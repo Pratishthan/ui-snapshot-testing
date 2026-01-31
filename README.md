@@ -190,11 +190,11 @@ export default {
 
 Fine-tune the sensitivity of visual tests in `visual-tests.config.js`:
 
-| Setting                 | Type     | Description                              | Effect of Varying Numbers                                                                                                             |
-| ----------------------- | -------- | ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| **`maxDiffPixelRatio`** | `0-1`    | Max allowed ratio of different pixels.   | **Increase (e.g., 0.05):** More tolerant of widespread changes.<br>**Decrease (e.g., 0.001):** Stricter; fails on small area changes. |
-| **`maxDiffPixels`**     | `number` | Max absolute number of differing pixels. | **Increase (e.g., 500):** Tolerates small artifacts or tiny layout shifts.<br>**Decrease (e.g., 0):** Zero tolerance.                 |
-| **`threshold`**         | `0-1`    | Color comparison sensitivity (YIQ).      | **Increase (e.g., 0.5):** Looser color matching (ignores anti-aliasing).<br>**Decrease (e.g., 0.1):** Stricter color matching.        |
+| Setting                 | Type  | Description                            | Effect of Varying Numbers                                                                                                             |
+| ----------------------- | ----- | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| **`maxDiffPixelRatio`** | `0-1` | Max allowed ratio of different pixels. | **Increase (e.g., 0.05):** More tolerant of widespread changes.<br>**Decrease (e.g., 0.001):** Stricter; fails on small area changes. |
+
+| **`threshold`** | `0-1` | Color comparison sensitivity (YIQ). | **Increase (e.g., 0.5):** Looser color matching (ignores anti-aliasing).<br>**Decrease (e.g., 0.1):** Stricter color matching. |
 
 ```javascript
 export default {

@@ -38,7 +38,7 @@ export default {
        * - Increase (e.g., 500): Tolerates small artifacts or tiny layout shifts (e.g., 1px border shift).
        * - Decrease (e.g., 0): Zero tolerance for any pixel difference.
        */
-      maxDiffPixels: 300,
+      threshold: 0.2,
 
       /**
        * Color Threshold (0-1)
