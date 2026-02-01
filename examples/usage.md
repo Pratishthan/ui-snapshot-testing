@@ -362,3 +362,71 @@ done
 - **Multi-locale batch testing**: Run tests for all configured locales in a single command
 - **Locale-specific thresholds**: Different comparison thresholds for RTL layouts
 - **Locale coverage reports**: Track which stories have been tested in which locales
+
+---
+
+## Orphan Detection
+
+Over time, snapshots can become orphaned if stories are deleted, renamed, or moved. The `orphans` command helps identify and clean up these unused files.
+
+### Usage
+
+```bash
+# List orphaned desktop snapshots
+npx snapshot-testing orphans
+
+# List orphaned mobile snapshots
+npx snapshot-testing orphans --mobile
+
+# List orphaned locale snapshots
+npx snapshot-testing orphans --locale de
+
+# List orphaned snapshots across all modes (desktop, mobile, and all locales)
+npx snapshot-testing orphans --all
+
+# Delete orphaned snapshots (interactive confirmation)
+npx snapshot-testing orphans --delete
+```
+
+### Behavior
+
+1. **Scan**: Reads all snapshot files in the relevant directories (`__visual_snapshots__`, `mobile/`, etc.).
+2. **Fetch**: Fetches all current stories from Storybook.
+3. **Compare**: Checks if each snapshot file corresponds to a valid story ID (and viewport for mobile).
+4. **Report**: Lists any files that do not match a current story.
+
+---
+
+## Dry Run
+
+The `dry-run` command allows you to preview which stories would be selected for testing without actually running Playwright or generating snapshots. This is useful for verifying your filters and configurations.
+
+### Usage
+
+```bash
+# Preview all stories that would be tested with default settings
+npx snapshot-testing dry-run
+
+# Preview stories matching specific paths
+npx snapshot-testing dry-run --include-paths "components/Button,components/Input"
+
+# Preview stories matching specific IDs
+npx snapshot-testing dry-run --story-ids "button--primary,input--default"
+
+# Preview mobile stories (shows mobile-specific filtering if configured)
+npx snapshot-testing dry-run --mobile
+
+# Preview locale stories
+npx snapshot-testing dry-run --locale de
+
+# Show detailed information (group by file)
+npx snapshot-testing dry-run --verbose
+```
+
+### Output
+
+The command displays:
+
+- Total number of matching stories
+- List of story IDs (or grouped by file with `--verbose`)
+- Configuration summary (enabled snapshot types, active mode, viewport)
