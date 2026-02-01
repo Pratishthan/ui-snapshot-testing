@@ -234,12 +234,19 @@ export async function prepareStoryForScreenshot(page, storyId, config = {}) {
  * @param {string} storyId - Story ID
  * @returns {string} - Sanitized snapshot name
  */
-export function getSnapshotName(storyId) {
-  return storyId
+export function getSnapshotName(storyId, config = {}, viewport = null) {
+  const sanitized = storyId
     .toLowerCase()
     .replace(/[^a-z0-9-]/g, "-")
     .replace(/-+/g, "-")
     .replace(/^-|-$/g, "");
+
+  // If viewport is provided (mobile mode), append dimensions
+  if (viewport && viewport.width && viewport.height) {
+    return `${sanitized}-${viewport.width}x${viewport.height}`;
+  }
+
+  return sanitized;
 }
 
 /**

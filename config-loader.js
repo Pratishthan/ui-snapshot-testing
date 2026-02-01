@@ -386,6 +386,7 @@ export const loadConfig = async (options = {}) => {
           width: viewport.width,
           height: viewport.height,
         };
+        config.activeViewport = viewport; // Store for use by other modules
       }
     }
 

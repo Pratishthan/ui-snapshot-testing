@@ -98,7 +98,9 @@ export function generateVisualTestsFromData(options = {}) {
 
     test(testTitle, async ({ page }, testInfo) => {
       const storyId = story.id;
-      const snapshotName = getSnapshotName(storyId);
+      // Get viewport from config if available (for mobile mode)
+      const viewport = config.playwrightConfig?.use?.viewport;
+      const snapshotName = getSnapshotName(storyId, config, viewport);
 
       try {
         // Prepare story for screenshot
