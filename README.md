@@ -11,7 +11,9 @@
 📸 **Snapshot Comparison** - Pixel-perfect visual regression detection  
 📍 **Position Tracking** - Detects element position changes (unique feature!)  
 🔄 **Diff-Based Testing** - Only test stories affected by your changes  
-🎯 **Flexible Filtering** - Filter by keywords, paths, or story IDs
+🎯 **Flexible Filtering** - Filter by keywords, paths, or story IDs  
+📱 **Mobile Snapshots** - Test responsive designs with mobile viewports  
+🌍 **Locale Snapshots** - Test internationalized UIs across different languages/regions
 
 🛠️ **CLI & Programmatic API** - Use however you prefer
 📊 **Rich Reports** - HTML reports with side-by-side comparisons  
@@ -71,10 +73,11 @@ npx ui-snapshot-testing run --update-snapshots
 **Options:**
 
 - `--storybook-port, -p` - Storybook port (default: 6006)
-
 - `--include-paths, -i` - Path segments to include
 - `--story-ids` - Specific story IDs to test
 - `--update-snapshots, -u` - Update snapshots
+- `--mobile` - Run in mobile mode with mobile viewports
+- `--locale <code>` - Run in locale mode with specified locale (e.g., de, ar)
 - `--config, -c` - Path to config file
 
 ### `update` - Update Snapshots
@@ -98,6 +101,8 @@ npx ui-snapshot-testing update --story-ids button--default,input--error
 - `--incremental` - Only update missing snapshots
 - `--interactive, -i` - Interactive selection
 - `--story-ids` - Specific stories to update
+- `--mobile` - Update mobile snapshots
+- `--locale <code>` - Update locale snapshots for specified locale
 - `--config, -c` - Path to config file
 
 ### `diff` - Test Changed Stories
@@ -208,6 +213,105 @@ export default {
   // ... other config
 };
 ```
+
+### Mobile Snapshots
+
+Test responsive designs with mobile viewports:
+
+```javascript
+export default {
+  snapshot: {
+    mobile: {
+      enabled: true,
+      // Optional: Only test stories with 'visual-mobile' tag in mobile mode
+      testMatcher: {
+        tags: ["visual-mobile"],
+      },
+      viewports: [
+        { width: 375, height: 667, name: "iPhone SE" },
+        { width: 390, height: 844, name: "iPhone 12/13" },
+      ],
+    },
+  },
+};
+```
+
+**Usage:**
+
+```bash
+# Run mobile tests
+npx ui-snapshot-testing run --mobile
+
+# Update mobile snapshots
+npx ui-snapshot-testing update --mobile
+```
+
+### Locale Snapshots
+
+Test internationalized UIs across different languages and regions:
+
+```javascript
+export default {
+  snapshot: {
+    locale: {
+      enabled: true,
+      // Optional: Only test stories with 'visual-locale' tag in locale mode
+      testMatcher: {
+        tags: ["visual-locale"],
+      },
+      locales: [
+        { code: "en", name: "English" },
+        { code: "de", name: "German" },
+        { code: "ar", name: "Arabic", direction: "rtl" },
+      ],
+      // Storybook global parameter name
+      storybookGlobalParam: "locale",
+    },
+  },
+};
+```
+
+**Usage:**
+
+```bash
+# Run tests for German locale
+npx ui-snapshot-testing run --locale de
+
+# Update Arabic locale snapshots
+npx ui-snapshot-testing update --locale ar
+
+# Test RTL layouts
+npx ui-snapshot-testing run --locale ar
+```
+
+**Storybook Setup:**
+
+```javascript
+// .storybook/preview.js
+export const globalTypes = {
+  locale: {
+    name: "Locale",
+    defaultValue: "en",
+    toolbar: {
+      icon: "globe",
+      items: [
+        { value: "en", title: "English" },
+        { value: "de", title: "German" },
+        { value: "ar", title: "Arabic" },
+      ],
+    },
+  },
+};
+
+export const decorators = [
+  (Story, context) => {
+    i18n.changeLanguage(context.globals.locale);
+    return <Story />;
+  },
+];
+```
+
+See [Usage Guide](./examples/usage.md) for detailed mobile and locale snapshot documentation.
 
 ## Programmatic API
 

@@ -52,6 +52,16 @@ export const updateCommand = (yargs) => {
           type: "string",
           description: "Comma-separated path segments to include",
         })
+        .option("mobile", {
+          type: "boolean",
+          description: "Run in mobile mode (uses mobile config overrides)",
+          default: false,
+        })
+        .option("locale", {
+          type: "string",
+          description:
+            "Run in locale mode with specified locale code (e.g., de-DE, ar-SA)",
+        })
         .example("$0 update", "Update all snapshots")
         .example("$0 update --incremental", "Update only missing snapshots")
         .example(
@@ -65,13 +75,21 @@ export const updateCommand = (yargs) => {
         .example(
           "$0 update --story-ids button--default,input--error",
           "Update specific stories",
+        )
+        .example(
+          "$0 update --locale de-DE",
+          "Update snapshots in German locale",
         );
     },
     async (argv) => {
       try {
         console.log(chalk.blue("📸 Updating visual test snapshots...\n"));
 
-        const configOptions = { configFile: argv.config };
+        const configOptions = {
+          configFile: argv.config,
+          mobile: argv.mobile,
+          locale: argv.locale,
+        };
 
         if (argv.includePaths) {
           configOptions.filters = configOptions.filters || {};
@@ -211,6 +229,8 @@ export const updateCommand = (yargs) => {
           UPDATE_SNAPSHOTS: "1",
           VISUAL_TEST_UPDATE_SNAPSHOTS: "true",
           VISUAL_TESTS_DATA_FILE: dataFile,
+          VISUAL_TEST_MOBILE: argv.mobile ? "true" : "false",
+          VISUAL_TEST_LOCALE: argv.locale || "",
         };
 
         if (argv.incremental) {

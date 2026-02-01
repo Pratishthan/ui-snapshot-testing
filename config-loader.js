@@ -389,10 +389,47 @@ export const loadConfig = async (options = {}) => {
         };
       }
     }
+
+    // Apply locale configuration if enabled
+    // Locale config is nested under snapshot.locale
+    if (options.locale && fileConfig.snapshot?.locale?.enabled) {
+      // Validate locale exists in configured locales
+      const locales = fileConfig.snapshot.locale.locales || [];
+      const localeConfig = locales.find((l) => l.code === options.locale);
+
+      if (!localeConfig) {
+        const availableLocales = locales.map((l) => l.code).join(", ");
+        throw new Error(
+          `Invalid locale: ${options.locale}. Available locales: ${availableLocales || "none configured"}`,
+        );
+      }
+
+      // Merge locale-specific testMatcher if provided
+      if (fileConfig.snapshot.locale.testMatcher) {
+        config.testMatcher = deepMerge(
+          config.testMatcher || {},
+          fileConfig.snapshot.locale.testMatcher,
+        );
+      }
+
+      // Store locale code in config for use by other modules
+      config.locale = {
+        code: options.locale,
+        name: localeConfig.name,
+        direction: localeConfig.direction || "ltr",
+        storybookGlobalParam:
+          fileConfig.snapshot.locale.storybookGlobalParam || "locale",
+      };
+    }
   }
 
   // 3. Merge programmatic options (highest priority)
+  // But preserve the locale object if it was set above
+  const localeObject = config.locale;
   config = deepMerge(config, options);
+  if (localeObject && typeof localeObject === "object") {
+    config.locale = localeObject;
+  }
 
   // 4. Normalize configuration
   config = normalizeConfig(config);

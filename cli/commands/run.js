@@ -56,11 +56,17 @@ export const runCommand = (yargs) => {
           description: "Run in mobile mode (uses mobile config overrides)",
           default: false,
         })
+        .option("locale", {
+          type: "string",
+          description:
+            "Run in locale mode with specified locale code (e.g., de-DE, ar-SA)",
+        })
         .example("$0 run", "Run visual tests with default settings")
         .example(
           "$0 run --include-paths components/Button",
           "Run tests for Button component",
-        );
+        )
+        .example("$0 run --locale de-DE", "Run tests in German locale");
     },
     async (argv) => {
       try {
@@ -70,6 +76,7 @@ export const runCommand = (yargs) => {
         const configOptions = {
           configFile: argv.config,
           mobile: argv.mobile,
+          locale: argv.locale,
         };
 
         if (argv.storybookPort) {
@@ -148,6 +155,7 @@ export const runCommand = (yargs) => {
           STORYBOOK_PORT: config.storybook.port,
           VISUAL_TEST_UPDATE_SNAPSHOTS: argv.updateSnapshots ? "true" : "false",
           VISUAL_TEST_MOBILE: argv.mobile ? "true" : "false",
+          VISUAL_TEST_LOCALE: argv.locale || "",
         };
 
         // Run Playwright

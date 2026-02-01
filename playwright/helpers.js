@@ -57,7 +57,13 @@ export async function maskTimestampElements(page) {
 export async function navigateToStory(page, storyId, config = {}) {
   const host = config.storybook?.host || "localhost";
   const port = config.storybook?.port || "6006";
-  const url = `http://${host}:${port}/iframe.html?id=${storyId}&viewMode=story`;
+  let url = `http://${host}:${port}/iframe.html?id=${storyId}&viewMode=story`;
+
+  // Inject locale parameter if locale is configured
+  if (config.locale?.code) {
+    const globalParam = config.locale.storybookGlobalParam || "locale";
+    url += `&globals=${globalParam}:${config.locale.code}`;
+  }
 
   await page.goto(url, { waitUntil: "networkidle" });
 }

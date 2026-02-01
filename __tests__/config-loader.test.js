@@ -29,6 +29,40 @@ describe("Config Loader", () => {
       });
       expect(config.snapshot.image.enabled).toBe(false);
     });
+
+    test("does not apply locale when locale not provided", async () => {
+      const config = await loadConfig({
+        snapshot: {
+          locale: {
+            enabled: true,
+            locales: [{ code: "de-DE", name: "German" }],
+          },
+        },
+      });
+
+      expect(config.locale).toBeUndefined();
+    });
+
+    test("validates locale configuration structure", async () => {
+      // Test that config with locale structure loads without errors
+      const config = await loadConfig({
+        snapshot: {
+          locale: {
+            enabled: true,
+            locales: [
+              { code: "en-US", name: "English (US)" },
+              { code: "de-DE", name: "German" },
+              { code: "ar-SA", name: "Arabic", direction: "rtl" },
+            ],
+            storybookGlobalParam: "locale",
+          },
+        },
+      });
+
+      expect(config.snapshot.locale).toBeDefined();
+      expect(config.snapshot.locale.enabled).toBe(true);
+      expect(config.snapshot.locale.locales).toHaveLength(3);
+    });
   });
 
   describe("getConfigValue", () => {

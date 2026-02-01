@@ -88,6 +88,29 @@ export default {
         // { width: 360, height: 640, name: 'Android Small' },
       ],
     },
+
+    // Locale snapshot configuration (overrides when --locale flag is used)
+    locale: {
+      // Enable locale snapshots (set to true to activate)
+      enabled: false,
+
+      // Optional: Override test matcher for locale-specific stories
+      // Only stories with 'visual-locale' tag will be tested
+      // testMatcher: {
+      //   tags: ['visual-locale'],
+      // },
+
+      // Define locales to test
+      locales: [
+        { code: "en-US", name: "English (US)" },
+        { code: "de-DE", name: "German" },
+        { code: "ar-SA", name: "Arabic (Saudi Arabia)", direction: "rtl" },
+      ],
+
+      // Storybook parameter to set locale (how to pass locale to stories)
+      // This will be injected as a URL parameter when navigating to stories
+      storybookGlobalParam: "locale", // e.g., ?globals=locale:de-DE
+    },
   },
 
   // Storybook configuration

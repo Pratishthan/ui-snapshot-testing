@@ -231,3 +231,134 @@ export const Default: Story = {
 - **Multi-viewport support**: Run tests across all configured viewports
 - **Story-level viewport override**: Override viewports per story via `story.parameters.mobileViewports`
 - **Parallel viewport testing**: Generate snapshots for all viewports concurrently
+
+---
+
+## Locale Snapshots
+
+Test your stories with different locales (languages/regions) using the `--locale` flag. This is useful for internationalized applications to ensure UI renders correctly in different languages and RTL layouts.
+
+### Configuration
+
+Add locale configuration to `visual-tests.config.js`:
+
+```javascript
+export default {
+  snapshot: {
+    locale: {
+      // Enable locale snapshots
+      enabled: true,
+
+      // Optional: Override test matcher for locale-specific stories
+      // Only stories with 'visual-locale' tag will be tested in locale mode
+      testMatcher: {
+        tags: ["visual-locale"],
+      },
+
+      // Define locales to test
+      locales: [
+        { code: "en", name: "English" },
+        { code: "de", name: "German" },
+        { code: "ar", name: "Arabic", direction: "rtl" },
+      ],
+
+      // Storybook parameter to set locale (how to pass locale to stories)
+      // This will be injected as a URL parameter when navigating to stories
+      storybookGlobalParam: "locale", // e.g., ?globals=locale:de
+    },
+  },
+};
+```
+
+### Story Tagging
+
+Tag stories that should be tested in locale mode:
+
+```typescript
+// LoginForm.stories.tsx
+export const Default: Story = {
+  tags: ['visual', 'visual-locale'],  // Include both tags
+  args: { ... },
+};
+```
+
+### Running Locale Tests
+
+| Action                      | Command                                                                |
+| :-------------------------- | :--------------------------------------------------------------------- |
+| **Run Locale Tests**        | `npx snapshot-testing run --locale de`                                 |
+| **Update Locale Snapshots** | `npx snapshot-testing update --locale de`                              |
+| **Test Specific Story**     | `npx snapshot-testing run --locale de --include-paths "path/to/story"` |
+| **Test RTL Locale**         | `npx snapshot-testing run --locale ar`                                 |
+
+### Behavior
+
+- **Snapshot Directory**: Locale snapshots are stored in locale-specific subdirectories (e.g., `__visual_snapshots__/de/`, `__visual_snapshots__/ar/`)
+- **Locale Parameter Injection**: The locale code is automatically injected into Storybook URLs as a global parameter (e.g., `?globals=locale:de`)
+- **Tag Filtering**: When `testMatcher` is configured in `snapshot.locale`, only stories with matching tags are tested in locale mode
+- **Independent Snapshots**: Each locale has its own set of snapshots, allowing you to verify translations and layout changes
+- **RTL Support**: Locales with `direction: 'rtl'` can be tested to ensure proper right-to-left layout rendering
+
+### Storybook Integration
+
+Ensure your Storybook is configured to respond to the locale global parameter:
+
+```javascript
+// .storybook/preview.js
+export const globalTypes = {
+  locale: {
+    name: "Locale",
+    description: "Internationalization locale",
+    defaultValue: "en",
+    toolbar: {
+      icon: "globe",
+      items: [
+        { value: "en", title: "English" },
+        { value: "de", title: "German" },
+        { value: "ar", title: "Arabic" },
+      ],
+    },
+  },
+};
+
+// Decorator to apply locale to stories
+export const decorators = [
+  (Story, context) => {
+    const locale = context.globals.locale;
+    // Apply locale to your i18n library
+    i18n.changeLanguage(locale);
+    return <Story />;
+  },
+];
+```
+
+### Example Package.json Scripts
+
+```json
+{
+  "scripts": {
+    "test:visual:locale:de": "npm run warmup-storybook && npx snapshot-testing run --locale de",
+    "test:visual:locale:ar": "npm run warmup-storybook && npx snapshot-testing run --locale ar",
+    "test:visual:locale:update": "npm run warmup-storybook && npx snapshot-testing update --locale de"
+  }
+}
+```
+
+### Testing Multiple Locales
+
+To test all configured locales, create a script:
+
+```bash
+#!/bin/bash
+# test-all-locales.sh
+for locale in en de ar; do
+  echo "Testing locale: $locale"
+  npx snapshot-testing run --locale $locale
+done
+```
+
+### Future Enhancements
+
+- **Multi-locale batch testing**: Run tests for all configured locales in a single command
+- **Locale-specific thresholds**: Different comparison thresholds for RTL layouts
+- **Locale coverage reports**: Track which stories have been tested in which locales
