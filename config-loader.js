@@ -130,7 +130,6 @@ const getDefaultConfig = () => {
   return {
     testMatcher: {
       tags: DEFAULT_TEST_MATCHER.tags,
-      suffix: DEFAULT_TEST_MATCHER.suffix,
     },
     storybook: {
       port: DEFAULT_STORYBOOK_PORT,
