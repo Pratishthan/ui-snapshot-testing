@@ -32,7 +32,7 @@ const config = {
     process.cwd(),
     visualTestConfig.paths?.snapshotsDir || "./playwright/__visual_snapshots__",
     isMobile ? "mobile" : "",
-    localeCode ? localeCode : "",
+    localeCode && !visualTestConfig.locale?.default ? localeCode : "",
   ),
   snapshotPathTemplate: "{snapshotDir}/{arg}{ext}",
 

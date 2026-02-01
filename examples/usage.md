@@ -257,7 +257,7 @@ export default {
 
       // Define locales to test
       locales: [
-        { code: "en", name: "English" },
+        { code: "en", name: "English", default: true },
         { code: "de", name: "German" },
         { code: "ar", name: "Arabic", direction: "rtl" },
       ],
@@ -296,7 +296,7 @@ export const Default: Story = {
 - **Snapshot Directory**: Locale snapshots are stored in locale-specific subdirectories (e.g., `__visual_snapshots__/de/`, `__visual_snapshots__/ar/`)
 - **Locale Parameter Injection**: The locale code is automatically injected into Storybook URLs as a global parameter (e.g., `?globals=locale:de`)
 - **Tag Filtering**: When `testMatcher` is configured in `snapshot.locale`, only stories with matching tags are tested in locale mode
-- **Independent Snapshots**: Each locale has its own set of snapshots, allowing you to verify translations and layout changes
+- **Independent Snapshots**: Each locale has its own set of snapshots, stored in subdirectories (e.g., `de/`, `ar/`). The **default locale** (marked with `default: true`) stores snapshots in the root directory to avoid duplication.
 - **RTL Support**: Locales with `direction: 'rtl'` can be tested to ensure proper right-to-left layout rendering
 
 ### Storybook Integration

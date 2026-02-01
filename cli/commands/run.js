@@ -76,7 +76,9 @@ export const runCommand = (yargs) => {
         const configOptions = {
           configFile: argv.config,
           mobile: argv.mobile,
-          locale: argv.locale,
+          // Handle empty string locale (passed as flag without value) as null/undefined unless we implement "all" logic later
+          // For run command, we don't have "all" logic yet, so we treat it as no locale
+          locale: argv.locale && argv.locale !== true ? argv.locale : undefined,
         };
 
         if (argv.storybookPort) {

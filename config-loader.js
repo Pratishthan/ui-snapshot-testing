@@ -416,6 +416,7 @@ export const loadConfig = async (options = {}) => {
         code: options.locale,
         name: localeConfig.name,
         direction: localeConfig.direction || "ltr",
+        default: localeConfig.default || false,
         storybookGlobalParam:
           fileConfig.snapshot.locale.storybookGlobalParam || "locale",
       };
@@ -423,11 +424,23 @@ export const loadConfig = async (options = {}) => {
   }
 
   // 3. Merge programmatic options (highest priority)
-  // But preserve the locale object if it was set above
+  // But preserve the locale object and testMatcher if they were set above
+  // This is necessary because options.locale might be a string (locale code)
+  // which would overwrite the locale object we created
   const localeObject = config.locale;
+  const testMatcherObject = config.testMatcher;
+
   config = deepMerge(config, options);
+
+  // Restore locale object if it was set (don't let string locale code overwrite it)
   if (localeObject && typeof localeObject === "object") {
     config.locale = localeObject;
+  }
+
+  // Restore testMatcher if it was overridden for locale/mobile mode
+  // Only restore if the options didn't explicitly provide a testMatcher
+  if (testMatcherObject && !options.testMatcher) {
+    config.testMatcher = testMatcherObject;
   }
 
   // 4. Normalize configuration

@@ -102,7 +102,7 @@ export default {
 
       // Define locales to test
       locales: [
-        { code: "en-US", name: "English (US)" },
+        { code: "en-US", name: "English (US)", default: true },
         { code: "de-DE", name: "German" },
         { code: "ar-SA", name: "Arabic (Saudi Arabia)", direction: "rtl" },
       ],
