@@ -346,7 +346,7 @@ export const updateCommand = (yargs) => {
           // Single locale mode
           // If argv.locale is empty string here, it means it fell through (should have been caught above)
           // But just in case, treat empty string as undefined/null
-          const localeCode = argv.locale || null;
+          const localeCode = argv.locale || undefined;
 
           const configOptions = {
             configFile: argv.config,
