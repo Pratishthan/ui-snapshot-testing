@@ -15,6 +15,7 @@ import { diffCommand } from "./commands/diff.js";
 import { reportCommand } from "./commands/report.js";
 import { orphansCommand } from "./commands/orphans.js";
 import { dryRunCommand } from "./commands/dry-run.js";
+import { recommendMobileCommand } from "./commands/recommend-mobile.js";
 
 const cli = yargs(hideBin(process.argv))
   .scriptName("snapshot-testing")
@@ -43,6 +44,7 @@ diffCommand(cli);
 reportCommand(cli);
 orphansCommand(cli);
 dryRunCommand(cli);
+recommendMobileCommand(cli);
 
 // Parse and execute
 cli.parse();

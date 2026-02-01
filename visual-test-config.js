@@ -116,6 +116,16 @@ export const DEFAULT_ENABLE_POSITION_TRACKING = true;
 export const DEFAULT_ENABLE_ORDER_CHECK = true;
 
 /**
+ * Default minimum width for mobile recommendation discovery (pixels)
+ */
+export const DEFAULT_MOBILE_DISCOVERY_MIN_WIDTH = 400;
+
+/**
+ * Default tags to exclude from mobile recommendations
+ */
+export const DEFAULT_MOBILE_DISCOVERY_EXCLUDE_TAGS = [];
+
+/**
  * Default target branch for diff-based testing
  */
 export const DEFAULT_TARGET_BRANCH = "Sprint16";

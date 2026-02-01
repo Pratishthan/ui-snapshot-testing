@@ -10,6 +10,11 @@ This guide covers how to use the `@pratishthan/snapshot-testing` library, from b
 - [Programmatic Usage](#programmatic-usage) (Advanced)
   - [Custom Scripts](#custom-scripts)
 - [Story Configuration](#story-configuration)
+- [Mobile Snapshots](#mobile-snapshots)
+- [Mobile Recommendation Discovery](#mobile-recommendation-discovery)
+- [Locale Snapshots](#locale-snapshots)
+- [Orphan Detection](#orphan-detection)
+- [Dry Run](#dry-run)
 - [Advanced Topics](../docs/advanced-guide.md) (Masking, Position Tracking, Troubleshooting)
 
 ---
@@ -231,6 +236,59 @@ export const Default: Story = {
 - **Multi-viewport support**: Run tests across all configured viewports
 - **Story-level viewport override**: Override viewports per story via `story.parameters.mobileViewports`
 - **Parallel viewport testing**: Generate snapshots for all viewports concurrently
+
+---
+
+## Mobile Recommendation Discovery
+
+The `recommend-mobile` command helps you identify stories that might benefit from mobile testing by analyzing your existing desktop snapshots.
+
+### Usage
+
+```bash
+# Analyze all stories with default threshold (400px)
+npx snapshot-testing recommend-mobile
+
+# Analyze with a specific width threshold
+npx snapshot-testing recommend-mobile --threshold 300
+```
+
+### Configuration
+
+You can configure the discovery logic in `visual-tests.config.js`:
+
+```javascript
+export default {
+  snapshot: {
+    mobile: {
+      discovery: {
+        // Snapshots wider than this (in px) trigger a recommendation
+        thresholds: {
+          minWidth: 400,
+        },
+        // Tags to ignore for mobile recommendations
+        excludeTags: ["no-mobile-vrt"],
+      },
+    },
+  },
+};
+```
+
+### Discovery Logic
+
+1.  **Width Heuristic**: The engine reads the actual rendered width of your desktop snapshots. If the width exceeds the configured `minWidth`, it's a candidate for mobile testing.
+2.  **Coverage Check**: It automatically excludes any story that already has a corresponding mobile snapshot.
+3.  **Exclusions**: It skips stories tagged with any tag in `excludeTags` or stories that are already configured for mobile testing but just missing snapshots.
+
+### Example Package.json Scripts
+
+```json
+{
+  "scripts": {
+    "test:visual:recommend": "npx snapshot-testing recommend-mobile"
+  }
+}
+```
 
 ---
 

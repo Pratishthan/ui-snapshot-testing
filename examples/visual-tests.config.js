@@ -33,14 +33,6 @@ export default {
       maxDiffPixelRatio: 0.02,
 
       /**
-       * Max Number of Different Pixels
-       * - What it does: Sets the absolute limit on the number of differing pixels.
-       * - Increase (e.g., 500): Tolerates small artifacts or tiny layout shifts (e.g., 1px border shift).
-       * - Decrease (e.g., 0): Zero tolerance for any pixel difference.
-       */
-      threshold: 0.2,
-
-      /**
        * Color Threshold (0-1)
        * - What it does: Sensitivity of pixel-to-pixel color comparison (YIQ difference).
        * - Increase (e.g., 0.5): Comparison becomes looser; colors must be very different to count as a mismatch (ignoring anti-aliasing).
@@ -87,6 +79,16 @@ export default {
         // { width: 390, height: 844, name: 'iPhone 12/13' },
         // { width: 360, height: 640, name: 'Android Small' },
       ],
+
+      // Mobile discovery settings (for recommend-mobile command)
+      discovery: {
+        // Thresholds for recommendations
+        thresholds: {
+          minWidth: 400, // Recommend mobile if desktop snapshot is wider than this
+        },
+        // Tags to exclude from recommendations
+        excludeTags: ["no-mobile-vrt"],
+      },
     },
 
     // Locale snapshot configuration (overrides when --locale flag is used)

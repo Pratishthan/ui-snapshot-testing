@@ -1,6 +1,6 @@
 {
     "name": "ui-snapshot-testing",
-    "version": "0.7.0",
+    "version": "0.8.0",
     "author": "vivekkodira@gmail.com",
     "publishConfig": {
         "access": "public"
@@ -64,6 +64,7 @@
     "dependencies": {
         "chalk": "^5.3.0",
         "enquirer": "^2.4.1",
+        "image-size": "^2.0.2",
         "yargs": "^17.7.2"
     },
     "devDependencies": {

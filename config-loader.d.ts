@@ -7,7 +7,7 @@
  */
 export interface VisualTestConfig {
   /** Test mode: 'lite' (only _visual stories) or 'full' (keyword matching) */
-  mode: 'lite' | 'full';
+  mode: "lite" | "full";
 
   /** Storybook configuration */
   storybook: {
@@ -29,6 +29,13 @@ export interface VisualTestConfig {
     keywords: string[];
     /** Exclusion patterns (stories matching these are excluded) */
     exclusions: string[];
+  };
+
+  /** Test matcher configuration (optional override) */
+  testMatcher?: {
+    tags?: string[];
+    suffix?: string[];
+    keywords?: string[];
   };
 
   /** Path configuration */
@@ -53,16 +60,64 @@ export interface VisualTestConfig {
     ignorePatterns: string[];
   };
 
-  /** Position tracking configuration */
-  positionTracking: {
-    /** Enable position tracking */
-    enabled: boolean;
-    /** Enable order checking */
-    orderCheck: boolean;
-    /** Position threshold in pixels */
-    positionThreshold: number;
-    /** Size threshold in pixels */
-    sizeThreshold: number;
+  /** Snapshot configuration */
+  snapshot: {
+    /** Image snapshot configuration */
+    image?: {
+      enabled: boolean;
+      testMatcher?: {
+        tags?: string[];
+      };
+    };
+    /** Position snapshot configuration */
+    position?: {
+      enabled: boolean;
+      orderCheck: boolean;
+      positionThreshold: number;
+      sizeThreshold: number;
+      testMatcher?: {
+        tags?: string[];
+      };
+    };
+    /** Mobile snapshot configuration */
+    mobile?: {
+      enabled: boolean;
+      viewports?: Array<{ width: number; height: number; name?: string }>;
+      testMatcher?: {
+        tags?: string[];
+      };
+      /** Discovery configuration for mobile recommendations */
+      discovery?: {
+        thresholds?: {
+          minWidth?: number;
+        };
+        excludeTags?: string[];
+      };
+    };
+    /** Locale snapshot configuration */
+    locale?: {
+      enabled: boolean;
+      locales?: Array<{
+        code: string;
+        name: string;
+        direction?: "ltr" | "rtl";
+        default?: boolean;
+      }>;
+      testMatcher?: {
+        tags?: string[];
+      };
+      storybookGlobalParam?: string;
+    };
+  };
+
+  /** Active configuration state (runtime only) */
+  activeViewport?: { width: number; height: number; name?: string };
+  locale?: {
+    code: string;
+    name: string;
+    direction: string;
+    default: boolean;
+    storybookGlobalParam: string;
   };
 
   /** Diff-based testing configuration */
