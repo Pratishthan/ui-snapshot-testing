@@ -18,7 +18,7 @@ import { dryRunCommand } from "./commands/dry-run.js";
 import { recommendMobileCommand } from "./commands/recommend-mobile.js";
 
 const cli = yargs(hideBin(process.argv))
-  .scriptName("snapshot-testing")
+  .scriptName("ui-snapshot-testing")
   .usage("$0 <command> [options]")
   .version()
   .help()

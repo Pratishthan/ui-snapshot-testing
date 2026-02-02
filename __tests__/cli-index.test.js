@@ -40,7 +40,7 @@ describe("CLI Index", () => {
       "utf8",
     );
 
-    expect(cliIndexContent).toContain('scriptName("snapshot-testing")');
+    expect(cliIndexContent).toContain('scriptName("ui-snapshot-testing")');
   });
 
   it("should have shebang for CLI execution", async () => {

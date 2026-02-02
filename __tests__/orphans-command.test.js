@@ -101,6 +101,50 @@ describe("Orphans Command", () => {
 
     const snapshotsDir = path.join(process.cwd(), "__visual_snapshots__");
     expect(mockFs.readdirSync).toHaveBeenCalledWith(snapshotsDir);
+
+    // Should assume default viewport from valid config (mockLoadConfig should provide it)
+    // We didn't provide mockConfig.playwright.use.viewport, so it falls back to undefined?
+    // In our implementation, we check config.playwright?.use?.viewport.
+    // If undefined, sanitizeSnapshotName is called with undefined, so "story1".
+  });
+
+  it("should use playwright viewport for desktop if configured", async () => {
+    const mockConfig = {
+      snapshot: {
+        paths: { snapshotsDir: "__visual_snapshots__" },
+        image: { enabled: true },
+        position: { enabled: true },
+        // Simulate what happens in config-loader defaults
+      },
+      playwright: {
+        use: { viewport: { width: 1280, height: 720 } },
+      },
+    };
+    mockLoadConfig.mockResolvedValue(mockConfig);
+
+    mockFetchStories.mockResolvedValue([{ id: "story1" }]);
+    mockFs.readdirSync.mockReturnValue(["story1-1280x720.png"]); // Matches expected
+
+    orphansCommand(mockYargs);
+    const argv = { config: "config.js" };
+
+    // Verify usage of console.log
+    // We need to spy on console.log if not already handled
+    const logSpy = jest.spyOn(console, "log").mockImplementation(() => {});
+
+    await commandHandler(argv);
+
+    // Verify sanitizeSnapshotName called with viewport
+    expect(mockSanitizeSnapshotName).toHaveBeenCalledWith("story1", {
+      width: 1280,
+      height: 720,
+    });
+    // Should find NO orphans
+    expect(logSpy).toHaveBeenCalledWith(
+      expect.stringContaining("No orphaned snapshots found"),
+    );
+
+    logSpy.mockRestore();
   });
 
   it("should check mobile snapshots with viewports", async () => {

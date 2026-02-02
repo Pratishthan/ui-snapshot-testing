@@ -132,10 +132,12 @@ describe("Dry Run Command", () => {
       expect.objectContaining({
         mobile: true,
         locale: "de-DE",
-        filters: {
-          includePaths: ["components/Button"],
-          storyIds: ["button--primary"],
-        },
+        snapshot: expect.objectContaining({
+          filters: {
+            includePaths: ["components/Button"],
+            storyIds: ["button--primary"],
+          },
+        }),
       }),
     );
 
@@ -144,6 +146,42 @@ describe("Dry Run Command", () => {
     );
     expect(mockConsoleLog).toHaveBeenCalledWith(
       expect.stringContaining("Locale: de-DE"),
+    );
+  });
+
+  it("should iterate all locales when --locale is used without value", async () => {
+    const mockConfig = {
+      snapshot: {
+        paths: { snapshotsDir: "__visual_snapshots__" },
+        locale: {
+          locales: [
+            { code: "en-US", name: "English", default: true },
+            { code: "de-DE", name: "German" },
+          ],
+        },
+      },
+    };
+    mockLoadConfig.mockResolvedValue(mockConfig);
+    mockFetchStories.mockResolvedValue([]);
+
+    dryRunCommand(mockYargs);
+    const argv = {
+      config: "config.js",
+      locale: true,
+    };
+    await commandHandler(argv);
+
+    // Initial load + non-default locale load
+    expect(mockLoadConfig).toHaveBeenCalledTimes(2);
+
+    // Should skip default (en-US)
+    expect(mockConsoleLog).toHaveBeenCalledWith(
+      expect.stringContaining("Skipping default locale: en-US"),
+    );
+
+    // Should run for de-DE
+    expect(mockConsoleLog).toHaveBeenCalledWith(
+      expect.stringContaining("Dry Run for locale: de-DE"),
     );
   });
 });

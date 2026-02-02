@@ -215,8 +215,14 @@ export const orphansCommand = (yargs) => {
             const stories = await fetchStoriesFromStorybook(config, true);
 
             for (const story of stories) {
+              // Priority: 1. Explicit story param (mobile loop)
+              //           2. Active viewport (mobile config)
+              //           3. Playwright config viewport (desktop fallback)
               const currentViewport =
-                storyParams.viewport || config.activeViewport;
+                storyParams.viewport ||
+                config.activeViewport ||
+                config.playwright?.use?.viewport;
+
               const baseName = sanitizeSnapshotName(story.id, currentViewport);
 
               if (config.snapshot?.image?.enabled !== false) {
