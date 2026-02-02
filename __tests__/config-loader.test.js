@@ -63,6 +63,21 @@ describe("Config Loader", () => {
       expect(config.snapshot.locale.enabled).toBe(true);
       expect(config.snapshot.locale.locales).toHaveLength(3);
     });
+
+    test("ensures new snapshot structure is present", async () => {
+      const config = await loadConfig();
+      expect(config.snapshot).toBeDefined();
+      expect(config.snapshot.paths).toBeDefined();
+      expect(config.snapshot.filters).toBeDefined();
+      expect(config.snapshot.testMatcher).toBeDefined();
+
+      // Ensure specific paths are under snapshot.paths
+      expect(config.snapshot.paths.snapshotsDir).toBeDefined();
+
+      // Ensure legacy root properties are NOT present
+      expect(config.paths).toBeUndefined();
+      expect(config.filters).toBeUndefined();
+    });
   });
 
   describe("getConfigValue", () => {

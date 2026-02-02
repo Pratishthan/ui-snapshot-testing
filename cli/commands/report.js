@@ -53,7 +53,7 @@ export const reportCommand = (yargs) => {
     async (argv) => {
       try {
         const config = await loadConfig({ configFile: argv.config });
-        const logsDir = path.join(process.cwd(), config.paths.logsDir);
+        const logsDir = path.join(process.cwd(), config.snapshot.paths.logsDir);
 
         // Generate new report if requested
         if (argv.generate) {

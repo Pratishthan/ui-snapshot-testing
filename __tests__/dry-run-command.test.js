@@ -53,7 +53,9 @@ describe("Dry Run Command", () => {
 
   it("should process default dry-run correctly", async () => {
     const mockConfig = {
-      paths: { snapshotsDir: "__visual_snapshots__" },
+      snapshot: {
+        paths: { snapshotsDir: "__visual_snapshots__" },
+      },
     };
     mockLoadConfig.mockResolvedValue(mockConfig);
     mockFetchStories.mockResolvedValue([
@@ -83,7 +85,11 @@ describe("Dry Run Command", () => {
   });
 
   it("should handle verbose output", async () => {
-    const mockConfig = { paths: { snapshotsDir: "__visual_snapshots__" } };
+    const mockConfig = {
+      snapshot: {
+        paths: { snapshotsDir: "__visual_snapshots__" },
+      },
+    };
     mockLoadConfig.mockResolvedValue(mockConfig);
     mockFetchStories.mockResolvedValue([
       { id: "story1", name: "Story 1", importPath: "src/Story1.stories.js" },
@@ -103,7 +109,9 @@ describe("Dry Run Command", () => {
 
   it("should handle filter options (mobile, locale, includes)", async () => {
     const mockConfig = {
-      paths: { snapshotsDir: "__visual_snapshots__" },
+      snapshot: {
+        paths: { snapshotsDir: "__visual_snapshots__" },
+      },
       mobile: true,
       locale: { code: "de-DE", name: "German" },
     };

@@ -11,7 +11,7 @@ describe("Story Discovery", () => {
     test("replaces non-alphanumeric characters with dashes", () => {
       expect(sanitizeSnapshotName("foo bar")).toBe("foo-bar");
       expect(sanitizeSnapshotName("foo/bar/baz")).toBe("foo-bar-baz");
-      expect(sanitizeSnapshotName("FooBar123")).toBe("FooBar123");
+      expect(sanitizeSnapshotName("FooBar123")).toBe("foobar123");
       expect(sanitizeSnapshotName("foo.bar")).toBe("foo-bar");
     });
   });

@@ -161,6 +161,27 @@ export default {
 
 ---
 
+## Snapshot Organization
+
+Snapshots are organized to ensure clarity and avoid collisions between different testing modes.
+
+### Naming Convention
+
+All snapshot files include their dimensions to ensure uniqueness and clarity:
+`{storyId}-{width}x{height}.png` (e.g., `button--primary-1280x720.png`)
+
+### Directory Structure
+
+Folders are used to separate testing contexts (User Agent, Locales, etc.):
+
+- **Desktop**: `__visual_snapshots__/` (Root)
+- **Mobile**: `__visual_snapshots__/mobile/`
+- **Locales**: `__visual_snapshots__/{locale}/` (e.g., `de/`, `ar/`)
+
+This structure is maintained even though filenames are unique, as it groups related snapshots and helps distinguish between desktop viewports and mobile simulations.
+
+---
+
 ## Mobile Snapshots
 
 Test your stories with mobile viewports using the `--mobile` flag.

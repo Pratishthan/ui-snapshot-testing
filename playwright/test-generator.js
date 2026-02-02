@@ -99,7 +99,7 @@ export function generateVisualTestsFromData(options = {}) {
     test(testTitle, async ({ page }, testInfo) => {
       const storyId = story.id;
       // Get viewport from config if available (for mobile mode)
-      const viewport = config.playwrightConfig?.use?.viewport;
+      const viewport = config.playwright?.use?.viewport;
       const snapshotName = getSnapshotName(storyId, config, viewport);
 
       try {
@@ -125,9 +125,33 @@ export function generateVisualTestsFromData(options = {}) {
           testInfo.config.updateSnapshots === "all" ||
           testInfo.config.updateSnapshots === "missing";
 
+        // Helper to check if a specific feature should be enabled for this story
+        const shouldRunFeature = (featureName, featureConfig, storyTags) => {
+          // 1. GLOBAL: Enabled in config?
+          if (featureConfig?.enabled === false) return false;
+          // 2. STORY: Enabled in story parameters?
+          if (story._testOptions?.[featureName] === false) return false;
+
+          // 3. OVERRIDE: Check specific testMatcher if present
+          if (featureConfig?.testMatcher) {
+            const matcher = featureConfig.testMatcher;
+            // If tags are defined, story MUST match at least one
+            if (matcher.tags && matcher.tags.length > 0) {
+              const hasMatchingTag = matcher.tags.some((tag) =>
+                storyTags.includes(tag),
+              );
+              if (!hasMatchingTag) return false;
+            }
+          }
+
+          return true;
+        };
+
+        const storyTags = story.tags || [];
+
+        // Check if position tracking should run
         if (
-          config.snapshot?.position?.enabled !== false &&
-          story._testOptions?.position !== false
+          shouldRunFeature("position", config.snapshot?.position, storyTags)
         ) {
           if (isUpdateMode) {
             // Update mode: capture and save positions
@@ -158,10 +182,7 @@ export function generateVisualTestsFromData(options = {}) {
         }
 
         // Take screenshot and compare
-        if (
-          config.snapshot?.image?.enabled !== false &&
-          story._testOptions?.image !== false
-        ) {
+        if (shouldRunFeature("image", config.snapshot?.image, storyTags)) {
           const screenshot = await captureStoryScreenshot(page, targetSelector);
 
           if (isUpdateMode) {
@@ -223,7 +244,8 @@ export function generateVisualTestsFromData(options = {}) {
         }
       } catch (error) {
         // Check if error should be ignored
-        const ignorePatterns = config.errorHandling?.ignorePatterns || [];
+        const ignorePatterns =
+          config.snapshot?.errorHandling?.ignorePatterns || [];
         if (shouldIgnoreError(error, ignorePatterns)) {
           console.log(`⚠️  Ignoring error for ${storyId}: ${error.message}`);
           test.skip();

@@ -77,8 +77,11 @@ describe("Orphans Command", () => {
 
   it("should check desktop snapshots by default", async () => {
     const mockConfig = {
-      paths: { snapshotsDir: "__visual_snapshots__" },
-      snapshot: { image: { enabled: true }, position: { enabled: true } },
+      snapshot: {
+        paths: { snapshotsDir: "__visual_snapshots__" },
+        image: { enabled: true },
+        position: { enabled: true },
+      },
     };
     mockLoadConfig.mockResolvedValue(mockConfig);
 
@@ -102,8 +105,8 @@ describe("Orphans Command", () => {
 
   it("should check mobile snapshots with viewports", async () => {
     const mockConfig = {
-      paths: { snapshotsDir: "__visual_snapshots__" },
       snapshot: {
+        paths: { snapshotsDir: "__visual_snapshots__" },
         mobile: {
           enabled: true,
           viewports: [{ width: 375, height: 667 }],
@@ -135,9 +138,12 @@ describe("Orphans Command", () => {
 
   it("should check locales correctly (flat structure)", async () => {
     const mockConfig = {
-      paths: { snapshotsDir: "__visual_snapshots__" },
+      snapshot: {
+        paths: { snapshotsDir: "__visual_snapshots__" },
+        locale: { code: "de-DE" },
+        image: { enabled: true },
+      },
       locale: { code: "de-DE" },
-      snapshot: { image: { enabled: true } },
     };
     mockLoadConfig.mockResolvedValue(mockConfig);
     mockFetchStories.mockResolvedValue([{ id: "story1" }]);
@@ -155,8 +161,8 @@ describe("Orphans Command", () => {
 
   it("should check --all modes including mobile and locales", async () => {
     const mockBaseConfig = {
-      paths: { snapshotsDir: "__visual_snapshots__" },
       snapshot: {
+        paths: { snapshotsDir: "__visual_snapshots__" },
         mobile: { enabled: true, viewports: [{ width: 375, height: 667 }] },
         locale: { enabled: true, locales: [{ code: "de-DE", default: false }] },
       },
@@ -207,8 +213,10 @@ describe("Orphans Command", () => {
 
   it("should delete orphans when requested and confirmed", async () => {
     const mockConfig = {
-      paths: { snapshotsDir: "__visual_snapshots__" },
-      snapshot: { image: { enabled: true } },
+      snapshot: {
+        paths: { snapshotsDir: "__visual_snapshots__" },
+        image: { enabled: true },
+      },
     };
     mockLoadConfig.mockResolvedValue(mockConfig);
     mockFetchStories.mockResolvedValue([{ id: "story1" }]);

@@ -32,7 +32,7 @@ async function runUpdate(config, argv, localeCode = null) {
   if (argv.interactive) {
     const failuresFile = path.join(
       process.cwd(),
-      config.paths.logsDir,
+      config.snapshot.paths.logsDir,
       "visual-test-failures.jsonl",
     );
     const failures = await readFailuresFromJsonl(failuresFile);
@@ -75,8 +75,8 @@ async function runUpdate(config, argv, localeCode = null) {
   }
 
   if (storyIds.length > 0) {
-    config.filters = config.filters || {};
-    config.filters.storyIds = storyIds;
+    config.snapshot.filters = config.snapshot.filters || {};
+    config.snapshot.filters.storyIds = storyIds;
   }
 
   // Fetch stories
@@ -100,7 +100,10 @@ async function runUpdate(config, argv, localeCode = null) {
     console.log(
       chalk.gray(`Checking ${stories.length} stories for missing snapshots...`),
     );
-    const snapshotDir = path.join(process.cwd(), config.paths.snapshotsDir);
+    const snapshotDir = path.join(
+      process.cwd(),
+      config.snapshot.paths.snapshotsDir,
+    );
 
     stories = stories.filter((story) => {
       const baseName = sanitizeSnapshotName(story.id);
@@ -136,10 +139,10 @@ async function runUpdate(config, argv, localeCode = null) {
   const playwrightArgs = [
     "test",
     specFile,
-    `--config=${config.paths.playwrightConfig}`,
-    `--config=${config.paths.playwrightConfig}`,
-    config.playwrightConfig?.project
-      ? `--project=${config.playwrightConfig.project}`
+    `--config=${config.snapshot.paths.playwrightConfig}`,
+    `--config=${config.snapshot.paths.playwrightConfig}`,
+    config.playwright?.project
+      ? `--project=${config.playwright.project}`
       : "--project=chromium",
     "--update-snapshots",
   ];
@@ -316,8 +319,11 @@ export const updateCommand = (yargs) => {
             };
 
             if (argv.includePaths) {
-              configOptions.filters = configOptions.filters || {};
-              configOptions.filters.includePaths = argv.includePaths.split(",");
+              configOptions.snapshot = configOptions.snapshot || {};
+              configOptions.snapshot.filters =
+                configOptions.snapshot.filters || {};
+              configOptions.snapshot.filters.includePaths =
+                argv.includePaths.split(",");
             }
 
             const localeConfig = await loadConfig(configOptions);
@@ -355,8 +361,11 @@ export const updateCommand = (yargs) => {
           };
 
           if (argv.includePaths) {
-            configOptions.filters = configOptions.filters || {};
-            configOptions.filters.includePaths = argv.includePaths.split(",");
+            configOptions.snapshot = configOptions.snapshot || {};
+            configOptions.snapshot.filters =
+              configOptions.snapshot.filters || {};
+            configOptions.snapshot.filters.includePaths =
+              argv.includePaths.split(",");
           }
 
           const config = await loadConfig(configOptions);

@@ -6,9 +6,6 @@
  * Visual test configuration object
  */
 export interface VisualTestConfig {
-  /** Test mode: 'lite' (only _visual stories) or 'full' (keyword matching) */
-  mode: "lite" | "full";
-
   /** Storybook configuration */
   storybook: {
     /** Storybook port */
@@ -17,51 +14,77 @@ export interface VisualTestConfig {
     host: string;
     /** Storybook index path */
     indexPath: string;
+    /** Command to start Storybook */
+    command?: string;
+    /** Timeout for Storybook to start (ms) */
+    timeout?: number;
+    /** Reuse existing Storybook server */
+    reuseExistingServer?: boolean;
   };
 
-  /** Story filtering configuration */
-  filters: {
-    /** Path segments to include (stories must match at least one) */
-    includePaths: string[];
-    /** Specific story IDs to include */
-    storyIds: string[];
-    /** Keywords to match in story names */
-    keywords: string[];
-    /** Exclusion patterns (stories matching these are excluded) */
-    exclusions: string[];
-  };
-
-  /** Test matcher configuration (optional override) */
-  testMatcher?: {
-    tags?: string[];
-    suffix?: string[];
-    keywords?: string[];
-  };
-
-  /** Path configuration */
-  paths: {
-    /** Playwright configuration file path */
-    playwrightConfig: string;
-    /** Test spec file path */
-    testSpec: string;
-    /** Logs directory */
-    logsDir: string;
-    /** Snapshots directory */
-    snapshotsDir: string;
-    /** Screenshots directory (relative to logs dir) */
-    screenshotsDir: string;
-    /** Component paths to scan */
-    componentPaths: string[];
-  };
-
-  /** Error handling configuration */
-  errorHandling: {
-    /** Error message patterns to ignore */
-    ignorePatterns: string[];
+  playwright?: {
+    fullyParallel?: boolean;
+    workers?: number;
+    timeout?: number;
+    retries?: number;
+    forbidOnly?: boolean;
+    expect?: {
+      timeout?: number;
+    };
+    reporter?: Array<string | [string, any]>;
+    use?: {
+      trace?: string;
+      screenshot?: string;
+      video?: string;
+      viewport?: { width: number; height: number };
+      ignoreHTTPSErrors?: boolean;
+      [key: string]: any;
+    };
+    projects?: Array<{
+      name: string;
+      use?: any;
+      [key: string]: any;
+    }>;
+    [key: string]: any;
   };
 
   /** Snapshot configuration */
   snapshot: {
+    /** Test matcher configuration */
+    testMatcher: {
+      tags: string[];
+      suffix?: string[];
+      keywords?: string[];
+    };
+    /** Story filtering configuration */
+    filters: {
+      includePaths: string[];
+      storyIds: string[];
+      keywords: string[];
+      exclusions: string[];
+    };
+    /** Path configuration */
+    paths: {
+      playwrightConfig: string;
+      testSpec: string;
+      logsDir: string;
+      snapshotsDir: string;
+      screenshotsDir: string;
+      componentPaths: string[];
+    };
+    /** Error handling configuration */
+    errorHandling: {
+      ignorePatterns: string[];
+    };
+    /** Diff-based testing configuration */
+    diff: {
+      targetBranch: string;
+    };
+    /** Masking configuration */
+    masking: {
+      selectors: string[];
+    };
+
     /** Image snapshot configuration */
     image?: {
       enabled: boolean;
@@ -73,8 +96,10 @@ export interface VisualTestConfig {
     position?: {
       enabled: boolean;
       orderCheck: boolean;
-      positionThreshold: number;
-      sizeThreshold: number;
+      thresholds: {
+        position: number;
+        size: number;
+      };
       testMatcher?: {
         tags?: string[];
       };
@@ -118,12 +143,6 @@ export interface VisualTestConfig {
     direction: string;
     default: boolean;
     storybookGlobalParam: string;
-  };
-
-  /** Diff-based testing configuration */
-  diff: {
-    /** Target branch for diff comparison */
-    targetBranch: string;
   };
 }
 

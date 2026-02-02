@@ -6,16 +6,91 @@
  */
 
 export default {
-  // Test matching configuration
-  testMatcher: {
-    // Match stories with 'visual' tag
-    tags: ["visual"],
-    // Optional: Match stories with suffixes (e.g. _visual, _default)
-    suffix: ["_visual", "_default"],
+  // Storybook configuration
+  storybook: {
+    // Connection settings
+    port: process.env.STORYBOOK_PORT || "6006",
+    host: process.env.STORYBOOK_HOST || "localhost",
+
+    // Server management
+    command: "npm run storybook",
+    timeout: 120000, // 2 minutes
+    reuseExistingServer: true,
   },
 
-  // Snapshot type configuration
+  // Snapshot configuration (container for all library settings)
   snapshot: {
+    // Test matching configuration
+    testMatcher: {
+      // Match stories with 'visual' tag
+      tags: ["visual"],
+      // Optional: Match stories with suffixes (e.g. _visual, _default)
+      suffix: ["_visual", "_default"],
+    },
+
+    // Story filtering
+    filters: {
+      // Exclusion patterns (no-visual)
+      exclusions: process.env.STORY_VISUAL_EXCLUSIONS?.split(",") || [
+        "no-visual",
+      ],
+
+      // Include paths filter
+      includePaths: process.env.STORY_INCLUDE_PATHS?.split(",") || [],
+
+      // Specific story IDs
+      storyIds: process.env.STORY_IDS?.split(",") || [],
+    },
+
+    // Paths configuration
+    paths: {
+      // Snapshot directory
+      snapshotsDir: "playwright/storybook-visual/__visual_snapshots__",
+
+      // Logs directory
+      logsDir: "logs",
+
+      // Results file
+      resultsFile: "logs/visual-test-results.json",
+
+      // Failures file
+      failuresFile: "logs/visual-test-failures.jsonl",
+
+      // HTML report
+      htmlReport: "logs/visual-test-report.html",
+
+      // Log file
+      logFile: "logs/storybook-visual-results.log",
+
+      // Screenshots directory
+      screenshotsDir: "logs/screenshots",
+
+      // Library paths (These point to the installed library in node_modules)
+      playwrightConfig: "node_modules/snapshot-testing/playwright.config.js",
+      testSpec: "node_modules/snapshot-testing/visual-tests.spec.js",
+    },
+
+    // Error handling
+    errorHandling: {
+      // Patterns to ignore (timeout, closed)
+      ignorePatterns: process.env.IGNORE_ERROR_PATTERNS?.split(",") || [
+        "timeout",
+        "closed",
+      ],
+    },
+
+    // Diff-based testing
+    diff: {
+      // Target branch for comparison
+      targetBranch: process.env.VISUAL_TESTS_TARGET_BRANCH || "main",
+    },
+
+    // Masking configuration
+    masking: {
+      // Selectors to mask (hide dynamic content)
+      selectors: ['[data-testid="timeElapsed"]', '[data-testid="bsqDate"]'],
+    },
+
     // Image comparison settings
     image: {
       // Optional: Override global testMatcher for image snapshots
@@ -60,17 +135,23 @@ export default {
       // Enable order checking
       orderCheck: process.env.ENABLE_ORDER_CHECK !== "false",
 
-      // Position threshold (pixels)
-      positionThreshold: parseInt(process.env.POSITION_THRESHOLD || "5", 10),
+      // Position tracking thresholds
+      thresholds: {
+        // Position threshold (pixels)
+        position: parseInt(process.env.POSITION_THRESHOLD || "5", 10),
 
-      // Size threshold (pixels)
-      sizeThreshold: parseInt(process.env.SIZE_THRESHOLD || "5", 10),
+        // Size threshold (pixels)
+        size: parseInt(process.env.SIZE_THRESHOLD || "5", 10),
+      },
     },
 
     // Mobile snapshot configuration (overrides when --mobile flag is used)
     mobile: {
       // Enable mobile snapshots
       enabled: true,
+
+      // Optional: Override global testMatcher for mobile snapshots
+      // testMatcher: { tags: ['visual-mobile'] },
 
       // Mobile viewport configurations (array of viewports to test)
       // Future: Can be overridden at story level via story.parameters.mobileViewports
@@ -115,74 +196,8 @@ export default {
     },
   },
 
-  // Storybook configuration
-  storybook: {
-    port: process.env.STORYBOOK_PORT || "6006",
-    host: process.env.STORYBOOK_HOST || "localhost",
-  },
-
-  // Story filtering
-  filters: {
-    // Exclusion patterns (no-visual)
-    exclusions: process.env.STORY_VISUAL_EXCLUSIONS?.split(",") || [
-      "no-visual",
-    ],
-
-    // Include paths filter
-    includePaths: process.env.STORY_INCLUDE_PATHS?.split(",") || [],
-
-    // Specific story IDs
-    storyIds: process.env.STORY_IDS?.split(",") || [],
-  },
-
-  // Paths configuration
-  paths: {
-    // Snapshot directory
-    snapshotsDir: "playwright/storybook-visual/__visual_snapshots__",
-
-    // Logs directory
-    logsDir: "logs",
-
-    // Results file
-    resultsFile: "logs/visual-test-results.json",
-
-    // Failures file
-    failuresFile: "logs/visual-test-failures.jsonl",
-
-    // HTML report
-    htmlReport: "logs/visual-test-report.html",
-
-    // Log file
-    logFile: "logs/storybook-visual-results.log",
-
-    // Screenshots directory
-    screenshotsDir: "logs/screenshots",
-
-    // Library paths (These point to the installed library in node_modules)
-    playwrightConfig: "node_modules/snapshot-testing/playwright.config.js",
-    testSpec: "node_modules/snapshot-testing/visual-tests.spec.js",
-  },
-
-  // Diff-based testing
-  diff: {
-    // Target branch for comparison
-    targetBranch: process.env.VISUAL_TESTS_TARGET_BRANCH || "main",
-  },
-
-  // Error handling
-  errorHandling: {
-    // Patterns to ignore (timeout, closed)
-    ignorePatterns: process.env.IGNORE_ERROR_PATTERNS?.split(",") || [
-      "timeout",
-      "closed",
-    ],
-
-    // CI mode
-    ci: process.env.CI === "1",
-  },
-
-  // Playwright test execution configuration
-  playwrightConfig: {
+  // Playwright configuration
+  playwright: {
     // Test execution settings
     fullyParallel: true,
     workers: process.env.CI ? 4 : 6,
@@ -234,26 +249,5 @@ export default {
       //   use: { ...devices['Desktop Safari'] }
       // },
     ],
-  },
-
-  // Storybook server configuration
-  storybookConfig: {
-    // Command to start Storybook (set to null to disable auto-start)
-    command: "npm run storybook",
-
-    // Timeout for Storybook to start (milliseconds)
-    timeout: 120000, // 2 minutes
-
-    // Reuse existing server (useful for development)
-    reuseExistingServer: true,
-  },
-
-  // Playwright masking configuration
-  playwright: {
-    // Masking configuration
-    masking: {
-      // Selectors to mask (hide dynamic content)
-      selectors: ['[data-testid="timeElapsed"]', '[data-testid="bsqDate"]'],
-    },
   },
 };

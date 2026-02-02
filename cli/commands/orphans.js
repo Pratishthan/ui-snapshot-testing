@@ -71,7 +71,7 @@ export const orphansCommand = (yargs) => {
 
           // Desktop
           addCheck(
-            path.join(process.cwd(), baseConfig.paths.snapshotsDir),
+            path.join(process.cwd(), baseConfig.snapshot.paths.snapshotsDir),
             "desktop",
             baseConfig,
           );
@@ -81,7 +81,7 @@ export const orphansCommand = (yargs) => {
             const viewports = baseConfig.snapshot.mobile.viewports || [];
             const mobileDir = path.join(
               process.cwd(),
-              baseConfig.paths.snapshotsDir,
+              baseConfig.snapshot.paths.snapshotsDir,
               "mobile",
             );
 
@@ -116,7 +116,7 @@ export const orphansCommand = (yargs) => {
               });
               const baseSnapshotDir = path.join(
                 process.cwd(),
-                localeConfig.paths.snapshotsDir,
+                localeConfig.snapshot.paths.snapshotsDir,
               );
 
               let snapshotDir = baseSnapshotDir;
@@ -140,7 +140,7 @@ export const orphansCommand = (yargs) => {
             const viewports = snapshotMobileConfig.viewports || [];
             const mobileDir = path.join(
               process.cwd(),
-              baseConfig.paths.snapshotsDir,
+              baseConfig.snapshot.paths.snapshotsDir,
               "mobile",
             );
 
@@ -174,7 +174,7 @@ export const orphansCommand = (yargs) => {
             });
             const baseSnapshotDir = path.join(
               process.cwd(),
-              config.paths.snapshotsDir,
+              config.snapshot.paths.snapshotsDir,
             );
             let snapshotDir = baseSnapshotDir;
 
@@ -189,7 +189,7 @@ export const orphansCommand = (yargs) => {
             // Desktop (default)
             const config = await loadConfig({ configFile: argv.config });
             addCheck(
-              path.join(process.cwd(), config.paths.snapshotsDir),
+              path.join(process.cwd(), config.snapshot.paths.snapshotsDir),
               "desktop",
               config,
             );

@@ -43,15 +43,18 @@ export const diffCommand = (yargs) => {
         };
 
         if (argv.targetBranch) {
-          configOptions.diff = { targetBranch: argv.targetBranch };
+          configOptions.snapshot = configOptions.snapshot || {};
+          configOptions.snapshot.diff = { targetBranch: argv.targetBranch };
         }
 
         const config = await loadConfig(configOptions);
 
-        console.log(chalk.gray(`Target branch: ${config.diff.targetBranch}`));
+        console.log(
+          chalk.gray(`Target branch: ${config.snapshot.diff.targetBranch}`),
+        );
 
         // Get changed files
-        const changedFiles = getChangedFiles(config.diff.targetBranch);
+        const changedFiles = getChangedFiles(config.snapshot.diff.targetBranch);
 
         if (changedFiles.length === 0) {
           console.log(

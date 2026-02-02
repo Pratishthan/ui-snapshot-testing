@@ -1,6 +1,6 @@
 {
     "name": "ui-snapshot-testing",
-    "version": "0.8.0",
+    "version": "0.9.0",
     "author": "vivekkodira@gmail.com",
     "publishConfig": {
         "access": "public"
@@ -35,7 +35,8 @@
     },
     "scripts": {
         "test": "NODE_OPTIONS=--experimental-vm-modules jest",
-        "test:coverage": "NODE_OPTIONS=--experimental-vm-modules jest --coverage"
+        "test:coverage": "NODE_OPTIONS=--experimental-vm-modules jest --coverage",
+        "test:coverage:open": "NODE_OPTIONS=--experimental-vm-modules jest --coverage && open coverage/lcov-report/index.html"
     },
     "keywords": [
         "storybook",

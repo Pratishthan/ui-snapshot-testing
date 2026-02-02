@@ -30,12 +30,13 @@ const __dirname = path.dirname(__filename);
  * );
  */
 export function createPlaywrightConfig(visualTestConfig = {}, overrides = {}) {
-  const {
-    storybook = {},
-    paths = {},
-    playwrightConfig = {},
-    storybookConfig = {},
-  } = visualTestConfig;
+  const paths = visualTestConfig.snapshot?.paths || {};
+
+  // Handle merged configuration (new structure)
+  // storybook contains everything, playwright contains everything
+
+  const storybook = visualTestConfig.storybook || {};
+  const playwright = visualTestConfig.playwright || {};
 
   // Get the library's spec file path
   const specFilePath = path.join(__dirname, "visual-tests.spec.js");
@@ -47,23 +48,23 @@ export function createPlaywrightConfig(visualTestConfig = {}, overrides = {}) {
 
     // Snapshot configuration
     snapshotDir:
-      visualTestConfig.snapshot?.image?.snapshotDir ||
+      visualTestConfig.snapshot?.image?.snapshotDir || // Legacy check or if image has specific dir
       paths.snapshotsDir ||
       "./playwright/__visual_snapshots__",
     snapshotPathTemplate: "{snapshotDir}/{testFileDir}/{arg}{ext}",
 
-    // Test execution settings from playwrightConfig
-    fullyParallel: playwrightConfig.fullyParallel ?? false,
-    workers: playwrightConfig.workers ?? 1,
-    retries: playwrightConfig.retries ?? 0,
-    forbidOnly: playwrightConfig.forbidOnly ?? true,
+    // Test execution settings
+    fullyParallel: playwright.fullyParallel ?? false,
+    workers: playwright.workers ?? 1,
+    retries: playwright.retries ?? 0,
+    forbidOnly: playwright.forbidOnly ?? true,
 
     // Timeout configuration
-    timeout: playwrightConfig.timeout ?? 30000,
-    expect: playwrightConfig.expect ?? { timeout: 5000 },
+    timeout: playwright.timeout ?? 30000,
+    expect: playwright.expect ?? { timeout: 5000 },
 
     // Reporter configuration
-    reporter: playwrightConfig.reporter ?? [
+    reporter: playwright.reporter ?? [
       ["html", { outputFolder: "playwright-report" }],
       ["list"],
     ],
@@ -71,24 +72,24 @@ export function createPlaywrightConfig(visualTestConfig = {}, overrides = {}) {
     // Shared settings
     use: {
       baseURL: `http://${storybook.host || "localhost"}:${storybook.port || "6006"}`,
-      ...(playwrightConfig.use || {}),
+      ...(playwright.use || {}),
     },
 
     // Projects configuration
-    projects: playwrightConfig.projects ?? [
+    projects: playwright.projects ?? [
       {
         name: "chromium",
       },
     ],
   };
 
-  // Add webServer configuration if storybookConfig.command is provided
-  if (storybookConfig.command) {
+  // Add webServer configuration if command is provided
+  if (storybook.command) {
     baseConfig.webServer = {
-      command: storybookConfig.command,
+      command: storybook.command,
       url: `http://${storybook.host || "localhost"}:${storybook.port || "6006"}`,
-      reuseExistingServer: storybookConfig.reuseExistingServer ?? true,
-      timeout: storybookConfig.timeout ?? 120000,
+      reuseExistingServer: storybook.reuseExistingServer ?? true,
+      timeout: storybook.timeout ?? 120000,
     };
   }
 

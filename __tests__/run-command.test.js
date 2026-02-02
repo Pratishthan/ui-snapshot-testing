@@ -1,5 +1,5 @@
 /**
- * Update Command Tests
+ * Run Command Tests
  */
 
 import { jest } from "@jest/globals";
@@ -10,7 +10,7 @@ const mockLoadConfig = jest.fn();
 const mockFetchStories = jest.fn();
 const mockGenerateTestFiles = jest.fn();
 const mockCleanupTestFiles = jest.fn();
-const mockReadFailuresFromJsonl = jest.fn();
+const mockProcessTestResults = jest.fn();
 
 jest.unstable_mockModule("child_process", () => ({
   spawn: mockSpawn,
@@ -22,7 +22,6 @@ jest.unstable_mockModule("../config-loader.js", () => ({
 
 jest.unstable_mockModule("../lib/story-discovery.js", () => ({
   fetchStoriesFromStorybook: mockFetchStories,
-  sanitizeSnapshotName: (id) => id.toLowerCase().replace(/[^a-z0-9-]/g, "-"),
 }));
 
 jest.unstable_mockModule("../lib/test-runner-utils.js", () => ({
@@ -31,13 +30,11 @@ jest.unstable_mockModule("../lib/test-runner-utils.js", () => ({
 }));
 
 jest.unstable_mockModule("../lib/result-processor.js", () => ({
-  readFailuresFromJsonl: mockReadFailuresFromJsonl,
-  parseFailures: jest.fn(),
-  readIgnoredFromJsonl: jest.fn(),
+  processTestResults: mockProcessTestResults,
 }));
 
-describe("Update Command - Locale Mode", () => {
-  let updateCommand;
+describe("Run Command - Locale Mode", () => {
+  let runCommand;
   let mockYargs;
   let commandHandler;
 
@@ -46,8 +43,8 @@ describe("Update Command - Locale Mode", () => {
     jest.clearAllMocks();
 
     // Import the module after mocks are set up
-    const module = await import("../cli/commands/update.js");
-    updateCommand = module.updateCommand;
+    const module = await import("../cli/commands/run.js");
+    runCommand = module.runCommand;
 
     // Create mock yargs
     mockYargs = {
@@ -93,15 +90,17 @@ describe("Update Command - Locale Mode", () => {
           paths: {
             snapshotsDir: "__visual_snapshots__",
             playwrightConfig: "playwright.config.js",
+            logsDir: "logs",
           },
         },
         playwright: {},
+        storybook: { port: 6006 },
       };
 
       mockLoadConfig.mockResolvedValue(mockConfig);
 
       // Register the command
-      updateCommand(mockYargs);
+      runCommand(mockYargs);
 
       // Execute with --locale as boolean
       const argv = {
@@ -112,10 +111,18 @@ describe("Update Command - Locale Mode", () => {
 
       await commandHandler(argv);
 
-      // Should load config twice (once for initial check, once per locale)
+      // Should load config multiple times (1 initial + 1 per locale)
       expect(mockLoadConfig).toHaveBeenCalledTimes(3);
 
-      // Should call runUpdate for each locale
+      // Verify each locale was loaded with correct overrides
+      expect(mockLoadConfig).toHaveBeenCalledWith(
+        expect.objectContaining({ locale: "en-US" }),
+      );
+      expect(mockLoadConfig).toHaveBeenCalledWith(
+        expect.objectContaining({ locale: "de-DE" }),
+      );
+
+      // Should call fetchStories for each locale
       expect(mockFetchStories).toHaveBeenCalledTimes(2);
     });
 
@@ -127,6 +134,7 @@ describe("Update Command - Locale Mode", () => {
           },
         },
         paths: {},
+        storybook: { port: 6006 },
       };
 
       mockLoadConfig.mockResolvedValue(mockConfig);
@@ -134,7 +142,7 @@ describe("Update Command - Locale Mode", () => {
       // Mock process.exit
       const mockExit = jest.spyOn(process, "exit").mockImplementation(() => {});
 
-      updateCommand(mockYargs);
+      runCommand(mockYargs);
 
       const argv = {
         locale: true,
@@ -150,27 +158,28 @@ describe("Update Command - Locale Mode", () => {
       mockExit.mockRestore();
     });
 
-    it("should iterate through all configured locales", async () => {
+    it("should skip default locale in all locales mode", async () => {
       const mockConfig = {
         snapshot: {
           locale: {
             locales: [
-              { code: "en-US", name: "English" },
+              { code: "en-US", name: "English", default: true },
               { code: "de-DE", name: "German" },
-              { code: "ar-SA", name: "Arabic", direction: "rtl" },
             ],
           },
           paths: {
             snapshotsDir: "__visual_snapshots__",
             playwrightConfig: "playwright.config.js",
+            logsDir: "logs",
           },
         },
         playwright: {},
+        storybook: { port: 6006 },
       };
 
       mockLoadConfig.mockResolvedValue(mockConfig);
 
-      updateCommand(mockYargs);
+      runCommand(mockYargs);
 
       const argv = {
         locale: true,
@@ -180,22 +189,23 @@ describe("Update Command - Locale Mode", () => {
 
       await commandHandler(argv);
 
-      // Should load config 4 times (1 initial + 3 locales)
-      expect(mockLoadConfig).toHaveBeenCalledTimes(4);
+      // Should load config 2 times (1 initial + 1 for non-default locale)
+      expect(mockLoadConfig).toHaveBeenCalledTimes(2);
 
-      // Verify each locale was loaded
-      expect(mockLoadConfig).toHaveBeenCalledWith(
-        expect.objectContaining({ locale: "en-US" }),
-      );
+      // Verify ONLY non-default locale was loaded
       expect(mockLoadConfig).toHaveBeenCalledWith(
         expect.objectContaining({ locale: "de-DE" }),
       );
-      expect(mockLoadConfig).toHaveBeenCalledWith(
-        expect.objectContaining({ locale: "ar-SA" }),
+      // Should NOT be called for default locale (en-US)
+      expect(mockLoadConfig).not.toHaveBeenCalledWith(
+        expect.objectContaining({ locale: "en-US" }),
       );
+
+      // Should call fetchStories once (for non-default locale)
+      expect(mockFetchStories).toHaveBeenCalledTimes(1);
     });
 
-    it("should handle failures in locale updates", async () => {
+    it("should handle failures in locale runs", async () => {
       const mockConfig = {
         snapshot: {
           locale: {
@@ -207,9 +217,11 @@ describe("Update Command - Locale Mode", () => {
           paths: {
             snapshotsDir: "__visual_snapshots__",
             playwrightConfig: "playwright.config.js",
+            logsDir: "logs",
           },
         },
         playwright: {},
+        storybook: { port: 6006 },
       };
 
       mockLoadConfig.mockResolvedValue(mockConfig);
@@ -230,7 +242,7 @@ describe("Update Command - Locale Mode", () => {
 
       const mockExit = jest.spyOn(process, "exit").mockImplementation(() => {});
 
-      updateCommand(mockYargs);
+      runCommand(mockYargs);
 
       const argv = {
         locale: true,
@@ -260,14 +272,16 @@ describe("Update Command - Locale Mode", () => {
           paths: {
             snapshotsDir: "__visual_snapshots__",
             playwrightConfig: "playwright.config.js",
+            logsDir: "logs",
           },
         },
         playwright: {},
+        storybook: { port: 6006 },
       };
 
       mockLoadConfig.mockResolvedValue(mockConfig);
 
-      updateCommand(mockYargs);
+      runCommand(mockYargs);
 
       const argv = {
         locale: "de-DE", // String value
@@ -289,20 +303,22 @@ describe("Update Command - Locale Mode", () => {
   });
 
   describe("No Locale Mode", () => {
-    it("should handle update without locale flag", async () => {
+    it("should handle run without locale flag", async () => {
       const mockConfig = {
         snapshot: {
           paths: {
             snapshotsDir: "__visual_snapshots__",
             playwrightConfig: "playwright.config.js",
+            logsDir: "logs",
           },
         },
         playwright: {},
+        storybook: { port: 6006 },
       };
 
       mockLoadConfig.mockResolvedValue(mockConfig);
 
-      updateCommand(mockYargs);
+      runCommand(mockYargs);
 
       const argv = {
         // No locale property

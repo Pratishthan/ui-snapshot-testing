@@ -30,7 +30,8 @@ const config = {
   // Snapshot configuration
   snapshotDir: path.resolve(
     process.cwd(),
-    visualTestConfig.paths?.snapshotsDir || "./playwright/__visual_snapshots__",
+    visualTestConfig.snapshot?.paths?.snapshotsDir ||
+      "./playwright/__visual_snapshots__",
     isMobile ? "mobile" : "",
     localeCode && !visualTestConfig.locale?.default ? localeCode : "",
   ),
@@ -43,19 +44,19 @@ const config = {
     process.env.VISUAL_TEST_UPDATE_SNAPSHOTS === "true" ? "missing" : "none",
 
   // Test execution settings
-  fullyParallel: visualTestConfig.playwrightConfig?.fullyParallel ?? false,
-  workers: visualTestConfig.playwrightConfig?.workers ?? 1,
-  retries: visualTestConfig.playwrightConfig?.retries ?? 0,
-  forbidOnly: visualTestConfig.playwrightConfig?.forbidOnly ?? true,
+  fullyParallel: visualTestConfig.playwright?.fullyParallel ?? false,
+  workers: visualTestConfig.playwright?.workers ?? 1,
+  retries: visualTestConfig.playwright?.retries ?? 0,
+  forbidOnly: visualTestConfig.playwright?.forbidOnly ?? true,
 
   // Timeout configuration
-  timeout: visualTestConfig.playwrightConfig?.timeout ?? 30000,
-  expect: visualTestConfig.playwrightConfig?.expect ?? { timeout: 5000 },
+  timeout: visualTestConfig.playwright?.timeout ?? 30000,
+  expect: visualTestConfig.playwright?.expect ?? { timeout: 5000 },
 
   // Reporter configuration
   // Reporter configuration
   reporter: (
-    visualTestConfig.playwrightConfig?.reporter ?? [
+    visualTestConfig.playwright?.reporter ?? [
       ["html", { outputFolder: "playwright-report" }],
       ["list"],
     ]
@@ -84,25 +85,24 @@ const config = {
   // Shared settings
   use: {
     baseURL: `http://${visualTestConfig.storybook?.host || "localhost"}:${visualTestConfig.storybook?.port || "6006"}`,
-    ...(visualTestConfig.playwrightConfig?.use || {}),
+    ...(visualTestConfig.playwright?.use || {}),
   },
 
   // Projects configuration
-  projects: visualTestConfig.playwrightConfig?.projects ?? [
+  projects: visualTestConfig.playwright?.projects ?? [
     {
       name: "chromium",
     },
   ],
 };
 
-// Add webServer configuration if storybookConfig.command is provided
-if (visualTestConfig.storybookConfig?.command) {
+// Add webServer configuration if storybook.command is provided
+if (visualTestConfig.storybook?.command) {
   config.webServer = {
-    command: visualTestConfig.storybookConfig.command,
+    command: visualTestConfig.storybook.command,
     url: `http://${visualTestConfig.storybook?.host || "localhost"}:${visualTestConfig.storybook?.port || "6006"}`,
-    reuseExistingServer:
-      visualTestConfig.storybookConfig.reuseExistingServer ?? true,
-    timeout: visualTestConfig.storybookConfig.timeout ?? 120000,
+    reuseExistingServer: visualTestConfig.storybook.reuseExistingServer ?? true,
+    timeout: visualTestConfig.storybook.timeout ?? 120000,
   };
 }
 
